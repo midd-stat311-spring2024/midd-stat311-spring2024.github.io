@@ -3,16 +3,25 @@ project:
   output-dir: docs
 
 website:
-  title: "stat310-website"
+  title: "STAT 310"
   navbar:
     left:
-      - href: index.qmd
+      - file: index.qmd
         text: Home
-      - about.qmd
+      - file: schedule.qmd
+        text: "Schedule"
+      
+  sidebar:
+    - title: "Schedule"
+      style: "docked"
+      contents:
+        - schedule.qmd
+        - weeks/week-01.qmd
+        - weeks/week-02.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: sandstone
     css: styles.css
     toc: true
 

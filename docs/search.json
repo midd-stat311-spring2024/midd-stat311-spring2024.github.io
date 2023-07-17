@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "stat310-website",
+    "title": "Welcome",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Welcome to the website for Middlebury College’s Fall 2023 STAT 310 (MATH 310) . On this website you will find the course syllabus, schedule, and assignments. The website is frequently updated during the semester, so please make a habit of refreshing the page."
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,40 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#course-details",
+    "href": "index.html#course-details",
+    "title": "Welcome",
+    "section": "Course Details",
+    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 8:40-9:30am in WNS 011\nOffice hours: TBD"
+  },
+  {
+    "objectID": "schedule.html#week-2",
+    "href": "schedule.html#week-2",
+    "title": "Schedule",
+    "section": "Week 2",
+    "text": "Week 2"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Day-by-day schedule"
+  },
+  {
+    "objectID": "temp.html",
+    "href": "temp.html",
+    "title": "temp",
+    "section": "",
+    "text": "blah"
+  },
+  {
+    "objectID": "prep/temp.html",
+    "href": "prep/temp.html",
+    "title": "Week 1",
+    "section": "",
+    "text": "blah"
   }
 ]

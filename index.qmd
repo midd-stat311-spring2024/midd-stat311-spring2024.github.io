@@ -1,11 +1,17 @@
 ---
-title: "stat310-website"
+title: "Welcome"
+sidebar: false
 ---
 
-This is a Quarto website.
+Welcome to the website for Middlebury College's Fall 2023 STAT 310 (MATH 310) . On this website you will find the course syllabus, schedule, and assignments. The website is frequently updated during the semester, so please make a habit of refreshing the page.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## Course Details
 
-```{r}
-1 + 1
-```
+Instructor: Becky Tang
+
+-   Office: WNS 214
+-   Email: btang\@middlebury.edu
+
+Meeting times: TRF 8:40-9:30am in WNS 011
+
+Office hours: TBD

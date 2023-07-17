@@ -1,0 +1,9 @@
+---
+title: "Schedule"
+format: 
+  html: 
+    grid:
+      margin-width: 50px
+---
+
+Day-by-day schedule

@@ -1,3 +1,36 @@
 ---
 title: "Week 01"
 ---
+
+### Tuesday (09/12)
+
+**Topics**
+
+-   Welcome!
+
+**Daily assignment**
+
+**Class activity**
+
+### Thursday (09/14)
+
+**Topics**
+
+-   Foundations of probability
+-   Counting
+
+**Daily assignment**
+
+**Class activity**
+
+### Friday (09/15)
+
+**Topics**
+
+-   Set theory
+
+-   Axioms of probability
+
+**Daily assignment**
+
+**Class activity**

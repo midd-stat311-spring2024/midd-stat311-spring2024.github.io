@@ -2,17 +2,25 @@
 title: "Week 01"
 ---
 
+::: {style="color: #F66D7A"}
 ### Tuesday (09/12)
+:::
 
 **Topics**
 
 -   Welcome!
+-   Course logistics
 
 **Daily assignment**
 
+-   Review syllabus
+-   Review the following topics from Calculus
+
 **Class activity**
 
+::: {style="color: #F66D7A"}
 ### Thursday (09/14)
+:::
 
 **Topics**
 
@@ -21,9 +29,15 @@ title: "Week 01"
 
 **Daily assignment**
 
+To be completed and submitted by 7:45am
+
+-   [Daily assignment](pre-assignment/DA_01.pdf)
+
 **Class activity**
 
+::: {style="color: #F66D7A"}
 ### Friday (09/15)
+:::
 
 **Topics**
 

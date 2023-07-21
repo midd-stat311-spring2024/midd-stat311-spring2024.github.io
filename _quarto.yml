@@ -17,7 +17,6 @@ website:
       contents:
         - schedule.qmd
         - weeks/week-01.qmd
-        - weeks/week-02.qmd
 
 format:
   html:

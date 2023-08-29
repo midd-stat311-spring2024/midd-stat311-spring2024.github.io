@@ -11,14 +11,16 @@ A high-level overview of the semester's topics are presented here. Please select
 
 -   Welcome
 
--   Blah
-
--   Blah
+-   Probability axioms
 
 ### Week 02
 
--   Welcome
+-   R and RStudio
 
--   Blah
+-   Conditional probability
 
--   Blah
+### Week 03
+
+-   Monty Hall
+
+-   Discrete random variables

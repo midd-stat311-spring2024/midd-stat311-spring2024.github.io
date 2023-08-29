@@ -3,13 +3,25 @@ project:
   output-dir: docs
 
 website:
-  title: "STAT 310"
+  title: "MATH/STAT 310: Probability"
+  favicon: img/img.png
   navbar:
+    logo: img/img.png
     left:
       - file: index.qmd
         text: Home
       - file: schedule.qmd
         text: "Schedule"
+    right:
+      - icon: book-half
+        href: https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/view
+      - icon: bar-chart-fill
+        menu: 
+          - text: Gradescope
+            url: https://www.gradescope.com/
+          - text: Canvas
+            url: https://middlebury.instructure.com/
+
       
   sidebar:
     - title: "Schedule"
@@ -17,13 +29,20 @@ website:
       contents:
         - schedule.qmd
         - weeks/week-01.qmd
+        - weeks/week-02.qmd
+        
+  page-footer:
+    center: |
+      - ![Logo image](/img/middlebury.png){width=10%}
 
 format:
   html:
     theme: 
       - united
       - customs.scss
-    toc: true
+    toc: false
+    page-layout: article
+    
 
 editor: visual
 

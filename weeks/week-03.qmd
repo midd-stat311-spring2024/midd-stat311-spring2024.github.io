@@ -1,0 +1,55 @@
+---
+title: "Week 03"
+---
+
+::: {style="color: #F66D7A"}
+### Tuesday (09/26)
+:::
+
+**Topics**
+
+-   Monty Hall and Gambler's Ruin
+
+**Daily assignment**
+
+To be completed and submitted by 7:45am
+
+**Class activity**
+
+::: {style="color: #F66D7A"}
+### Thursday (09/28)
+:::
+
+***Prof. Tang traveling - Class on Zoom***
+
+**Topics**
+
+-   Conditional probability in `R`
+
+**Daily assignment**
+
+To be completed and submitted by 7:45am
+
+-   
+
+**Class activity**
+
+-   Attend Zoom class (link provided soon)
+
+::: {style="color: #F66D7A"}
+### Friday (09/29)
+:::
+
+***Prof. Tang traveling - Class on Zoom***
+
+**Topics**
+
+-   Random variables (discrete)
+
+-   PMF, Bernoulli, Binomial
+
+**Daily assignment**
+
+**Class activity**
+
+-   Attend Zoom class (link provided soon)

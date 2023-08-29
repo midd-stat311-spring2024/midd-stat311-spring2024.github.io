@@ -2,30 +2,50 @@
 title: "Week 02"
 ---
 
-## Option 1:
+::: {style="color: #F66D7A"}
+### Tuesday (09/19)
+:::
 
-+----------------------+--------------+--------------------------------+---------------------------+
-|                      | Tuesday      | Thursday                       | Friday                    |
-+======================+:=============+================================+===========================+
-| **Topics**           | -   Welcome! | -   Foundations of probability | -   Set theory            |
-|                      |              |                                | -   Axioms of probability |
-+----------------------+--------------+--------------------------------+---------------------------+
-| **Daily assignment** |              |                                |                           |
-+----------------------+--------------+--------------------------------+---------------------------+
-| **Class activity**   |              |                                |                           |
-+----------------------+--------------+--------------------------------+---------------------------+
-| **Due dates**        |              |                                |                           |
-+----------------------+--------------+--------------------------------+---------------------------+
+**Topics**
 
-## Option 2:
+-   Introduction to R and RStudio
 
-+--------------+--------------------------------+------------------+-------------------+-----------+
-|              | Topics                         | Daily activities | Class assignments | Due dates |
-+==============+:===============================+==================+===================+===========+
-| **Tuesday**  | -   Welcome!                   |                  |                   |           |
-+--------------+--------------------------------+------------------+-------------------+-----------+
-| **Thursday** | -   Foundations of probability |                  |                   |           |
-+--------------+--------------------------------+------------------+-------------------+-----------+
-| **Friday**   | -   Set theory                 |                  |                   |           |
-|              | -   Axioms of probability      |                  |                   |           |
-+--------------+--------------------------------+------------------+-------------------+-----------+
+**Daily assignment**
+
+To be completed and submitted by 7:45am
+
+-   Download R and RStudio if you do not already have them downloaded by following these [instructions](files/R_RStudio.pdf).
+-   
+
+**Class activity**
+
+::: {style="color: #F66D7A"}
+### Thursday (09/21)
+:::
+
+**Topics**
+
+-   Conditional probability
+-   Independence
+
+**Daily assignment**
+
+To be completed and submitted by 7:45am
+
+-   
+
+**Class activity**
+
+::: {style="color: #F66D7A"}
+### Friday (09/22)
+:::
+
+**Topics**
+
+-   Bayes Rule
+
+-   Law of Total Probability
+
+**Daily assignment**
+
+**Class activity**

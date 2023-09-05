@@ -12,12 +12,16 @@ title: "Week 02"
 
 **Daily assignment**
 
-To be completed and submitted by 7:45am
+To be completed and submitted to Gradescope by 7:45am
 
 -   Download R and RStudio if you do not already have them downloaded by following these [instructions](files/R_RStudio.pdf).
 -   
 
 **Class activity**
+
+-   TBD
+
+------------------------------------------------------------------------
 
 ::: {style="color: #F66D7A"}
 ### Thursday (09/21)
@@ -30,11 +34,15 @@ To be completed and submitted by 7:45am
 
 **Daily assignment**
 
-To be completed and submitted by 7:45am
+To be completed and submitted to Gradescope by 7:45am
 
 -   
 
 **Class activity**
+
+-   TBD
+
+------------------------------------------------------------------------
 
 ::: {style="color: #F66D7A"}
 ### Friday (09/22)
@@ -48,4 +56,10 @@ To be completed and submitted by 7:45am
 
 **Daily assignment**
 
+To be completed and submitted to Gradescope by 7:45am
+
+-   
+
 **Class activity**
+
+-   TBD

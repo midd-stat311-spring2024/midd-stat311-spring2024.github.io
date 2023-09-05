@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome",
+    "title": "Probability",
     "section": "",
-    "text": "Welcome to the website for Middlebury College’s Fall 2023 MATH/STAT 310. On this website you will find the course syllabus, schedule, and assignments. The website is frequently updated during the semester, so please make a habit of refreshing the page."
+    "text": "Welcome to the website for Middlebury College’s Fall 2023 MATH/STAT 310. On this website you will find the course syllabus, schedule, and assignments. The website is frequently updated during the semester, so please make a habit of refreshing the page. The icons at the top right will link to the online version of the textbook, Gradescope, and Canvas."
   },
   {
     "objectID": "about.html",
@@ -16,9 +16,9 @@
   {
     "objectID": "index.html#course-details",
     "href": "index.html#course-details",
-    "title": "Welcome",
+    "title": "Probability",
     "section": "Course Details",
-    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 8:40-9:30am in WNS 105\nOffice hours: M 2-4pm, R 2-3pm (tentative)"
+    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 8:40-9:30am in WNS 105\nOffice hours: M 2-4pm, R 2-3pm (tentative)\nSyllabus (most recent update: 9/1/23)"
   },
   {
     "objectID": "schedule.html#week-2",
@@ -32,7 +32,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome\nProbability axioms\n\n\n\nWeek 02\n\nR and RStudio\nConditional probability\n\n\n\nWeek 03\n\nMonty Hall\nDiscrete random variables"
+    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome\nProbability axioms\n\n\n\nWeek 02\n\nR and RStudio\nConditional probability"
   },
   {
     "objectID": "temp.html",
@@ -53,7 +53,7 @@
     "href": "weeks/week-01.html",
     "title": "Week 01",
     "section": "",
-    "text": "Tuesday (09/12)\n\nTopics\n\nWelcome!\nCourse logistics\n\nDaily assignment\n\nReview syllabus\nReview the following topics from Calculus\n\nClass activity\n\nThursday (09/14)\n\nTopics\n\nFoundations of probability\nCounting\n\nDaily assignment\nTo be completed and submitted by 7:45am\n\nDaily assignment\n\nClass activity\n\nFriday (09/15)\n\nTopics\n\nSet theory\nAxioms of probability\n\nDaily assignment\nClass activity"
+    "text": "Tuesday (09/12)\n\nTopics\n\nWelcome!\nCourse logistics\n\nDaily assignment\nReview syllabus\n\nComplete the pre-course survey if you haven’t already\n\nClass activity\n\nTBD\n\n\n\nThursday (09/14)\n\nTopics\n\nFoundations of probability\nCounting\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\nDaily assignment\n\nClass activity\n\nTBD\n\n\n\nFriday (09/15)\n\nTopics\n\nSet theory\nAxioms of probability\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\nDaily assignment\n\nClass activity\n\nTBD"
   },
   {
     "objectID": "weeks/week-01.html#thursday",
@@ -74,7 +74,7 @@
     "href": "weeks/week-02.html",
     "title": "Week 02",
     "section": "",
-    "text": "Tuesday (09/19)\n\nTopics\n\nIntroduction to R and RStudio\n\nDaily assignment\nTo be completed and submitted by 7:45am\n\nDownload R and RStudio if you do not already have them downloaded by following these instructions.\n\n\nClass activity\n\nThursday (09/21)\n\nTopics\n\nConditional probability\nIndependence\n\nDaily assignment\nTo be completed and submitted by 7:45am\n\n\n\nClass activity\n\nFriday (09/22)\n\nTopics\n\nBayes Rule\nLaw of Total Probability\n\nDaily assignment\nClass activity"
+    "text": "Tuesday (09/19)\n\nTopics\n\nIntroduction to R and RStudio\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\nDownload R and RStudio if you do not already have them downloaded by following these instructions.\n\n\nClass activity\n\nTBD\n\n\n\nThursday (09/21)\n\nTopics\n\nConditional probability\nIndependence\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\n\n\nClass activity\n\nTBD\n\n\n\nFriday (09/22)\n\nTopics\n\nBayes Rule\nLaw of Total Probability\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\n\n\nClass activity\n\nTBD"
   },
   {
     "objectID": "weeks/week-02.html#option-2",
@@ -88,6 +88,6 @@
     "href": "weeks/week-03.html",
     "title": "Week 03",
     "section": "",
-    "text": "Tuesday (09/26)\n\nTopics\n\nMonty Hall and Gambler’s Ruin\n\nDaily assignment\nTo be completed and submitted by 7:45am\nClass activity\n\nThursday (09/28)\n\nProf. Tang traveling - Class on Zoom\nTopics\n\nConditional probability in R\n\nDaily assignment\nTo be completed and submitted by 7:45am\n\n\n\nClass activity\n\nAttend Zoom class (link provided soon)\n\n\nFriday (09/29)\n\nProf. Tang traveling - Class on Zoom\nTopics\n\nRandom variables (discrete)\nPMF, Bernoulli, Binomial\n\nDaily assignment\nClass activity\n\nAttend Zoom class (link provided soon)"
+    "text": "Tuesday (09/26)\n\nTopics\n\nMonty Hall and Gambler’s Ruin\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\nClass activity\n\nTBD\n\n\n\nThursday (09/28)\n\nProf. Tang traveling - Class on Zoom\nTopics\n\nConditional probability in R\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\nTBD\n\nClass activity\n\nAttend Zoom class (link provided soon)\n\n\n\nFriday (09/29)\n\nProf. Tang traveling - Class on Zoom\nTopics\n\nRandom variables (discrete)\nPMF, Bernoulli, Binomial\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\nTBD\n\nClass activity\n\nAttend Zoom class (link provided soon)"
   }
 ]

@@ -13,14 +13,10 @@ A high-level overview of the semester's topics are presented here. Please select
 
 -   Probability axioms
 
-### Week 02
+### [Week 02](weeks/week-02.qmd)
 
 -   R and RStudio
 
 -   Conditional probability
 
-### Week 03
-
--   Monty Hall
-
--   Discrete random variables
+### 

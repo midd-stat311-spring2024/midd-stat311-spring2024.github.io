@@ -12,9 +12,13 @@ title: "Week 03"
 
 **Daily assignment**
 
-To be completed and submitted by 7:45am
+To be completed and submitted to Gradescope by 7:45am
 
 **Class activity**
+
+-   TBD
+
+------------------------------------------------------------------------
 
 ::: {style="color: #F66D7A"}
 ### Thursday (09/28)
@@ -28,13 +32,15 @@ To be completed and submitted by 7:45am
 
 **Daily assignment**
 
-To be completed and submitted by 7:45am
+To be completed and submitted to Gradescope by 7:45am
 
--   
+-   TBD
 
 **Class activity**
 
 -   Attend Zoom class (link provided soon)
+
+------------------------------------------------------------------------
 
 ::: {style="color: #F66D7A"}
 ### Friday (09/29)
@@ -49,6 +55,10 @@ To be completed and submitted by 7:45am
 -   PMF, Bernoulli, Binomial
 
 **Daily assignment**
+
+To be completed and submitted to Gradescope by 7:45am
+
+-   TBD
 
 **Class activity**
 

@@ -18,7 +18,7 @@
     "href": "index.html#course-details",
     "title": "Probability",
     "section": "Course Details",
-    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 8:40-9:30am in WNS 105\nOffice hours: M 2-4pm, R 2-3pm (tentative)\nSyllabus (most recent update: 9/1/23)"
+    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 8:40-9:30am in WNS 105\nOffice hours: M 2-4pm, R 3-4pm (tentative)\nSyllabus (most recent update: 9/7/23)"
   },
   {
     "objectID": "schedule.html#week-2",
@@ -88,6 +88,6 @@
     "href": "weeks/week-03.html",
     "title": "Week 03",
     "section": "",
-    "text": "Tuesday (09/26)\n\nTopics\n\nMonty Hall and Gambler’s Ruin\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\nClass activity\n\nTBD\n\n\n\nThursday (09/28)\n\nProf. Tang traveling - Class on Zoom\nTopics\n\nConditional probability in R\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\nTBD\n\nClass activity\n\nAttend Zoom class (link provided soon)\n\n\n\nFriday (09/29)\n\nProf. Tang traveling - Class on Zoom\nTopics\n\nRandom variables (discrete)\nPMF, Bernoulli, Binomial\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\nTBD\n\nClass activity\n\nAttend Zoom class (link provided soon)"
+    "text": "Tuesday (09/26)\n\nTopics\n\nMonty Hall and Gambler’s Ruin\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\nClass activity\n\nTBD\n\n\n\nThursday (09/28)\n\nProf. Tang traveling - Class on Zoom\nTopics\n\nConditional probability in R\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\nTBD\n\nClass activity\n\nfor loops in R demo\nTBD\n\n\n\nFriday (09/29)\n\nProf. Tang traveling - Class on Zoom\nTopics\n\nRandom variables (discrete)\nPMF, Bernoulli, Binomial\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\nTBD\n\nClass activity\n\nTBD"
   }
 ]

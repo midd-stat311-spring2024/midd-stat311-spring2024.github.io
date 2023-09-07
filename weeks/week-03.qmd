@@ -38,7 +38,8 @@ To be completed and submitted to Gradescope by 7:45am
 
 **Class activity**
 
--   Attend Zoom class (link provided soon)
+-   `for` loops in `R` demo
+-   TBD
 
 ------------------------------------------------------------------------
 
@@ -62,4 +63,4 @@ To be completed and submitted to Gradescope by 7:45am
 
 **Class activity**
 
--   Attend Zoom class (link provided soon)
+-   TBD

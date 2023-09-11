@@ -18,7 +18,7 @@
     "href": "index.html#course-details",
     "title": "Probability",
     "section": "Course Details",
-    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 8:40-9:30am in WNS 105\nOffice hours: M 2-4pm, R 3-4pm (tentative)\nSyllabus (most recent update: 9/7/23)"
+    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 8:40-9:30am in WNS 105\nOffice hours: M 2-4pm, R 3-4pm (tentative)\nSyllabus (most recent update: 9/11/23)"
   },
   {
     "objectID": "schedule.html#week-2",
@@ -74,7 +74,7 @@
     "href": "weeks/week-02.html",
     "title": "Week 02",
     "section": "",
-    "text": "Tuesday (09/19)\n\nTopics\n\nIntroduction to R and RStudio\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\nDownload R and RStudio if you do not already have them downloaded by following these instructions.\n\n\nClass activity\n\nTBD\n\n\n\nThursday (09/21)\n\nTopics\n\nConditional probability\nIndependence\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\n\n\nClass activity\n\nTBD\n\n\n\nFriday (09/22)\n\nTopics\n\nBayes Rule\nLaw of Total Probability\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\n\n\nClass activity\n\nTBD"
+    "text": "Tuesday (09/19)\n\nTopics\n\nIntroduction to R and RStudio\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\nDownload R and RStudio if you do not already have them downloaded by following these instructions.\nDaily assignment\n\nVideo for creating a new R Markdown document\nVideo for knitting a document\n\n\nClass activity\n\nTBD\n\n\n\nThursday (09/21)\n\nTopics\n\nConditional probability\nIndependence\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nFriday (09/22)\n\nTopics\n\nBayes Rule\nLaw of Total Probability\n\nDaily assignment\nTo be completed and submitted to Gradescope by 7:45am\n\n\n\nClass activity\n\nTBD"
   },
   {
     "objectID": "weeks/week-02.html#option-2",

@@ -16,11 +16,7 @@ website:
       - icon: book-half
         href: https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/view
       - icon: bar-chart-fill
-        menu: 
-          - text: Gradescope
-            url: https://www.gradescope.com/
-          - text: Canvas
-            url: https://middlebury.instructure.com/
+        href: https://middlebury.instructure.com/
 
       
   sidebar:

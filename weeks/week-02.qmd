@@ -12,12 +12,12 @@ title: "Week 02"
 
 **Daily assignment**
 
-To be completed and submitted to Gradescope by 7:45am
+To be completed and submitted to Canvas by 7:45am
 
 -   Download R and RStudio if you do not already have them downloaded by following these [instructions](files/R_RStudio.pdf).
 -   [Daily assignment](daily/DA_03.pdf)
-    -   Video for [creating a new R Markdown document](https://middlebury.zoom.us/rec/share/P3yz_ijZA4gzX44fDgaLEnqqHuOkjvTTDo0HRX-cxUyuo7ObKGGCKQs2xKPyLaVy.qkjvzTJAbq7KjC8G?startTime=1694198782000 Passcode: X^SuA=Q1)
-    -   Video for [knitting a document](https://middlebury.zoom.us/rec/share/P3yz_ijZA4gzX44fDgaLEnqqHuOkjvTTDo0HRX-cxUyuo7ObKGGCKQs2xKPyLaVy.qkjvzTJAbq7KjC8G?startTime=1694199079000 Passcode: X^SuA=Q1)
+    -   Video for [creating a new R Markdown document](https://middlebury.zoom.us/rec/share/P3yz_ijZA4gzX44fDgaLEnqqHuOkjvTTDo0HRX-cxUyuo7ObKGGCKQs2xKPyLaVy.qkjvzTJAbq7KjC8G?startTime=1694198782000%20Passcode:%20X%5ESuA=Q1)
+    -   Video for [knitting a document](https://middlebury.zoom.us/rec/share/P3yz_ijZA4gzX44fDgaLEnqqHuOkjvTTDo0HRX-cxUyuo7ObKGGCKQs2xKPyLaVy.qkjvzTJAbq7KjC8G?startTime=1694199079000%20Passcode:%20X%5ESuA=Q1)
 
 **Class activity**
 
@@ -32,13 +32,14 @@ To be completed and submitted to Gradescope by 7:45am
 **Topics**
 
 -   Conditional probability
--   Independence
+-   Bayes rule
+-   Law of Total Probability
 
 **Daily assignment**
 
-To be completed and submitted to Gradescope by 7:45am
+To be completed and submitted to Canvas by 7:45am
 
--   TBD
+-   [Daily assignment](daily/DA_04.pdf)
 
 **Class activity**
 
@@ -52,13 +53,13 @@ To be completed and submitted to Gradescope by 7:45am
 
 **Topics**
 
--   Bayes Rule
+-   Independence
 
--   Law of Total Probability
+-   Conditional independence
 
 **Daily assignment**
 
-To be completed and submitted to Gradescope by 7:45am
+To be completed and submitted to Canvas by 7:45am
 
 -   
 

@@ -1,9 +1,10 @@
 ---
 title: "Homework"
+sidebar: false
 ---
 
 Note: problem sets will be updated with new questions following each class. Completed homework should be submitted to Canvas unless otherwise noted.
 
 ### Homework 1
 
--   [Homework 1](hw/310_hw1.pdf), due 09/19 at 11:59pm
+-   [Homework 1](weeks/hw/310_hw1.pdf), due 09/19 at 11:59pm

@@ -12,6 +12,8 @@ website:
         text: Home
       - file: schedule.qmd
         text: "Schedule"
+      - file: homework.qmd
+        text: "Homework"
     right:
       - icon: book-half
         href: https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/view

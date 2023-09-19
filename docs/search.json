@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Probability",
     "section": "",
-    "text": "Welcome to the website for Middlebury College’s Fall 2023 MATH/STAT 310. On this website you will find the course syllabus, schedule, and assignments. The website is frequently updated during the semester, so please make a habit of refreshing the page. The icons at the top right will link to the online version of the textbook, Gradescope, and Canvas."
+    "text": "Welcome to the website for Middlebury College’s Fall 2023 MATH/STAT 310. On this website you will find the course syllabus, schedule, and assignments. The website is frequently updated during the semester, so please make a habit of refreshing the page. The icons at the top right will link to the online version of the textbook and Canvas."
   },
   {
     "objectID": "about.html",
@@ -18,7 +18,7 @@
     "href": "index.html#course-details",
     "title": "Probability",
     "section": "Course Details",
-    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 8:40-9:30am in WNS 105\nOffice hours: M 2-4pm, R 3-4pm (tentative)\nSyllabus (most recent update: 9/12/23 to say assignments should be submitted to Canvas)"
+    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 8:40-9:30am in WNS 105\nOffice hours: M 2-4pm, R 3-4pm\nSyllabus (most recent update: 9/12/23 to say assignments should be submitted to Canvas)"
   },
   {
     "objectID": "schedule.html#week-2",
@@ -32,7 +32,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome\nProbability axioms\n\n\n\nWeek 02\n\nR and RStudio\nConditional probability"
+    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome\nProbability axioms\n\n\n\nWeek 02\n\nR and RStudio\nConditional probability\nIndependence\n\n\n\nWeek 03\n\nMonty Hall\nBernoulli and Binomial"
   },
   {
     "objectID": "temp.html",
@@ -96,5 +96,12 @@
     "title": "Homework",
     "section": "",
     "text": "Note: problem sets will be updated with new questions following each class. Completed homework should be submitted to Canvas unless otherwise noted.\n\nHomework 1\n\nHomework 1, due 09/19 at 11:59pm"
+  },
+  {
+    "objectID": "index.html#major-announcements",
+    "href": "index.html#major-announcements",
+    "title": "Probability",
+    "section": "Major Announcements",
+    "text": "Major Announcements\n\nMidterm 1 date and time:\n\nTBA by end of week\n\nModified office hours the week of 9/25\n\nMonday, 9/25: 2-3:15pm\nWednesday, 9/27: 10-11am\nThursday, 9/28: 3-4pm (usual time) on Zoom (link)"
   }
 ]

@@ -19,4 +19,10 @@ A high-level overview of the semester's topics are presented here. Please select
 
 -   Conditional probability
 
-### 
+-   Independence
+
+### [Week 03](weeks/week-03.qmd)
+
+-   Monty Hall
+
+-   Bernoulli and Binomial

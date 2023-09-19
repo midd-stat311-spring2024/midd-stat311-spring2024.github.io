@@ -3,7 +3,21 @@ title: "Probability"
 sidebar: false
 ---
 
-Welcome to the website for Middlebury College's Fall 2023 MATH/STAT 310. On this website you will find the course syllabus, schedule, and assignments. The website is frequently updated during the semester, so please make a habit of refreshing the page. The icons at the top right will link to the online version of the textbook, Gradescope, and Canvas.
+Welcome to the website for Middlebury College's Fall 2023 MATH/STAT 310. On this website you will find the course syllabus, schedule, and assignments. The website is frequently updated during the semester, so please make a habit of refreshing the page. The icons at the top right will link to the online version of the textbook and Canvas.
+
+## Major Announcements
+
+-   Midterm 1 date and time:
+
+    -   TBA by end of week
+
+-   Modified office hours the week of 9/25
+
+    -   Monday, 9/25: 2-3:15pm
+
+    -   Wednesday, 9/27: 10-11am
+
+    -   Thursday, 9/28: 3-4pm (usual time) on Zoom ([link](https://middlebury.zoom.us/j/95659494382?pwd=aWRuekdlLy83azhWWWpBWE5lZFBNQT09))
 
 ## Course Details
 
@@ -14,6 +28,8 @@ Instructor: Becky Tang
 
 Meeting times: TRF 8:40-9:30am in WNS 105
 
-Office hours: M 2-4pm, R 3-4pm (tentative)
+Office hours: M 2-4pm, R 3-4pm
 
 [Syllabus](Stat310_Syllabus.pdf) (most recent update: 9/12/23 to say assignments should be submitted to Canvas)
+
+## 

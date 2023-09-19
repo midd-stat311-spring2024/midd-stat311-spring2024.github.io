@@ -12,7 +12,7 @@ title: "Week 03"
 
 **Daily assignment**
 
-To be completed and submitted to Gradescope by 7:45am
+To be completed and submitted to Canvas by 7:45am
 
 **Class activity**
 
@@ -24,15 +24,13 @@ To be completed and submitted to Gradescope by 7:45am
 ### Thursday (09/28)
 :::
 
-***Prof. Tang traveling - Class on Zoom***
-
 **Topics**
 
 -   Conditional probability in `R`
 
 **Daily assignment**
 
-To be completed and submitted to Gradescope by 7:45am
+To be completed and submitted to Canvas by 7:45am
 
 -   TBD
 
@@ -47,8 +45,6 @@ To be completed and submitted to Gradescope by 7:45am
 ### Friday (09/29)
 :::
 
-***Prof. Tang traveling - Class on Zoom***
-
 **Topics**
 
 -   Random variables (discrete)
@@ -57,7 +53,7 @@ To be completed and submitted to Gradescope by 7:45am
 
 **Daily assignment**
 
-To be completed and submitted to Gradescope by 7:45am
+To be completed and submitted to Canvas by 7:45am
 
 -   TBD
 

@@ -21,7 +21,8 @@ To be completed and submitted to Canvas by 7:45am
 
 **Class activity**
 
--   TBD
+-   Covering some [basics of coding in `R`](files/R_intro.pdf)
+-   [Class activity](class/CA_03.pdf)
 
 ------------------------------------------------------------------------
 

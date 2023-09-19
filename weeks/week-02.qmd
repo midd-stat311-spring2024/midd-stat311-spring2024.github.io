@@ -22,6 +22,7 @@ To be completed and submitted to Canvas by 7:45am
 **Class activity**
 
 -   Covering some [basics of coding in `R`](files/R_intro.pdf)
+    -   [Code-only version](files/R_intro_code.pdf)
 -   [Class activity](class/CA_03.pdf)
 
 ------------------------------------------------------------------------

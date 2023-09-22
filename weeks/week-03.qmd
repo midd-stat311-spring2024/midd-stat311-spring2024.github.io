@@ -26,9 +26,12 @@ To be completed and submitted to Canvas by 7:45am
 ### Thursday (09/28)
 :::
 
+***Class on Zoom (link forthcoming)!***
+
 **Topics**
 
--   Conditional probability in `R`
+-   Random variables (discrete)
+-   PMF, Bernoulli, Binomial
 
 **Daily assignment**
 
@@ -38,9 +41,6 @@ To be completed and submitted to Canvas by 7:45am
 
 **Class activity**
 
--   `for` loops in `R` demo
--   TBD
-
 ------------------------------------------------------------------------
 
 ::: {style="color: #F66D7A"}
@@ -49,16 +49,15 @@ To be completed and submitted to Canvas by 7:45am
 
 **Topics**
 
--   Random variables (discrete)
-
--   PMF, Bernoulli, Binomial
+-   Conditional probability in `R`
 
 **Daily assignment**
 
 To be completed and submitted to Canvas by 7:45am
 
--   TBD
+-   [Daily assignment](daily/DA_08.pdf)
 
 **Class activity**
 
+-   `for` loops and `while` loops in `R` demo
 -   TBD

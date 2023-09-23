@@ -1,0 +1,67 @@
+---
+title: "Week 04"
+---
+
+::: {style="color: #F66D7A"}
+### Tuesday (10/03)
+:::
+
+**Topics**
+
+-   More discrete RV's
+-   CDF
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 7:45am
+
+-   TBD
+
+**Class activity**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #F66D7A"}
+### Thursday (10/05)
+:::
+
+**Topics**
+
+-   Functions of RVs
+-   Independence of RVs
+-   RVs in `R`
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 7:45am
+
+-   TBD
+
+**Class activity**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #F66D7A"}
+### Friday (10/06)
+:::
+
+***Content through today is fair game for Midterm 1***
+
+**Topics**
+
+-   Expected value
+-   LOTUS
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 7:45am
+
+-   TBD
+
+**Class activity**
+
+-   TBD

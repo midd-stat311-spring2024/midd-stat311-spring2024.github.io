@@ -32,7 +32,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome\nProbability axioms\n\n\n\nWeek 02\n\nR and RStudio\nConditional probability\nIndependence\n\n\n\nWeek 03\n\nMonty Hall\nBernoulli and Binomial"
+    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome\nProbability axioms\n\n\n\nWeek 02\n\nR and RStudio\nConditional probability\nIndependence of events\n\n\n\nWeek 03\n\nMonty Hall\nBernoulli and Binomial\n\n\n\nWeek 04\n\nCDF\nIndependence of RVs\nExpected value"
   },
   {
     "objectID": "temp.html",
@@ -103,5 +103,12 @@
     "title": "Probability",
     "section": "Major Announcements",
     "text": "Major Announcements\n\nSelected solutions to Daily Assignments and Class Activities are available under the Files option of Canvas.\nMidterm 1 date and time:\n\nThursday, 10/12 from 6-8pm in LIB 201\n\nModified office hours the week of 9/25\n\nMonday, 9/25: 2-3:15pm\nWednesday, 9/27: 10-11am\nThursday, 9/28: 3-4pm (usual time) on Zoom (link)"
+  },
+  {
+    "objectID": "weeks/week-04.html",
+    "href": "weeks/week-04.html",
+    "title": "Week 04",
+    "section": "",
+    "text": "Tuesday (10/03)\n\nTopics\n\nMore discrete RV’s\nCDF\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nThursday (10/05)\n\nTopics\n\nFunctions of RVs\nIndependence of RVs\nRVs in R\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nFriday (10/06)\n\nContent through today is fair game for Midterm 1\nTopics\n\nExpected value\nLOTUS\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD"
   }
 ]

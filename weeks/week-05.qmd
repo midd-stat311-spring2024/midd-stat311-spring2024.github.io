@@ -1,0 +1,52 @@
+---
+title: "Week 05"
+---
+
+::: {style="color: #F66D7A"}
+### Tuesday (10/10)
+:::
+
+**Topics**
+
+-   Geometric and Negative Binomial Distributions
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 7:45am
+
+-   TBD
+
+**Class activity**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #F66D7A"}
+### Thursday (10/12)
+:::
+
+**MIDTERM 1 from 6-8pm in LIB 201**
+
+**Topics**
+
+-   Indicator variables
+-   Fundamental Bridge
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 7:45am
+
+-   TBD
+
+**Class activity**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #F66D7A"}
+### Friday (10/06)
+:::
+
+***Fall break! No class!***

@@ -34,3 +34,9 @@ A high-level overview of the semester's topics are presented here. Please select
 -   Independence of RVs
 
 -   Expected value
+
+### [Week 05](weeks/week-05.qmd)
+
+-   Geometric and Negative Binomial Distributions
+
+-   Midterm 1

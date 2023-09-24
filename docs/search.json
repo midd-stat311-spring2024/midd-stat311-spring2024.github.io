@@ -32,7 +32,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome\nProbability axioms\n\n\n\nWeek 02\n\nR and RStudio\nConditional probability\nIndependence of events\n\n\n\nWeek 03\n\nMonty Hall\nBernoulli and Binomial\n\n\n\nWeek 04\n\nCDF\nIndependence of RVs\nExpected value"
+    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome\nProbability axioms\n\n\n\nWeek 02\n\nR and RStudio\nConditional probability\nIndependence of events\n\n\n\nWeek 03\n\nMonty Hall\nBernoulli and Binomial\n\n\n\nWeek 04\n\nCDF\nIndependence of RVs\nExpected value\n\n\n\nWeek 05\n\nGeometric and Negative Binomial Distributions\nMidterm 1"
   },
   {
     "objectID": "temp.html",
@@ -110,5 +110,12 @@
     "title": "Week 04",
     "section": "",
     "text": "Tuesday (10/03)\n\nTopics\n\nMore discrete RV’s\nCDF\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nThursday (10/05)\n\nTopics\n\nFunctions of RVs\nIndependence of RVs\nRVs in R\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nFriday (10/06)\n\nContent through today is fair game for Midterm 1\nTopics\n\nExpected value\nLOTUS\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD"
+  },
+  {
+    "objectID": "weeks/week-05.html",
+    "href": "weeks/week-05.html",
+    "title": "Week 05",
+    "section": "",
+    "text": "Tuesday (10/10)\n\nTopics\n\nGeometric and Negative Binomial Distributions\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nThursday (10/12)\n\nMIDTERM 1 from 6-8pm in LIB 201\nTopics\n\nIndicator variables\nFundamental Bridge\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nFriday (10/06)\n\nFall break! No class!"
   }
 ]

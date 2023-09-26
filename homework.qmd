@@ -12,3 +12,7 @@ Note: problem sets will be updated with new questions following each class. Comp
 ### Homework 2
 
 -   [Homework 2](weeks/hw/310_hw2.pdf), due 09/26 at 11:59pm
+
+### Homework 2
+
+-   [Homework 3](weeks/hw/310_hw3.pdf), due 10/03 at 11:59pm

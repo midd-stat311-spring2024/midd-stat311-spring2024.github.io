@@ -17,8 +17,6 @@ Welcome to the website for Middlebury College's Fall 2023 MATH/STAT 310. On this
 
 -   Modified office hours the week of 9/25
 
-    -   Monday, 9/25: 2-3:15pm
-
     -   Wednesday, 9/27: 10-11am
 
     -   Thursday, 9/28: 3-4pm (usual time) on Zoom ([link](https://middlebury.zoom.us/j/95659494382?pwd=aWRuekdlLy83azhWWWpBWE5lZFBNQT09))

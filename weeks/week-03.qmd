@@ -41,6 +41,8 @@ To be completed and submitted to Canvas by 7:45am
 
 **Class activity**
 
+-   N/A
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #F66D7A"}
@@ -60,4 +62,4 @@ To be completed and submitted to Canvas by 7:45am
 **Class activity**
 
 -   `for` loops and `while` loops in `R` demo
--   TBD
+    -   Executed code and output [here](files/cond_prob_R.pdf)

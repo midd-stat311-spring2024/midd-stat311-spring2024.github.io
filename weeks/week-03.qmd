@@ -63,3 +63,4 @@ To be completed and submitted to Canvas by 7:45am
 
 -   `for` loops and `while` loops in `R` demo
     -   Executed code and output [here](files/cond_prob_R.pdf)
+-   [Class activity](class/CA_08.pdf)

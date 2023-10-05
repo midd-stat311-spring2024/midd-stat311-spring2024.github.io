@@ -7,7 +7,7 @@ Welcome to the website for Middlebury College's Fall 2023 MATH/STAT 310. On this
 
 ## Major Announcements
 
--   Midterm 1 date and time:
+-   [Midterm 1](exam.qmd) date and time:
 
     -   Thursday, 10/12 from 6-8pm in LIB 201
     -   Practice problems will be posted soon!

@@ -14,6 +14,8 @@ website:
         text: "Schedule"
       - file: homework.qmd
         text: "Homework"
+      - file: exam.qmd
+        text: "Exams"
     right:
       - icon: book-half
         href: https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/view

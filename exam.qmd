@@ -1,0 +1,20 @@
+---
+title: "Exams"
+sidebar: false
+---
+
+## Midterm 1
+
+Thursday, 10/12 from 6-8pm in LIB 201. We will start promptly at 6pm, so please plan to arrive a bit early.
+
+-   You are allowed one, single-sided 8.5x11 cheat sheet, either typed/printed OR written in pen.
+
+    -   You may write definition, theorems, properties, distributions, and other "factual" type of information. You are not allowed to write any worked out examples or problems.
+
+    -   The cheat sheet will be submitted alongside your midterm.
+
+-   Besides your cheat sheet, no other outside resources may be used. This includes a calculator.
+
+-   The midterm will cover material through October 6 (through and including expectation and LOTUS).
+
+-   Questions will be similar in conceptual difficulty to class activity problems.

@@ -1,0 +1,176 @@
+\documentclass[12pt]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}%
+\usepackage{amsfonts}%
+%\usepackage{float}
+\usepackage{natbib}
+\usepackage{floatrow}
+\bibliographystyle{agsm}
+\setcitestyle{authoryear,open={(},close={)},aysep={}}
+\usepackage{xr}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\captionsetup[subfigure]{labelformat=empty}
+\usepackage{sidecap}
+
+\usepackage{multirow}
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6.5in}
+%SetFonts
+\newcommand{\blam}{ \mbox{\boldmath $ \lambda $} }
+\newcommand{\bet}{ \mbox{\boldmath $ \eta $} }
+\newcommand{\btau}{ \mbox{\boldmath $ \tau $} }
+\newcommand{\bome}{ \mbox{\boldmath $ \omega $} }
+\newcommand{\bbet}{ \mbox{\boldmath $ \beta $} }
+\newcommand{\bbeta}{ \mbox{\boldmath $ \beta $} }
+\newcommand{\balph}{ \mbox{\boldmath $ \alpha $} }
+\newcommand{\balpha}{ \mbox{\boldmath $ \alpha $} }
+\newcommand{\bphi}{ \mbox{\boldmath $\phi$}}
+\newcommand{\bzeta}{ \mbox{\boldmath $\zeta$}}
+\newcommand{\bkap}{ \mbox{\boldmath $\kappa$}}
+\newcommand{\bkappa}{ \mbox{\boldmath $\kappa$}}
+\newcommand{\beps}{ \mbox{\boldmath $\epsilon$}}
+\newcommand{\bepsilon}{ \mbox{\boldmath $\epsilon$}}
+\newcommand{\bthet}{ \mbox{\boldmath $ \theta $} }
+\newcommand{\btheta}{ \mbox{\boldmath $ \theta $} }
+\newcommand{\bnu}{ \mbox{\boldmath $\nu$} }
+\newcommand{\bmu}{ \mbox{\boldmath $\mu$} }
+\newcommand{\bOmega}{ \mbox{\boldmath $\Omega$} }
+\newcommand{\bGam}{ \mbox{\boldmath $\Gamma$} }
+\newcommand{\bSig}{ \mbox{\boldmath $\Sigma$} }
+\newcommand{\bSigma}{ \mbox{\boldmath $\Sigma$} }
+\newcommand{\bPhi}{ \mbox{\boldmath $\Phi$} }
+\newcommand{\bThet}{ \mbox{\boldmath $\Theta$} }
+\newcommand{\bTheta}{ \mbox{\boldmath $\Theta$} }
+\newcommand{\bDel}{ \mbox{\boldmath $\Delta$} }
+\newcommand{\bDelta}{ \mbox{\boldmath $\Delta$} }
+\newcommand{\bnabla}{ \mbox{\boldmath $\nabla$} }
+\newcommand{\bLam}{ \mbox{\boldmath $\Lambda$} }
+\newcommand{\bLambda}{ \mbox{\boldmath $\Lambda$} }
+\newcommand{\bLambdasub}{ \scriptsize{\bLambda}}
+\newcommand{\bgam}{ \mbox{\boldmath $\gamma$} }
+\newcommand{\bgamma}{ \mbox{\boldmath $\gamma$} }
+\newcommand{\brho}{ \mbox{\boldmath $\rho$} }
+\newcommand{\bdel}{ \mbox{\boldmath $\delta$} }
+\newcommand{\bdelta}{ \mbox{\boldmath $\delta$} }
+\newcommand{\bvarphi}{ \mbox{\boldmath $\varphi$} }
+\newcommand{\bsigma}{ \mbox{\boldmath $\sigma$} }
+\newcommand{\boeta}{ \mbox{\boldmath $\eta$} }
+\newcommand{\bpi}{ \mbox{\boldmath $\pi$} }
+\newcommand{\bpsi}{ \mbox{\boldmath $\psi$} }
+\newcommand{\bzero}{\textbf{0}}
+\newcommand{\bone}{\textbf{1}}
+\newcommand{\bZ}{\textbf{Z}}
+\newcommand{\bz}{\textbf{z}}
+\newcommand{\ba}{\textbf{a}}
+\newcommand{\bA}{\textbf{A}}
+\newcommand{\bb}{\textbf{b}}
+\newcommand{\bB}{\textbf{B}}
+\newcommand{\bc}{\textbf{c}}
+\newcommand{\bC}{\textbf{C}}
+\newcommand{\bd}{\textbf{d}}
+\newcommand{\bD}{\textbf{D}}
+\newcommand{\be}{\textbf{e}}
+\newcommand{\bE}{\textbf{E}}
+\newcommand{\bbf}{\textbf{f}}
+\newcommand{\bF}{\textbf{F}}
+\newcommand{\bk}{\textbf{k}}
+\newcommand{\bK}{\textbf{K}}
+\newcommand{\bh}{\textbf{h}}
+\newcommand{\bH}{\textbf{H}}
+\newcommand{\bi}{\textbf{i}}
+\newcommand{\bI}{\textbf{I}}
+\newcommand{\bg}{\textbf{g}}
+\newcommand{\bG}{\textbf{G}}
+\newcommand{\bJ}{\textbf{J}}
+\newcommand{\bL}{\textbf{L}}
+\newcommand{\bm}{\textbf{m}}
+\newcommand{\bM}{\textbf{M}}
+\newcommand{\bn}{\textbf{N}}
+\newcommand{\bN}{\textbf{N}}
+\newcommand{\bO}{\textbf{O}}
+\newcommand{\bp}{\textbf{p}}
+\newcommand{\bP}{\textbf{P}}
+\newcommand{\bq}{\textbf{q}}
+\newcommand{\bQ}{\textbf{Q}}
+\newcommand{\bs}{\textbf{s}}
+\newcommand{\bS}{\textbf{S}}
+\newcommand{\bt}{\textbf{t}}
+\newcommand{\bT}{\textbf{T}}
+\newcommand{\bu}{\textbf{u}}
+\newcommand{\bU}{\textbf{U}}
+\newcommand{\bv}{\textbf{v}}
+\newcommand{\bV}{\textbf{V}}
+\newcommand{\bw}{\textbf{w}}
+\newcommand{\bW}{\textbf{W}}
+\newcommand{\bx}{\textbf{x}}
+\newcommand{\bX}{\textbf{X}}
+\newcommand{\by}{\textbf{y}}
+\newcommand{\bY}{\textbf{Y}}
+\newcommand{\br}{\textbf{r}}
+\newcommand{\bR}{\textbf{R}}
+\newcommand{\iidsim}{\overset{\text{iid}}{\sim} }
+\newcommand{\indsim}{\stackrel{\mbox{\tiny indep}}{\sim}}
+
+\usepackage{xcolor}
+\xdefinecolor{custom_red}{rgb}{0.58, 0.32, 0.32} % Marsala
+%% SOLUTIONS -- must comment one out
+% OFF
+\newcommand{\soln}[2]{\vspace{0cm}}{}
+% ON 
+%\newcommand{\soln}[2]{\textit{\textcolor{custom_red}{#2}}}{}
+
+
+\usepackage[headheight=65pt,tmargin=65pt,headsep=5pt, margin = 1in]{geometry}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\lhead{STAT/MATH 310}
+\rhead{10/12/23}
+\chead{\Large{Daily Assignment}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+\section*{Pre-class preparation}
+Please read the following textbook sections from Blitzstein and Hwang's \emph{Introduction to Probability} (second edition) OR watched the indicated video from \href{https://www.youtube.com/playlist?list=PLLVplP8OIVc8EktkrD3Q8td0GmId7DjW0}{Blitzstein’s Math 110 YouTube channel}:
+\begin{itemize}
+	\item Textbook: 4.4
+	\item Video:
+		\begin{itemize}
+			\item \href{https://www.youtube.com/watch?v=P1fSFvhPf7Q&list=PLLVplP8OIVc8EktkrD3Q8td0GmId7DjW0&index=11}{Lecture 10: Expectation Continued (from 30:00 to 39:00)}
+			\item The video lecture’s coverage of the Fundamental Bridge is very light. So read/skim section 4.4 in the textbook as well
+		\end{itemize}
+\end{itemize}
+
+\section*{Objectives}
+By the end of the day's class, students should be able to do the following:
+
+\begin{itemize}
+	\item Translate set-theoretic operations on events in a sample space to multiplication and addition operations
+on the corresponding indicator random variables.
+	\item Explain how a counting variable can be decomposed into a sum of indicator variables.
+	\item Apply the fundamental bridge in order to solve a wide variety of probability problems.
+	\end{itemize}
+
+\section*{Reflection Questions}
+Please submit your answers to the following questions to the corresponding Canvas assignment by 7:45AM:
+
+\begin{enumerate}
+	\item Consider a sequence of $n$  $\text{Bernoulli}(p)$ trials, which are not necessarily assumed to be independent. For $1 \leq i \leq n$, let $A_{i}$ be the event that the $i$-th trial is a success. Define a random variable $X$ as 
+	$$X = \bone_{A_{1}} + \bone_{A_{2}}  + \cdots + \bone_{A_{n}},$$ where $\bone_{A_{i}}$ is the indicator variable for the event $A_{i}$ (the book uses the notation $I_{A_{i}}$, but I've never liked that for some reason!). In this set-up, what does the variable $X$ represent? What is its expected value?
+	
+	\soln{}{$X$ represents the number of successful trials, i.e. the number of events that occurred among the $A_{i}$. By linearity of expectation and fundamental bridge, $\mathbb{E}[X] = \mathbb{E}[\bone_{A_{1}} + \cdots + \mathbb{E}[\bone_{A_{n}}] = np$}
+	
+	
+	\item In your own words, explain why the ``fundamental bridge" described in section 4.4 can be helpful in solving probability problems.
+	
+	\soln{}{The fundamental bridge allows us translate between problems involving probabilities into problems about expectations. With the bonus of linearity of expectation, it may be easier to simplify certain problems, especially when counting variables.}
+	\item (Optional) Is there anything from the pre-class preparation that you have questions about? What topics would you like would you like some more clarification on? 
+	\end{enumerate}
+
+
+\end{document}  

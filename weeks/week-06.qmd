@@ -1,0 +1,63 @@
+---
+title: "Week 06"
+---
+
+::: {style="color: #F66D7A"}
+### Tuesday (10/17)
+:::
+
+**Topics**
+
+-   Variance
+-   More practice with the fundamental bridge
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 7:45am
+
+-   [Daily assignment](daily/DA_14.pdf)
+
+**Class activity**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #F66D7A"}
+### Thursday (10/19)
+:::
+
+**Topics**
+
+-   Poisson distribution
+-   Poisson paradigm
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 7:45am
+
+-   TBD
+
+**Class activity**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #F66D7A"}
+### Friday (10/20)
+:::
+
+**Topics**
+
+-   Continuous random variables
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 7:45am
+
+-   TBD
+
+**Class activity**
+
+-   TBD

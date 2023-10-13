@@ -40,3 +40,11 @@ A high-level overview of the semester's topics are presented here. Please select
 -   Geometric and Negative Binomial Distributions
 
 -   Midterm 1
+
+### [Week 06](weeks/week-06.qmd)
+
+-   Variance
+
+-   Poisson distribution
+
+-   Continuous random variables

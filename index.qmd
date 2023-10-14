@@ -7,12 +7,9 @@ Welcome to the website for Middlebury College's Fall 2023 MATH/STAT 310. On this
 
 ## Major Announcements
 
--   [Midterm 1](exam.qmd) date and time:
+-   We will have three job talks for the Assistant Professor of Statistics position in a few weeks. You are highly encouraged to attend, especially if you are considering declaring a Statistics major! Dates coming soon.
 
-    -   Thursday, 10/12 from 6-8pm in LIB 201
-    -   Practice problems will be posted soon!
-
--   Selected solutions to Daily Assignments and Class Activities are available under the *Files* option of Canvas.
+    -   Let me know if you'd like to meet with some of the candidates!
 
 ## Course Details
 

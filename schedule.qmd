@@ -48,3 +48,11 @@ A high-level overview of the semester's topics are presented here. Please select
 -   Poisson distribution
 
 -   Continuous random variables
+
+### [Week 07](weeks/week-07.qmd)
+
+-   Uniform distribution
+
+-   Normal distribution
+
+-   Exponential distribution

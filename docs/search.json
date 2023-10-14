@@ -32,7 +32,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome\nProbability axioms\n\n\n\nWeek 02\n\nR and RStudio\nConditional probability\nIndependence of events\n\n\n\nWeek 03\n\nMonty Hall\nBernoulli and Binomial\n\n\n\nWeek 04\n\nCDF\nIndependence of RVs\nExpected value\n\n\n\nWeek 05\n\nGeometric and Negative Binomial Distributions\nMidterm 1\n\n\n\nWeek 06\n\nVariance\nPoisson distribution\nContinuous random variables"
+    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome\nProbability axioms\n\n\n\nWeek 02\n\nR and RStudio\nConditional probability\nIndependence of events\n\n\n\nWeek 03\n\nMonty Hall\nBernoulli and Binomial\n\n\n\nWeek 04\n\nCDF\nIndependence of RVs\nExpected value\n\n\n\nWeek 05\n\nGeometric and Negative Binomial Distributions\nMidterm 1\n\n\n\nWeek 06\n\nVariance\nPoisson distribution\nContinuous random variables\n\n\n\nWeek 07\n\nUniform distribution\nNormal distribution\nExponential distribution"
   },
   {
     "objectID": "temp.html",
@@ -102,7 +102,7 @@
     "href": "index.html#major-announcements",
     "title": "Probability",
     "section": "Major Announcements",
-    "text": "Major Announcements\n\nMidterm 1 date and time:\n\nThursday, 10/12 from 6-8pm in LIB 201\nPractice problems will be posted soon!\n\nSelected solutions to Daily Assignments and Class Activities are available under the Files option of Canvas."
+    "text": "Major Announcements\n\nWe will have three job talks for the Assistant Professor of Statistics position in a few weeks. You are highly encouraged to attend, especially if you are considering declaring a Statistics major! Dates coming soon.\n\nLet me know if you’d like to meet with some of the candidates!"
   },
   {
     "objectID": "weeks/week-04.html",
@@ -131,5 +131,12 @@
     "title": "Week 06",
     "section": "",
     "text": "Tuesday (10/17)\n\nTopics\n\nVariance\nMore practice with the fundamental bridge\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nTBD\n\n\n\nThursday (10/19)\n\nTopics\n\nPoisson distribution\nPoisson paradigm\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nTBD\n\n\n\nFriday (10/20)\n\nTopics\n\nContinuous random variables\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD"
+  },
+  {
+    "objectID": "weeks/week-07.html",
+    "href": "weeks/week-07.html",
+    "title": "Week 07",
+    "section": "",
+    "text": "Tuesday (10/24)\n\nTopics\n\nUniform distribution\nUniverality of the uniform\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nThursday (10/26)\n\nTopics\n\nNormal distribution\nContinuous random variables in R\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nFriday (10/27)\n\nTopics\n\nExponential distribution\nConnection between Exponential and Poisson\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD"
   }
 ]

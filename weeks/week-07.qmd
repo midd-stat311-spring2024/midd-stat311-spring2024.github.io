@@ -1,0 +1,64 @@
+---
+title: "Week 07"
+---
+
+::: {style="color: #F66D7A"}
+### Tuesday (10/24)
+:::
+
+**Topics**
+
+-   Uniform distribution
+-   Univerality of the uniform
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 7:45am
+
+-   TBD
+
+**Class activity**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #F66D7A"}
+### Thursday (10/26)
+:::
+
+**Topics**
+
+-   Normal distribution
+-   Continuous random variables in `R`
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 7:45am
+
+-   TBD
+
+**Class activity**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #F66D7A"}
+### Friday (10/27)
+:::
+
+**Topics**
+
+-   Exponential distribution
+-   Connection between Exponential and Poisson
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 7:45am
+
+-   TBD
+
+**Class activity**
+
+-   TBD

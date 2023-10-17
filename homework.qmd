@@ -24,3 +24,7 @@ Note: problem sets will be updated with new questions following each class. Comp
 ### Homework 5
 
 -   [Homework 5](weeks/hw/310_hw5.pdf), due 10/17 at 11:59pm
+
+### Homework 6
+
+-   [Homework 6](weeks/hw/310_hw6.pdf), due 10/24 at 11:59pm

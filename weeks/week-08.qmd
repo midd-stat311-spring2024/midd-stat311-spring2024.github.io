@@ -1,21 +1,27 @@
 ---
-title: "Week 07"
+title: "Week 08"
 ---
 
 ::: {style="color: #F66D7A"}
-### Tuesday (10/24)
+### Tuesday (10/31)
 :::
+
+**Candidate job talk: Christian Stratton**
+
+12:30-1:20pm in Warner 101
+
+Talk title: \"An overview of Bayesian statistical methodology for ecological and environmental applications\"
 
 **Topics**
 
--   Uniform distribution
--   Universality of the uniform
+-   Moments
+-   Recap power series
 
 **Daily assignment**
 
 To be completed and submitted to Canvas by 7:45am
 
--   [Daily assignment](daily/DA_17.pdf)
+-   TBD
 
 **Class activity**
 
@@ -24,19 +30,25 @@ To be completed and submitted to Canvas by 7:45am
 ------------------------------------------------------------------------
 
 ::: {style="color: #F66D7A"}
-### Thursday (10/26)
+### Thursday (11/02)
 :::
+
+**Candidate job talk: Maddie Rainey**
+
+12:30-1:20pm in Warner 101
+
+Talk title: TBD
 
 **Topics**
 
--   Normal distribution
--   Continuous random variables in `R`
+-   Recap Taylor series
+-   Moment generating functions
 
 **Daily assignment**
 
 To be completed and submitted to Canvas by 7:45am
 
--   [Daily assignment](daily/DA_18.pdf)
+-   TBD
 
 **Class activity**
 
@@ -45,19 +57,18 @@ To be completed and submitted to Canvas by 7:45am
 ------------------------------------------------------------------------
 
 ::: {style="color: #F66D7A"}
-### Friday (10/27)
+### Friday (11/03)
 :::
 
 **Topics**
 
--   Exponential distribution
--   Connection between Exponential and Poisson
+-   Joint distributions (discrete case)
 
 **Daily assignment**
 
 To be completed and submitted to Canvas by 7:45am
 
--   [Daily assignment](daily/DA_19.pdf)
+-   TBD
 
 **Class activity**
 

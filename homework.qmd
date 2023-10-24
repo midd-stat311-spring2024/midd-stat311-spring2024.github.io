@@ -28,3 +28,8 @@ Note: problem sets will be updated with new questions following each class. Comp
 ### Homework 6
 
 -   [Homework 6](weeks/hw/310_hw6.pdf), due 10/24 at 11:59pm
+
+### Homework 7
+
+-   [Homework 7](weeks/hw/310_hw7.pdf), due 10/31 at 11:59pm
+-   Taking your feedback, this problem set and the ones moving forward are going to be shorter than the previous weeks' problem sets. Please let me know if you still feel like the problem sets are too long.

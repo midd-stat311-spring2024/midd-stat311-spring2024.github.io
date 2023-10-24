@@ -7,17 +7,11 @@ Welcome to the website for Middlebury College's Fall 2023 MATH/STAT 310. On this
 
 ## Major Announcements
 
--   Please fill out [mid-semester feedback](https://forms.gle/eDYPsMxszgpX19C28) by end of day Sunday 10/22/23! This will be extremely helpful for Prof. Tang to calibrate moving forward!
-
--   We will have three job talks for the Assistant Professor of Statistics position in a few weeks. You are highly encouraged to attend, especially if you are considering declaring a Statistics major!
-
-    -   Chris Desjardins: Monday 10/23 at 12:30-1:20pm in Davis Library 105 A/B
-
-        -   Talk title: \"Getting Tidy on Monday: Let\'s do Data Science\"
+-   We will have two more job talks for the Assistant Professor of Statistics position in a few weeks. You are highly encouraged to attend, especially if you are considering declaring a Statistics major!
 
     -   Christian Stratton: Tuesday, 10/31 at 12:30-1:20pm in Warner 101
 
-        -   Talk title: "An overview of Bayesian statistical methodology for ecological and environmental applications\"
+        -   Talk title: "An overview of Bayesian statistical methodology for ecological and environmental applications"
 
     -   Maddie Rainey: Thursday, 11/02 at 12:30-1:20pm in Warner 101
 

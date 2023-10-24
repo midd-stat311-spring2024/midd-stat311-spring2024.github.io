@@ -15,7 +15,6 @@ Talk title: \"An overview of Bayesian statistical methodology for ecological and
 **Topics**
 
 -   Moments
--   Recap power series
 
 **Daily assignment**
 
@@ -41,8 +40,7 @@ Talk title: TBD
 
 **Topics**
 
--   Recap Taylor series
--   Moment generating functions
+-   Recap Power and Taylor series
 
 **Daily assignment**
 
@@ -62,7 +60,7 @@ To be completed and submitted to Canvas by 7:45am
 
 **Topics**
 
--   Joint distributions (discrete case)
+-   Moment generating functions
 
 **Daily assignment**
 

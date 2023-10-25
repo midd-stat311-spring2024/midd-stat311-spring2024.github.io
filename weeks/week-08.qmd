@@ -14,13 +14,14 @@ Talk title: \"An overview of Bayesian statistical methodology for ecological and
 
 **Topics**
 
+-   Summaries of distributions
 -   Moments
 
 **Daily assignment**
 
 To be completed and submitted to Canvas by 7:45am
 
--   TBD
+-   [Daily assignment](daily/DA_20.pdf)
 
 **Class activity**
 

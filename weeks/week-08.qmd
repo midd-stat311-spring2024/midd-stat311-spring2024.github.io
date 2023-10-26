@@ -42,6 +42,7 @@ Talk title: TBD
 **Topics**
 
 -   Recap Power and Taylor series
+-   Moment generating functions
 
 **Daily assignment**
 
@@ -61,7 +62,7 @@ To be completed and submitted to Canvas by 7:45am
 
 **Topics**
 
--   Moment generating functions
+-   Moment generating functions cont.
 
 **Daily assignment**
 

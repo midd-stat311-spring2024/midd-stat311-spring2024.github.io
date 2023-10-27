@@ -15,7 +15,7 @@ Welcome to the website for Middlebury College's Fall 2023 MATH/STAT 310. On this
 
     -   Maddie Rainey: Thursday, 11/02 at 12:30-1:20pm in Warner 101
 
-        -   Talk title: TBD
+        -   Talk title: "Modeling Spatial Data with the Flexibility of Spatial Splines"
 
 ## Course Details
 

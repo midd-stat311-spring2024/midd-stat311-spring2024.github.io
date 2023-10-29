@@ -1,6 +1,7 @@
 ---
 title: "Exams"
 sidebar: false
+toc: true
 ---
 
 ## Midterm 1
@@ -41,11 +42,11 @@ Thursday, 10/12 from 6-8pm in LIB 201. We will start promptly at 6pm, so please 
 
 ------------------------------------------------------------------------
 
-## Midterm 2
+## Midterm 2 {#sec-midterm2}
 
 Midterm 2 will feature both an in-person component and a take-home component.
 
--   In-person component: evening of Thursday, 11/16/23 (location and exact time TBD)
+-   In-person component: 6-8 pm on Thursday, 11/16/23 in Warner 104
 
 -   Take-home component: available from 8:00am on Friday, 11/17/23 through 11:59pm on Sunday, 11/19/23
 

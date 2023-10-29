@@ -68,3 +68,9 @@ A high-level overview of the semester's topics are presented here. Please select
 ### [Week 09](weeks/week-09.qmd)
 
 -   Joint distributions
+-   Covariance and correlation
+
+### [Week 10](weeks/week-10.qmd)
+
+-   Change of variable (2-D)
+-   [**Midterm II**](/exam.qmd#sec-midterm2) (in-person and take-home)

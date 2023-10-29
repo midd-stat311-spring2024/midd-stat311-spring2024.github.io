@@ -32,7 +32,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome\nProbability axioms\n\n\n\nWeek 02\n\nR and RStudio\nConditional probability\nIndependence of events\n\n\n\nWeek 03\n\nMonty Hall\nBernoulli and Binomial\n\n\n\nWeek 04\n\nCDF\nIndependence of RVs\nExpected value\n\n\n\nWeek 05\n\nGeometric and Negative Binomial Distributions\nMidterm 1\n\n\n\nWeek 06\n\nVariance\nPoisson distribution\nContinuous random variables\n\n\n\nWeek 07\n\nUniform distribution\nNormal distribution\nExponential distribution\n\n\n\nWeek 08\n\nMoments\nRecap Taylor Series\nMGF\n\n\n\nWeek 09\n\nJoint distributions"
+    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome\nProbability axioms\n\n\n\nWeek 02\n\nR and RStudio\nConditional probability\nIndependence of events\n\n\n\nWeek 03\n\nMonty Hall\nBernoulli and Binomial\n\n\n\nWeek 04\n\nCDF\nIndependence of RVs\nExpected value\n\n\n\nWeek 05\n\nGeometric and Negative Binomial Distributions\nMidterm 1\n\n\n\nWeek 06\n\nVariance\nPoisson distribution\nContinuous random variables\n\n\n\nWeek 07\n\nUniform distribution\nNormal distribution\nExponential distribution\n\n\n\nWeek 08\n\nMoments\nRecap Taylor Series\nMGF\n\n\n\nWeek 09\n\nJoint distributions\nCovariance and correlation\n\n\n\nWeek 10\n\nChange of variable (2-D)\nMidterm II (in-person and take-home)"
   },
   {
     "objectID": "temp.html",
@@ -151,7 +151,7 @@
     "href": "weeks/week-08.html",
     "title": "Week 08",
     "section": "",
-    "text": "Tuesday (10/31)\n\n\nCandidate job talk: Christian Stratton\n\n\n12:30-1:20pm in Warner 101\nTalk title: \"An overview of Bayesian statistical methodology for ecological and environmental applications\"\n\nTopics\n\nSummaries of distributions\nMoments\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nTBD\n\n\n\nThursday (11/02)\n\n\nCandidate job talk: Maddie Rainey\n\n\n12:30-1:20pm in Warner 101\nTalk title: “Modeling Spatial Data with the Flexibility of Spatial Splines”\n\nTopics\n\nRecap Power and Taylor series\nMoment generating functions\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nTBD\n\n\n\nFriday (11/03)\n\nTopics\n\nMoment generating functions cont.\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nTBD"
+    "text": "Tuesday (10/31)\n\n\nCandidate job talk: Christian Stratton\n\n\n12:30-1:20pm in Warner 101\nTalk title: “An overview of Bayesian statistical methodology for ecological and environmental applications”\n\nTopics\n\nSummaries of distributions\nMoments\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nTBD\n\n\n\nThursday (11/02)\n\n\nCandidate job talk: Maddie Rainey\n\n\n12:30-1:20pm in Warner 101\nTalk title: “Modeling Spatial Data with the Flexibility of Spatial Splines”\n\nTopics\n\nRecap Power and Taylor series\nMoment generating functions\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nTBD\n\n\n\nFriday (11/03)\n\nLast day to drop classes\nTopics\n\nMoment generating functions cont.\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nTBD"
   },
   {
     "objectID": "weeks/week-09.html",
@@ -159,5 +159,26 @@
     "title": "Week 09",
     "section": "",
     "text": "Tuesday (11/07)\n\nTopics\n\nJoint distributions (discrete)\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nThursday (11/09)\n\nTopics\n\nJoint distribution (continuous and mixed)\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nFriday (11/10)\n\nTopics\n\n2D LOTUS\nCovariance and Correlation\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD"
+  },
+  {
+    "objectID": "weeks/week-10.html",
+    "href": "weeks/week-10.html",
+    "title": "Week 10",
+    "section": "",
+    "text": "Tuesday (11/14)\n\nTopics\n\nChange of variable formula (1D and 2D)\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nThursday (11/16)\n\nMidterm II at 6-8pm tonight in Warner 104\nTopics\n\nMultinomial distribution\n\nDaily assignment\n\nNote: no submission to Canvas today!\n\nClass activity\n\nTBD\n\n\n\nFriday (11/17)\n\nNo class! Take-home component of Midterm II released. Please consider using the usual class time to work on the take-home!\nHave a safe Thanksgiving break!"
+  },
+  {
+    "objectID": "exam.html#sec-midterm2",
+    "href": "exam.html#sec-midterm2",
+    "title": "Exams",
+    "section": "Midterm 2",
+    "text": "Midterm 2\nMidterm 2 will feature both an in-person component and a take-home component.\n\nIn-person component: 6-8 pm on Thursday, 11/16/23 in Warner 104\nTake-home component: available from 8:00am on Friday, 11/17/23 through 11:59pm on Sunday, 11/19/23\n\nWe will not have class on Friday, 11/17/23\n\nThe take-home is assigned in such a way to give flexibility in travel and so you can fully enjoy your Thanksgiving break starting at 2pm on Friday (if you so choose). Therefore, I hope that some of you use the usual class time to work on the take-home.\n\nThe take-home will be made available on Canvas. You will have ____ hours from opening the assignment to complete the take-home component of the midterm.\n\nIt is your responsibility to make sure that everything is uploaded in time.\n\n\n\nMore details coming soon!"
+  },
+  {
+    "objectID": "exam.html#midterm-1",
+    "href": "exam.html#midterm-1",
+    "title": "Exams",
+    "section": "Midterm 1",
+    "text": "Midterm 1\nThursday, 10/12 from 6-8pm in LIB 201. We will start promptly at 6pm, so please plan to arrive a bit early.\n\nYou are allowed one, single-sided 8.5x11 cheat sheet, either typed/printed OR written in pen.\n\nYou may write definition, theorems, properties, distributions, and other “factual” type of information. You are not allowed to write any worked out examples or problems.\nThe cheat sheet will be submitted alongside your midterm.\n\nBesides your cheat sheet, no other outside resources may be used. This includes a calculator.\nThe midterm will cover material through October 6 (through and including expectation and LOTUS).\nQuestions will be similar in conceptual difficulty to class activity problems and these practice problems. Solutions will be posted beginning of Week 5.\n\nIt is not my suggestion to only use these practice problems as your study guide. It would be good to skim through the readings from the previous weeks, return to homeworks, see the feedback Prof. Tang left on Canvas, etc.\n\n\n\nRevisions\n\nYou may choose to revise one problem (for multi-part problems, “one problem” includes all the parts of the problem!)\nBring to class Friday, 10/20/23:\n\nOriginal midterm (please do this regardless of if you are revising or not!)\nAn attached sheet that clearly denotes which problem you are revising, and:\n\nYour new solution to the problem\nWhat was not correct in your original solution\n\n\nPlease do not talk to others about your revision! You are welcome to come see Prof. Tang in office hours or schedule outside time to discuss the midterm.\nWell done all!"
   }
 ]

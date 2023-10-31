@@ -27,7 +27,7 @@ To be completed and submitted to Canvas by 7:45am
 
 **Class activity**
 
--   TBD
+-   [Class activity](class/CA_20.pdf)
 
 ------------------------------------------------------------------------
 
@@ -65,6 +65,10 @@ To be completed and submitted to Canvas by 7:45am
 :::
 
 *Last day to drop classes*
+
+::: {style="color: orange"}
+Material through today is fair game for midterm 2!
+:::
 
 **Topics**
 

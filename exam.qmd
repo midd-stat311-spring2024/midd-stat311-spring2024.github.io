@@ -88,5 +88,5 @@ More details and practice problems coming soon...
 **Resources**
 
 -   You should e-mail Prof. Tang with clarifying questions only! I will do my best to answer within a few hours of you sending the email, but you should expect a longer wait if you send an email between the hours of 8pm and 8am.
--   You may use any notes you\'ve taken for this class, your work on any previous homework, in-class, and daily assignments, any solutions posted to the course Canvas site, comments you\'ve received on homework or assignments through Canvas, aand Blitzstein\'s textbook/videos.
+-   You may use any notes you've taken for this class, your work on any previous homework, in-class, and daily assignments, any solutions posted to the course Canvas site, comments you've received on homework or assignments through Canvas, aand Blitzstein's textbook/videos.
 -   You may not use any other resources other than those listed above. You may not seek answers to exam questions online or ChatGPT, or in other textbooks, and may not work with others on the exam.

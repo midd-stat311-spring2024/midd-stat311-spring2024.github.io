@@ -9,12 +9,6 @@ Welcome to the website for Middlebury College's Fall 2023 MATH/STAT 310. On this
 
 -   Ice-cream social and spring course advising: **Tuesday, November 7** starting at **3:45pm in Davis Family Library 105A/B**.
 
--   We will have one more job talk for the Assistant Professor of Statistics position in a few weeks. You are highly encouraged to attend, especially if you are considering declaring a Statistics major!
-
-    -   Maddie Rainey: Thursday, 11/02 at 12:30-1:20pm in Warner 101
-
-        -   Talk title: "Modeling Spatial Data with the Flexibility of Spatial Splines"
-
 -   Details about [**Midterm 2**](/exam.qmd#sec-midterm2)! Please email me ASAP if you have a conflict with the in-person component.
 
 ## Course Details

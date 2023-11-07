@@ -48,11 +48,13 @@ Midterm 2 will feature both an in-person component and a take-home component. So
 
 Material through the end of Week 8 (up to and including MGFs) is fair game for this midterm. The exam will be lightly cumulative, but with emphasis on material covered since the first midterm.
 
+The grading will be as follows: score on in-person component + score on take-home = final score on Midterm 2.
+
 ::: {style="color: purple"}
 I will host a review session on Sunday, 11/12 from 3-5pm in Warner 105!
 :::
 
-More details and practice problems coming soon...
+[Practice problems here](weeks/exam/midterm2_review.pdf)! Solutions will be posted beginning of Week 10.
 
 ### **In-person component**
 
@@ -80,7 +82,7 @@ More details and practice problems coming soon...
 
 **Format**
 
--   The take-home will be made available on Canvas. You will have \_\_\_\_ hours from opening the assignment to complete the take-home component of the midterm.
+-   The take-home will be made available on Canvas. You will have 3 hours from opening the assignment to complete the take-home component of the midterm.
     -   It is your responsibility to make sure that everything is uploaded in time.
     -   Your solutions should be neatly written or typed. If you scan a handwritten assignment, be sure to review the legibility of your scan and upload before you submit your assignment.
 -   Questions on the take-home exam will be similar in difficulty and scope to questions on homework.
@@ -88,5 +90,5 @@ More details and practice problems coming soon...
 **Resources**
 
 -   You should e-mail Prof. Tang with clarifying questions only! I will do my best to answer within a few hours of you sending the email, but you should expect a longer wait if you send an email between the hours of 8pm and 8am.
--   You may use any notes you've taken for this class, your work on any previous homework, in-class, and daily assignments, any solutions posted to the course Canvas site, comments you've received on homework or assignments through Canvas, aand Blitzstein's textbook/videos.
+-   You may use any notes you've taken for this class, your work on any previous homework, in-class, and daily assignments, any solutions posted to the course Canvas site, comments you've received on homework or assignments through Canvas, and Blitzstein's textbook/videos.
 -   You may not use any other resources other than those listed above. You may not seek answers to exam questions online or ChatGPT, or in other textbooks, and may not work with others on the exam.

@@ -37,3 +37,7 @@ Note: problem sets will be updated with new questions following each class. Comp
 ### Homework 8
 
 -   [Homework 8](weeks/hw/310_hw8.pdf), due 11/07 at 11:59pm. Material through this homework is fair game for Midterm II!
+
+### Homework 9
+
+-   [Homework 9](weeks/hw/310_hw9.pdf), due 11/14 at 11:59pm.

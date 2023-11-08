@@ -7,9 +7,9 @@ Welcome to the website for Middlebury College's Fall 2023 MATH/STAT 310. On this
 
 ## Major Announcements
 
--   [Ice-cream social](weeks/files/spring_courses.pdf) and spring course advising: **Tuesday, November 7** starting at **3:45pm in Davis Family Library 105A/B**.
+-   Review session for midterm this Sunday 11/12 in WNS 105 from 3-5pm
 
--   Details about [**Midterm 2**](/exam.qmd#sec-midterm2)! Please email me ASAP if you have a conflict with the in-person component.
+-   Details about [**Midterm 2**](/exam.qmd#sec-midterm2)!
 
 ## Course Details
 

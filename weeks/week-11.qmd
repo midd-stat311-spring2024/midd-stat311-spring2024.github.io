@@ -1,61 +1,60 @@
 ---
-title: "Week 09"
+title: "Week 11"
 ---
 
 ::: {style="color: #F66D7A"}
-### Tuesday (11/07)
+### Tuesday (11/28)
 :::
 
 **Topics**
 
--   Joint distributions (discrete)
+-   Beta distribution
 
 **Daily assignment**
 
 To be completed and submitted to Canvas by 7:45am
 
--   [Daily assignment](daily/DA_23.pdf)
+-   TBD
 
 **Class activity**
 
--   [Class activity](class/CA_23.pdf)
+-   TBD
 
 ------------------------------------------------------------------------
 
 ::: {style="color: #F66D7A"}
-### Thursday (11/09)
+### Thursday (11/30)
 :::
 
 **Topics**
 
--   Joint distribution (continuous and mixed)
+-   TBD
 
 **Daily assignment**
 
 To be completed and submitted to Canvas by 7:45am
 
--   [Daily assignment](daily/DA_24.pdf)
+-   TBD
 
 **Class activity**
 
--   [Class activity](class/CA_24.pdf)
+-   TBD
 
 ------------------------------------------------------------------------
 
 ::: {style="color: #F66D7A"}
-### Friday (11/10)
+### Friday (12/01)
 :::
 
 **Topics**
 
--   2D LOTUS
--   Covariance and Correlation
+-   
 
 **Daily assignment**
 
 To be completed and submitted to Canvas by 7:45am
 
--   [Daily assignment](daily/DA_25.pdf)
+-   TBD
 
 **Class activity**
 

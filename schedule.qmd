@@ -75,7 +75,17 @@ A high-level overview of the semester's topics are presented here. Please select
 -   Change of variable (2-D)
 -   [**Midterm II**](/exam.qmd#sec-midterm2) (in-person and take-home)
 
+### Thanksgiving Break!
+
 ### [Week 11](weeks/week-11.qmd)
 
 -   Beta distribution
 -   Gamma distribution
+-   Order statistics
+-   Conditional expectation
+
+### [Week 12](weeks/week-12.qmd)
+
+-   Conditional variance
+-   Law of Large Numbers
+-   Central Limit Theorem

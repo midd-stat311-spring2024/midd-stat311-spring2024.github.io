@@ -1,16 +1,14 @@
 ---
-title: "Week 11"
+title: "Week 12"
 ---
 
 ::: {style="color: #F66D7A"}
-### Tuesday (11/28)
+### Tuesday (12/05)
 :::
 
 **Topics**
 
--   Beta distribution
--   Gamma distribution
--   Poisson processes
+-   Conditional variance
 
 **Daily assignment**
 
@@ -25,13 +23,13 @@ To be completed and submitted to Canvas by 7:45am
 ------------------------------------------------------------------------
 
 ::: {style="color: #F66D7A"}
-### Thursday (11/30)
+### Thursday (12/07)
 :::
 
 **Topics**
 
--   Order statistics
--   Conditional expectation (given an event)
+-   Inequalities
+-   Law of Large Numbers
 
 **Daily assignment**
 
@@ -46,12 +44,12 @@ To be completed and submitted to Canvas by 7:45am
 ------------------------------------------------------------------------
 
 ::: {style="color: #F66D7A"}
-### Friday (12/01)
+### Friday (12/08)
 :::
 
 **Topics**
 
--   Conditional expectation (given a random variable)
+-   Central Limit Theorem!
 
 **Daily assignment**
 

@@ -7,9 +7,9 @@ Welcome to the website for Middlebury College's Fall 2023 MATH/STAT 310. On this
 
 ## Major Announcements
 
--   Review session for midterm this Sunday 11/12 in WNS 105 from 3-5pm
+-   Details about [**Midterm 2**](/exam.qmd#sec-midterm2)! Solutions to practice problems and selected class activity problems have been posted to Canvas!
 
--   Details about [**Midterm 2**](/exam.qmd#sec-midterm2)!
+-   I hope to see some of you in Math/Stat 311 next semester!
 
 ## Course Details
 

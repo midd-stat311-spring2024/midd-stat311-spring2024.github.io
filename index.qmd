@@ -7,6 +7,8 @@ Welcome to the website for Middlebury College's Fall 2023 MATH/STAT 310. On this
 
 ## Major Announcements
 
+-   Homework assigned in Week 10 will be due the Thursday following break.
+
 -   Details about [**Midterm 2**](/exam.qmd#sec-midterm2)! Solutions to practice problems and selected class activity problems have been posted to Canvas!
 
 -   I hope to see some of you in Math/Stat 311 next semester!

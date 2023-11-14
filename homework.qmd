@@ -41,3 +41,7 @@ Note: problem sets will be updated with new questions following each class. Comp
 ### Homework 9
 
 -   [Homework 9](weeks/hw/310_hw9.pdf), due 11/14 at 11:59pm.
+
+### Homework 10
+
+-   [Homework 10](weeks/hw/310_hw10.pdf), due Thursday 11/30 at 11:59pm. Note the atypical due date!

@@ -32,7 +32,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome\nProbability axioms\n\n\n\nWeek 02\n\nR and RStudio\nConditional probability\nIndependence of events\n\n\n\nWeek 03\n\nMonty Hall\nBernoulli and Binomial\n\n\n\nWeek 04\n\nCDF\nIndependence of RVs\nExpected value\n\n\n\nWeek 05\n\nGeometric and Negative Binomial Distributions\nMidterm 1\n\n\n\nWeek 06\n\nVariance\nPoisson distribution\nContinuous random variables\n\n\n\nWeek 07\n\nUniform distribution\nNormal distribution\nExponential distribution\n\n\n\nWeek 08\n\nMoments\nRecap Taylor Series\nMGF\n\n\n\nWeek 09\n\nJoint distributions\nCovariance and correlation\n\n\n\nWeek 10\n\nChange of variable (2-D)\nMidterm II (in-person and take-home)\n\n\n\nThanksgiving Break!\n\n\nWeek 11\n\nBeta distribution\nGamma distribution\nOrder statistics\nConditional expectation\n\n\n\nWeek 12\n\nConditional variance\nLaw of Large Numbers\nCentral Limit Theorem"
+    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome\nProbability axioms\n\n\n\nWeek 02\n\nR and RStudio\nConditional probability\nIndependence of events\n\n\n\nWeek 03\n\nMonty Hall\nBernoulli and Binomial\n\n\n\nWeek 04\n\nCDF\nIndependence of RVs\nExpected value\n\n\n\nWeek 05\n\nGeometric and Negative Binomial Distributions\nMidterm 1\n\n\n\nWeek 06\n\nVariance\nPoisson distribution\nContinuous random variables\n\n\n\nWeek 07\n\nUniform distribution\nNormal distribution\nExponential distribution\n\n\n\nWeek 08\n\nMoments\nRecap Taylor Series\nMGF\n\n\n\nWeek 09\n\nJoint distributions\nCovariance and correlation\n\n\n\nWeek 10\n\nChange of variable (2-D)\nMidterm II (in-person and take-home)\n\n\n\nThanksgiving Break!\n\n\nWeek 11\n\nBeta distribution\nGamma distribution\nOrder statistics\nConditional expectation\n\n\n\nWeek 12\n\nConditional variance\nLaw of Large Numbers\nCentral Limit Theorem\n\n\n\nWeek 13\n\nCLT in R\nFinal exam"
   },
   {
     "objectID": "temp.html",
@@ -102,7 +102,7 @@
     "href": "index.html#major-announcements",
     "title": "Probability",
     "section": "Major Announcements",
-    "text": "Major Announcements\n\nHomework assigned in Week 10 will be due the Thursday following break.\nDetails about Midterm 2! Solutions to practice problems and selected class activity problems have been posted to Canvas!\nI hope to see some of you in Math/Stat 311 next semester!"
+    "text": "Major Announcements\n\nHomework assigned in Week 10 will be due the Thursday, 11/30 following break.\nDetails about Midterm 2! Solutions to practice problems and selected class activity problems have been posted to Canvas!\nI hope to see some of you in Math/Stat 311 next semester!"
   },
   {
     "objectID": "weeks/week-04.html",
@@ -193,6 +193,13 @@
     "href": "weeks/week-12.html",
     "title": "Week 12",
     "section": "",
-    "text": "Tuesday (12/05)\n\nTopics\n\nConditional variance\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nThursday (12/07)\n\nTopics\n\nInequalities\nLaw of Large Numbers\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nFriday (12/08)\n\nTopics\n\nCentral Limit Theorem!\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD"
+    "text": "Tuesday (12/05)\n\nClass visit: Prof. Tang being observed by a colleague!\nTopics\n\nConditional variance\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nThursday (12/07)\n\nClass visit: Prof. Tang being observed by a colleague!\nTopics\n\nInequalities\nLaw of Large Numbers\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD\n\n\n\nFriday (12/08)\n\nTopics\n\nCentral Limit Theorem!\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD"
+  },
+  {
+    "objectID": "weeks/week-13.html",
+    "href": "weeks/week-13.html",
+    "title": "Week 13",
+    "section": "",
+    "text": "Monday (12/11)\n\nTopics\n\nCLT simulation in R\nExtra time for review?\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD"
   }
 ]

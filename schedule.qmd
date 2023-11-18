@@ -89,3 +89,8 @@ A high-level overview of the semester's topics are presented here. Please select
 -   Conditional variance
 -   Law of Large Numbers
 -   Central Limit Theorem
+
+### [Week 13](weeks/week-13.qmd)
+
+-   CLT in `R`
+-   Final exam

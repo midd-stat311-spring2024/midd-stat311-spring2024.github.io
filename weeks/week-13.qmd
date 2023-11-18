@@ -1,0 +1,24 @@
+---
+title: "Week 13"
+---
+
+::: {style="color: #F66D7A"}
+### Monday (12/11)
+:::
+
+**Topics**
+
+-   CLT simulation in R
+-   Extra time for review?
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 7:45am
+
+-   TBD
+
+**Class activity**
+
+-   TBD
+
+------------------------------------------------------------------------

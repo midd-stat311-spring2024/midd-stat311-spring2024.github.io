@@ -49,3 +49,4 @@ Note: problem sets will be updated with new questions following each class. Comp
 ### Homework 11 (final homework!)
 
 -   [Homework 11](weeks/hw/310_hw11.pdf), due Friday, 12/08 at 11:59pm. Note the atypical due date!
+    -   I've also added a clarification on AP2 part c(ii)!

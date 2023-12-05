@@ -109,7 +109,7 @@ The final exam will be in-person on the college-assigned date and time of **Thur
 
 Material from the entire semester is fair game and the final is lightly cumulative, but there will be a heavy emphasis on content covered after the second midterm (Week 9 content onward).
 
-Practice problems will be posted shortly, with solutions provided on Canvas after our final class. Note that some of these problems are more difficult than I would expect you to be able to do on the final. Practicing on harder problems means you'll be better prepared for the actual final!
+[Practice problems are available here](weeks/exam/final_practice_problems.pdf), with solutions provided on Canvas after our final class. Note that some of these problems are more difficult than I would expect you to be able to do on the final. Practicing on harder problems means you'll be better prepared for the actual final!
 
 ::: {style="color: purple"}
 I will also be having extra office hours on Tuesday, 12/12 from 10:30am-12:30pm.

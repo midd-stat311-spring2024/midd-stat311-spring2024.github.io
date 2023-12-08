@@ -97,6 +97,22 @@ I will host a review session on Sunday, 11/12 from 3-5pm in Warner 105!
 
 -   You may not use any other resources other than those listed above. You may not seek answers to exam questions online or ChatGPT, or in other textbooks, and may not work with others on the exam.
 
+### **Revisions**
+
+There is an opportunity to earn points back on the second midterm, but if you take advantage of the opportunity, there is the potential of receiving an overall *lower* score on the midterm. Details:
+
+-   From 12/11 at 5:00 pm - 12/13 11:59pm, a new problem(s) will be made available via Canvas quiz. Upon starting the quiz, will have 30 minutes to submit your solutions.
+
+    -   Resources for the revision are the same as the resources for the take-home component (see above).
+
+-   Your updated Midterm 2 score will be a weighted average of your original midterm 2 score and your score on the new problem(s): $$\text{new score} = 0.8(\text{original score}) + 0.2(\text{revision score})$$
+
+    -   Depending on how you do on the revision, your new score may be lower than the original. See this figure:
+
+        ![Find your original score on the x-axis. Then based on how you do on the revision problem (colors), you can find your updated score (y-axis).](weeks/exam/revision_fig.png)
+
+-   You are welcome to "start" the quiz on Canvas and decide to not finish it. I will only grade and update scores for those who submit a solution to the quiz.
+
 ------------------------------------------------------------------------
 
 ## **Final exam** {#sec-final}

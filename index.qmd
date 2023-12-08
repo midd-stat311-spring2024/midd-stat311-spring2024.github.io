@@ -7,11 +7,11 @@ Welcome to the website for Middlebury College's Fall 2023 MATH/STAT 310. On this
 
 ## Major Announcements
 
--   Details about revision opportunity for Midterm 2.
+-   Details about [revision opportunity](exam.qmd#midterm2-revisions) for Midterm 2.
 
 -   Final exam is scheduled for **Thursday, 12/14 from 2-5pm**.
 
-    -   Details of [final exam](exam.qmd) are posted, along with practice problems!
+    -   Details of [final exam](exam.qmd#sec-final) are posted, along with practice problems!
 
 -   Today at 12:15pm: pizza lunch with stats major + stats-interested folks in WNS 100!
 

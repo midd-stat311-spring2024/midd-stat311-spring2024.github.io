@@ -13,11 +13,6 @@ Welcome to the website for Middlebury College's Fall 2023 MATH/STAT 310. On this
 
     -   Details of [final exam](exam.qmd#sec-final) are posted, along with practice problems!
 
--   Today at 12:15pm: pizza lunch with stats major + stats-interested folks in WNS 100!
-
--   Homework 11 is the final problem set of the semester. Note: it will include material/problems through Tuesday, 12/05 and will be **due Friday, 12/08** at 11:59pm.
-
-    -   This is to maximize the amount of feedback Prof. Tang can give you before the final exam!
 
 ## Course Details
 

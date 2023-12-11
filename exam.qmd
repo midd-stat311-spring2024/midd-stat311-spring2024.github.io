@@ -101,7 +101,7 @@ I will host a review session on Sunday, 11/12 from 3-5pm in Warner 105!
 
 There is an opportunity to earn points back on the second midterm, but if you take advantage of the opportunity, there is the potential of receiving an overall *lower* score on the midterm. Details:
 
--   From 12/11 at 5:00 pm - 12/13 11:59pm, a new problem(s) will be made available via Canvas quiz. Upon starting the quiz, will have 30 minutes to submit your solutions.
+-   From 12/11 at 5:00 pm - 12/13 11:59pm, new problems will be made available via Canvas quiz. Upon starting the quiz, will have **60 minutes** to submit your solutions.
 
     -   Resources for the revision are the same as the resources for the take-home component (see above).
 
@@ -121,7 +121,7 @@ There is an opportunity to earn points back on the second midterm, but if you ta
 An opportunity to celebrate all that you have learned this semester!!
 :::
 
-The final exam will be in-person on the college-assigned date and time of **Thursday, 12/14 from 2-5pm**. Location TBD.
+The final exam will be in-person on the college-assigned date and time of **Thursday, 12/14 from 2-5pm**. in WNS 105 (our usual classroom).
 
 Material from the entire semester is fair game and the final is lightly cumulative, but there will be a heavy emphasis on content covered after the second midterm (Week 9 content onward).
 
@@ -141,7 +141,7 @@ I will also be having office hours on Tuesday, 12/12 from 11:00am-12:00pm, then 
 
 -   You will be provided a "distribution sheet" that lists the PMFs/PDFs of the "common" distributions we have covered, along with their expected values and variances.
 
-    -   I will share the distribution sheet with you on the final day of class so you won't be surprised when you take the exam.
+    -   I will share the [distribution sheet](weeks/files/distributions_310.pdf) with you on the final day of class so you won't be surprised when you take the exam.
 
     -   Formulas for MGFs or CDFs will not be provided on this distribution sheet.
 

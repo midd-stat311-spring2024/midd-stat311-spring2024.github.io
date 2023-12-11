@@ -141,7 +141,9 @@ I will also be having office hours on Tuesday, 12/12 from 11:00am-12:00pm, then 
 
 -   You will be provided a "distribution sheet" that lists the PMFs/PDFs of the "common" distributions we have covered, along with their expected values and variances.
 
-    -   I will share the [distribution sheet](weeks/files/distributions_310.pdf) with you on the final day of class so you won't be surprised when you take the exam.
+    -   I will share the [distribution sheet](weeks/files/distributions_310.pdf) with you on the final day of class so you won't be surprised when you take the exam
+
+        -   **Update 12/11 \~5:00pm: added Multinomial distribution to sheet**. Thanks Thomas for reminding me! Note that expectation and variance are not provided for it...
 
     -   Formulas for MGFs or CDFs will not be provided on this distribution sheet.
 

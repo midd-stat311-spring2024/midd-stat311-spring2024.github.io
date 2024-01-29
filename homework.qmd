@@ -7,46 +7,4 @@ Note: problem sets will be updated with new questions following each class. Comp
 
 ### Homework 1
 
--   [Homework 1](weeks/hw/310_hw1.pdf), due 09/19 at 11:59pm
-
-### Homework 2
-
--   [Homework 2](weeks/hw/310_hw2.pdf), due 09/26 at 11:59pm
-
-### Homework 3
-
--   [Homework 3](weeks/hw/310_hw3.pdf), due 10/03 at 11:59pm
-
-### Homework 4
-
--   [Homework 4](weeks/hw/310_hw4.pdf), due 10/10 at 11:59pm
-
-### Homework 5
-
--   [Homework 5](weeks/hw/310_hw5.pdf), due 10/17 at 11:59pm
-
-### Homework 6
-
--   [Homework 6](weeks/hw/310_hw6.pdf), due 10/24 at 11:59pm
-
-### Homework 7
-
--   [Homework 7](weeks/hw/310_hw7.pdf), due 10/31 at 11:59pm
--   Taking your feedback, this problem set and the ones moving forward are going to be shorter than the previous weeks' problem sets. Please let me know if you still feel like the problem sets are too long.
-
-### Homework 8
-
--   [Homework 8](weeks/hw/310_hw8.pdf), due 11/07 at 11:59pm. Material through this homework is fair game for Midterm II!
-
-### Homework 9
-
--   [Homework 9](weeks/hw/310_hw9.pdf), due 11/14 at 11:59pm.
-
-### Homework 10
-
--   [Homework 10](weeks/hw/310_hw10.pdf), due Thursday 11/30 at 11:59pm. Note the atypical due date!
-
-### Homework 11 (final homework!)
-
--   [Homework 11](weeks/hw/310_hw11.pdf), due Friday, 12/08 at 11:59pm. Note the atypical due date!
-    -   I've also added a clarification on AP2 part c(ii)!
+-   TBD

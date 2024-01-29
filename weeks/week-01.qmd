@@ -2,8 +2,8 @@
 title: "Week 01"
 ---
 
-::: {style="color: #F66D7A"}
-### Tuesday (09/12)
+::: {style="color: #DDA0DD"}
+### Tuesday (02/13)
 :::
 
 **Topics**
@@ -17,49 +17,36 @@ Review syllabus
 
 -   Complete the pre-course survey if you haven't already
 
-**Class activity**
-
--   [Getting to know you survey](class/CA_00.pdf)
-
 ------------------------------------------------------------------------
 
-::: {style="color: #F66D7A"}
-### Thursday (09/14)
+::: {style="color: #DDA0DD"}
+### Thursday (02/15)
 :::
 
 **Topics**
 
--   Foundations of probability
--   Counting
+-   Core terminology
 
 **Daily assignment**
 
-To be completed and submitted to Canvas by 7:45am
+To be completed and submitted to Canvas by 8:45am
 
--   [Daily assignment](daily/DA_01.pdf)
-
-**Class activity**
-
--   [Class activity](class/CA_01.pdf)
+-   TBD
 
 ------------------------------------------------------------------------
 
-::: {style="color: #F66D7A"}
-### Friday (09/15)
+::: {style="color: #DDA0DD"}
+### Friday (02/16)
 :::
 
 **Topics**
 
--   Set theory
+-   Prior distribution
 
--   Axioms of probability
+-   Posterior distribution
 
 **Daily assignment**
 
-To be completed and submitted to Canvas by 7:45am
+To be completed and submitted to Canvas by 8:45am
 
--   [Daily assignment](daily/DA_02.pdf)
-
-**Class activity**
-
--   [Class activity](class/CA_02.pdf)
+-   TBD

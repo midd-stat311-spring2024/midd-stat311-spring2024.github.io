@@ -1,5 +1,5 @@
 ---
-title: "Probability"
+title: "Statistical Inference"
 sidebar: false
 ---
 
@@ -12,7 +12,6 @@ Welcome to the website for Middlebury College's Fall 2023 MATH/STAT 310. On this
 -   Final exam is scheduled for **Thursday, 12/14 from 2-5pm**.
 
     -   Details of [final exam](exam.qmd#sec-final) are posted, along with practice problems!
-
 
 ## Course Details
 

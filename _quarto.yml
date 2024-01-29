@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "MATH/STAT 310: Probability"
+  title: "STAT 311: Statistical Inference"
   favicon: img/img.png
   navbar:
     logo: img/img.png

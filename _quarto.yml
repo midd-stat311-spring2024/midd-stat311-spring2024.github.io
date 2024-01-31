@@ -4,9 +4,9 @@ project:
 
 website:
   title: "STAT 311: Statistical Inference"
-  favicon: img/img.png
+  favicon: img/chi2.png
   navbar:
-    logo: img/img.png
+    logo: img/chi2.png
     left:
       - file: index.qmd
         text: Home

@@ -102,21 +102,21 @@
     "href": "index.html",
     "title": "Statistical Inference",
     "section": "",
-    "text": "Welcome to the website for Middlebury College’s Spring 2024 STAT 311. On this website you will find the course syllabus, schedule, and assignments. The website is frequently updated during the semester, so please make a habit of refreshing the page. The icons at the top right will link to the course Canvas."
+    "text": "Welcome to the website for Middlebury College’s Spring 2024 STAT 311. On this website you will find the course syllabus, schedule, and assignments. The website is frequently updated during the semester, so please make a habit of refreshing the page. The icon at the top right will link to the course Canvas."
   },
   {
     "objectID": "index.html#major-announcements",
     "href": "index.html#major-announcements",
     "title": "Statistical Inference",
     "section": "Major Announcements",
-    "text": "Major Announcements\nNone yet!"
+    "text": "Major Announcements\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
   },
   {
     "objectID": "index.html#course-details",
     "href": "index.html#course-details",
     "title": "Statistical Inference",
     "section": "Course Details",
-    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 9:45-10:35am in WNS 011\nOffice hours: M 2-4pm, R 3-4pm (tentative)\nSyllabus (most recent update: 02/05/24)"
+    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 9:45-10:35am in WNS 011\nOffice hours: M 2-4pm, R 3-4pm (tentative)\nSyllabus (most recent update: 01/29/24)"
   },
   {
     "objectID": "exam.html",
@@ -144,6 +144,6 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome"
+    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome!\nPrior and posterior distributions"
   }
 ]

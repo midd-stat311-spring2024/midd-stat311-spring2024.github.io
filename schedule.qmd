@@ -9,4 +9,5 @@ A high-level overview of the semester's topics are presented here. Please select
 
 ### [Week 01](weeks/week-01.qmd)
 
--   Welcome
+-   Welcome!
+-   Prior and posterior distributions

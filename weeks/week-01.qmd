@@ -13,9 +13,9 @@ title: "Week 01"
 
 **Daily assignment**
 
-Review syllabus
+-   Review syllabus
 
--   Complete the pre-course survey if you haven't already
+-   Open (or re-download) RStudio and make sure everything is working
 
 ------------------------------------------------------------------------
 
@@ -41,9 +41,9 @@ To be completed and submitted to Canvas by 8:45am
 
 **Topics**
 
--   Prior distribution
+-   Prior distributions
 
--   Posterior distribution
+-   Posterior distributions
 
 **Daily assignment**
 

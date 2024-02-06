@@ -11,3 +11,13 @@ A high-level overview of the semester's topics are presented here. Please select
 
 -   Welcome!
 -   Prior and posterior distributions
+
+### Week 02
+
+-   Conjugate priors
+
+-   Bayes estimators
+
+### Week 03
+
+-   Maximum likelihood estimation

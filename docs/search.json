@@ -88,7 +88,7 @@
     "href": "weeks/week-01.html",
     "title": "Week 01",
     "section": "",
-    "text": "Tuesday (02/13)\n\nTopics\n\nWelcome!\nCourse logistics\n\nDaily assignment\n\nReview syllabus\nOpen (or re-download) RStudio and make sure everything is working\n\n\n\nThursday (02/15)\n\nTopics\n\nCore terminology\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nTBD\n\n\n\nFriday (02/16)\n\nTopics\n\nPrior distributions\nPosterior distributions\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nTBD"
+    "text": "Tuesday (02/13)\n\nTopics\n\nWelcome!\nCourse logistics\n\nDaily assignment\n\nReview syllabus\nOpen (or re-download) RStudio and make sure everything is working\n\nClass activity\n\nIntroduction to inference\n\n\n\nThursday (02/15)\n\nTopics\n\nCore terminology\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nDaily assignment\n\n\n\nFriday (02/16)\n\nTopics\n\nPrior distributions\nPosterior distributions\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nTBD"
   },
   {
     "objectID": "homework.html",
@@ -102,7 +102,7 @@
     "href": "index.html",
     "title": "Statistical Inference",
     "section": "",
-    "text": "Welcome to the website for Middlebury College’s Spring 2024 STAT 311. On this website you will find the course syllabus, schedule, and assignments. The website is frequently updated during the semester, so please make a habit of refreshing the page. The icon at the top right will link to the course Canvas."
+    "text": "Welcome to the website for Middlebury College’s Spring 2024 STAT 311. On this website you will find the course syllabus, schedule, and assignments. The website is frequently updated during the semester, so please make a habit of refreshing the page. The icon at the top right will link to the course Canvas where assignments should be submitted."
   },
   {
     "objectID": "index.html#major-announcements",
@@ -116,7 +116,7 @@
     "href": "index.html#course-details",
     "title": "Statistical Inference",
     "section": "Course Details",
-    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 9:45-10:35am in WNS 011\nOffice hours: M 2-4pm, R 3-4pm (tentative)\nSyllabus (most recent update: 01/29/24)"
+    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 9:45-10:35am in WNS 011\nOffice hours: M 2-4pm, R 3-4pm (tentative)\nSyllabus (most recent update: 02/12/24)\nDistribution sheet (from MATH/STAT 310)"
   },
   {
     "objectID": "exam.html",

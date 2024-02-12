@@ -17,6 +17,10 @@ title: "Week 01"
 
 -   Open (or re-download) RStudio and make sure everything is working
 
+**Class activity**
+
+-   Introduction to inference
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}
@@ -31,7 +35,7 @@ title: "Week 01"
 
 To be completed and submitted to Canvas by 8:45am
 
--   TBD
+-   [Daily assignment](daily/DA_01.pdf)
 
 ------------------------------------------------------------------------
 

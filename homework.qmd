@@ -7,4 +7,4 @@ Note: problem sets will be updated with new questions following each class. Comp
 
 ### Homework 1
 
--   TBD
+-   [Homework 1](weeks/hw/hw1.pdf) (due Tuesday, 2/20 at 11:59pm)

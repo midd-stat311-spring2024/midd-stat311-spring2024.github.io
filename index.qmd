@@ -20,9 +20,9 @@ Instructor: Becky Tang
 
 Meeting times: TRF 9:45-10:35am in WNS 011
 
-Office hours: M 2-4pm, R 3-4pm (tentative)
+Office hours: T 10:45am-12pm, R 3-5pm
 
-[Syllabus](Stat311_Syllabus.pdf) (most recent update: 02/12/24)
+[Syllabus](Stat311_Syllabus.pdf) (most recent update: 02/15/24 to reflect updated office hours)
 
 [Distribution sheet](weeks/files/distributions_310.pdf) (from MATH/STAT 310)
 

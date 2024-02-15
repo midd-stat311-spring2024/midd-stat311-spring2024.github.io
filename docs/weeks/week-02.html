@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MATH/STAT 310: Probability - Week 02</title>
+<title>STAT 311: Statistical Inference - Week 02</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../img/img.png" rel="icon" type="image/png">
+<link href="../img/chi2.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,10 +71,10 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../img/img.png" alt="" class="navbar-logo">
+    <img src="../img/chi2.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">MATH/STAT 310: Probability</span>
+    <span class="navbar-title">STAT 311: Statistical Inference</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -100,11 +100,6 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/view"><i class="bi bi-book-half" role="img">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://middlebury.instructure.com/"><i class="bi bi-bar-chart-fill" role="img">
 </i> 
@@ -145,61 +140,6 @@ ul.task-list li input[type="checkbox"] {
   <a href="../weeks/week-02.html" class="sidebar-item-text sidebar-link active">Week 02</a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week-03.html" class="sidebar-item-text sidebar-link">Week 03</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week-04.html" class="sidebar-item-text sidebar-link">Week 04</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week-05.html" class="sidebar-item-text sidebar-link">Week 05</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week-06.html" class="sidebar-item-text sidebar-link">Week 06</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week-07.html" class="sidebar-item-text sidebar-link">Week 07</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week-08.html" class="sidebar-item-text sidebar-link">Week 08</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week-09.html" class="sidebar-item-text sidebar-link">Week 09</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week-10.html" class="sidebar-item-text sidebar-link">Week 10</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week-11.html" class="sidebar-item-text sidebar-link">Week 11</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week-12.html" class="sidebar-item-text sidebar-link">Week 12</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week-13.html" class="sidebar-item-text sidebar-link">Week 13</a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -225,68 +165,43 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="tuesday-0919" class="level3" style="color: #F66D7A">
-<h3 class="anchored" data-anchor-id="tuesday-0919">Tuesday (09/19)</h3>
+<section id="tuesday-0220" class="level3" style="color: #6284a2">
+<h3 class="anchored" data-anchor-id="tuesday-0220">Tuesday (02/20)</h3>
 </section>
 <p><strong>Topics</strong></p>
 <ul>
-<li>Introduction to R and RStudio</li>
+<li>More with posterior distributions</li>
 </ul>
 <p><strong>Daily assignment</strong></p>
-<p>To be completed and submitted to Canvas by 7:45am</p>
 <ul>
-<li>Download R and RStudio if you do not already have them downloaded by following these <a href="files/R_RStudio.pdf">instructions</a>.</li>
-<li><a href="daily/DA_03.pdf">Daily assignment</a>
-<ul>
-<li>Video for <a href="https://middlebury.zoom.us/rec/share/P3yz_ijZA4gzX44fDgaLEnqqHuOkjvTTDo0HRX-cxUyuo7ObKGGCKQs2xKPyLaVy.qkjvzTJAbq7KjC8G?startTime=1694198782000%20Passcode:%20X%5ESuA=Q1">creating a new R Markdown document</a></li>
-<li>Video for <a href="https://middlebury.zoom.us/rec/share/P3yz_ijZA4gzX44fDgaLEnqqHuOkjvTTDo0HRX-cxUyuo7ObKGGCKQs2xKPyLaVy.qkjvzTJAbq7KjC8G?startTime=1694199079000%20Passcode:%20X%5ESuA=Q1">knitting a document</a></li>
-</ul></li>
-</ul>
-<p><strong>Class activity</strong></p>
-<ul>
-<li>Covering some <a href="files/R_intro.pdf">basics of coding in <code>R</code></a>
-<ul>
-<li><a href="files/R_intro_code.pdf">Code-only version</a></li>
-</ul></li>
-<li><a href="class/CA_03.pdf">Class activity</a></li>
+<li>None for today!</li>
 </ul>
 <hr>
-<section id="thursday-0921" class="level3" style="color: #F66D7A">
-<h3 class="anchored" data-anchor-id="thursday-0921">Thursday (09/21)</h3>
+<section id="thursday-0222" class="level3" style="color: #6284a2">
+<h3 class="anchored" data-anchor-id="thursday-0222">Thursday (02/22)</h3>
 </section>
 <p><strong>Topics</strong></p>
 <ul>
-<li>Conditional probability</li>
-<li>Bayes rule</li>
-<li>Law of Total Probability</li>
+<li>Conjugate priors</li>
+<li>Improper priors</li>
 </ul>
 <p><strong>Daily assignment</strong></p>
-<p>To be completed and submitted to Canvas by 7:45am</p>
+<p>To be completed and submitted to Canvas by 8:45am</p>
 <ul>
-<li><a href="daily/DA_04.pdf">Daily assignment</a></li>
-</ul>
-<p><strong>Class activity</strong></p>
-<ul>
-<li><a href="class/CA_04.pdf">Class activity</a></li>
+<li>TBD</li>
 </ul>
 <hr>
-<section id="friday-0922" class="level3" style="color: #F66D7A">
-<h3 class="anchored" data-anchor-id="friday-0922">Friday (09/22)</h3>
+<section id="friday-0223" class="level3" style="color: #6284a2">
+<h3 class="anchored" data-anchor-id="friday-0223">Friday (02/23)</h3>
 </section>
 <p><strong>Topics</strong></p>
 <ul>
-<li><p>Independence</p></li>
-<li><p>Conditional independence</p></li>
+<li>Bayes estimators</li>
 </ul>
 <p><strong>Daily assignment</strong></p>
-<p>To be completed and submitted to Canvas by 7:45am</p>
+<p>To be completed and submitted to Canvas by 8:45am</p>
 <ul>
-<li><a href="daily/DA_05.pdf">Daily assignment</a></li>
-</ul>
-<p><strong>Class activity</strong></p>
-<ul>
-<li><a href="class/people_v_collins.pdf">Case study</a></li>
-<li><a href="class/CA_05.pdf">Class activity</a></li>
+<li>TBD</li>
 </ul>
 
 

@@ -1,0 +1,48 @@
+---
+title: "Week 02"
+---
+
+::: {style="color: #6284a2"}
+### Tuesday (02/20)
+:::
+
+**Topics**
+
+-   More with posterior distributions
+
+**Daily assignment**
+
+-   None for today!
+
+------------------------------------------------------------------------
+
+::: {style="color: #6284a2"}
+### Thursday (02/22)
+:::
+
+**Topics**
+
+-   Conjugate priors
+-   Improper priors
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 8:45am
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #6284a2"}
+### Friday (02/23)
+:::
+
+**Topics**
+
+-   Bayes estimators
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 8:45am
+
+-   TBD

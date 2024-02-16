@@ -33,7 +33,7 @@ title: "Week 02"
 
 To be completed and submitted to Canvas by 8:45am
 
--   TBD
+-   [Daily assignment](daily/DA_03.pdf)
 
 ------------------------------------------------------------------------
 

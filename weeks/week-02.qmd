@@ -16,6 +16,8 @@ title: "Week 02"
 
 **Class activity**
 
+-   Prior and posterior [practice problems](class/01_prior_post.pdf)
+
 -   Please bring a laptop with R ready to go
 
 ------------------------------------------------------------------------

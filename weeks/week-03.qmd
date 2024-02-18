@@ -1,54 +1,47 @@
 ---
-title: "Week 02"
+title: "Week 03"
 ---
 
 ::: {style="color: #6284a2"}
-### Tuesday (02/20)
+### Tuesday (02/27)
 :::
 
 **Topics**
 
--   More with posterior distributions
+-   Method of Maximum Likelihood
 
 **Daily assignment**
 
--   None for today!
-
-**Class activity**
-
--   Prior and posterior [practice problems](class/01_prior_post.pdf)
-
--   Please bring a laptop with R ready to go
+-   TBA
 
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}
-### Thursday (02/22)
+### Thursday (02/29)
 :::
 
 **Topics**
 
--   Conjugate priors
--   Improper priors
+-   MLEs (cont.)
 
 **Daily assignment**
 
 To be completed and submitted to Canvas by 8:45am
 
--   [Daily assignment](daily/DA_03.pdf)
+-   TBD
 
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}
-### Friday (02/23)
+### Friday (03/01)
 :::
 
 **Topics**
 
--   Bayes estimators
+-   Properties of MLEs
 
 **Daily assignment**
 
 To be completed and submitted to Canvas by 8:45am
 
--   [Daily assignment](daily/DA_04.pdf)
+-   TBD

@@ -18,6 +18,6 @@ A high-level overview of the semester's topics are presented here. Please select
 
 -   Bayes estimators
 
-### Week 03
+### [Week 03](weeks/week-03.qmd)
 
 -   Maximum likelihood estimation

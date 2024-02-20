@@ -74,7 +74,7 @@
     "href": "weeks/week-02.html",
     "title": "Week 02",
     "section": "",
-    "text": "Tuesday (02/20)\n\nTopics\n\nMore with posterior distributions\n\nDaily assignment\n\nNone for today!\n\nClass activity\n\nPrior and posterior practice problems\nPlease bring a laptop with R ready to go\n\n\n\nThursday (02/22)\n\nTopics\n\nConjugate priors\nImproper priors\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nDaily assignment\n\n\n\nFriday (02/23)\n\nTopics\n\nBayes estimators\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nDaily assignment"
+    "text": "Tuesday (02/20)\n\nTopics\n\nMore with posterior distributions\n\nDaily assignment\n\nNone for today!\nPlease bring a laptop with R ready to go\n\nClass activity\n\nPrior and posterior practice problems\nComputing posteriors in R\n\n.Rmd template:  .Rmd \nFilled-in code: computing posteriors in R\n\n\n\n\nThursday (02/22)\n\nTopics\n\nConjugate priors\nImproper priors\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nDaily assignment\n\n\n\nFriday (02/23)\n\nTopics\n\nBayes estimators\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nDaily assignment"
   },
   {
     "objectID": "weeks/week-03.html",
@@ -145,5 +145,117 @@
     "title": "Schedule",
     "section": "",
     "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome!\nPrior and posterior distributions\n\n\n\nWeek 02\n\nConjugate priors\nBayes estimators\n\n\n\nWeek 03\n\nMaximum likelihood estimation"
+  },
+  {
+    "objectID": "weeks/class/posteriors_in_R.html",
+    "href": "weeks/class/posteriors_in_R.html",
+    "title": "Obtaining posteriors in R",
+    "section": "",
+    "text": "Suppose \\(X_{1},\\ldots, X_{5}\\) form a random sample from a \\(\\text{Geometric}(\\theta)\\) distribution, where \\(\\theta \\in (0,1)\\) is the unknown probability of success. We can use a Beta prior for \\(\\theta\\): \\(\\theta \\sim \\text{Beta}(a, b)\\)."
+  },
+  {
+    "objectID": "weeks/class/posteriors_in_R.html#visualize-prior",
+    "href": "weeks/class/posteriors_in_R.html#visualize-prior",
+    "title": "Obtaining posteriors in R",
+    "section": "Visualize prior",
+    "text": "Visualize prior\nSuppose I pick hyperparameter values \\(a = 1\\) and \\(b = 4\\). What does this particular distribution look like?\n\n# create vector of possible theta values\ntheta_vals <- seq(0.01, 0.99, by = 0.01)\n\n# set prior hyperparameters\n\n\n# evaluate the prior at each of the elements of theta_vals\nprior_vals <- \n\n# plot prior dist"
+  },
+  {
+    "objectID": "weeks/class/posteriors_in_R.html#verify-prior-is-a-proper-pdf",
+    "href": "weeks/class/posteriors_in_R.html#verify-prior-is-a-proper-pdf",
+    "title": "Obtaining posteriors in R",
+    "section": "Verify prior is a proper PDF",
+    "text": "Verify prior is a proper PDF\nWe know the prior is a valid PDF because the Beta distribution is a well known distribution. But let’s double check by using R to verify that that the PDF integrates to 1.\nWe will write a function called beta_prior that takes in an argument theta as input, and should return the Beta density evaluated at that value of theta and our choice of hyperparameters. Then, we will integrate() our function over its support to see if the PDF in fact integrates to 1.\n\n# write function that evaluates our prior\nbeta_prior <- function(theta){\n  \n}\n\n# verify that our prior integrates to 1"
+  },
+  {
+    "objectID": "weeks/class/posteriors_in_R.html#obtain-and-plot-posterior",
+    "href": "weeks/class/posteriors_in_R.html#obtain-and-plot-posterior",
+    "title": "Obtaining posteriors in R",
+    "section": "Obtain and plot posterior",
+    "text": "Obtain and plot posterior\nNow suppose we observe \\(X = (3, 1, 2, 5, 6)\\).\n\ndat <- c(3,1,2,5,6)\nn <- length(dat)\n\n\nFrom known results\nWhat is the posterior for \\(\\theta\\) under our \\(\\text{Beta}(2,2)\\) prior given the observed data? From class work, we know:\n\\[\\theta | \\mathbf{x} \\sim\\]\n\n# create vector of posterior values\n\n# plot posterior\n\n\n\nBy obtaining normalizing constant\nSuppose we didn’t know that the posterior is a Beta. However, we know that the posterior is always proportional to the likelihood times prior! So all we lack is the normalizing constant. We can write a function that evaluates the kernel of the posterior (i.e. all the parts that include \\(\\theta\\)).\n\n# write function that evaluate the kernel of the posterior for a given theta value\n\n# integrate the function to obtain normalizing constant\n\n# obtain normalizing constant \n\n# plot posterior\n\nWe can see that the unnormalized posterior has exactly the same shape:\n\nplot(theta_vals, post_kernel(theta_vals), type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\n\nWe can visualize the prior and posterior on the same plot by first creating one plot, then using the lines() function to add additional lines to the original plot.\n\nplot(theta_vals, post_vals, type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\nlines(theta_vals, prior_vals, type = \"l\", col = \"orange\")"
+  },
+  {
+    "objectID": "weeks/class/posteriors_in_R_solns.html",
+    "href": "weeks/class/posteriors_in_R_solns.html",
+    "title": "Obtaining posteriors in R",
+    "section": "",
+    "text": "Suppose \\(X_{1},\\ldots, X_{5}\\) form a random sample from a \\(\\text{Geometric}(\\theta)\\) distribution, where \\(\\theta \\in (0,1)\\) is the unknown probability of success. We can use a Beta prior for \\(\\theta\\): \\(\\theta \\sim \\text{Beta}(a, b)\\)."
+  },
+  {
+    "objectID": "weeks/class/posteriors_in_R_solns.html#visualize-prior",
+    "href": "weeks/class/posteriors_in_R_solns.html#visualize-prior",
+    "title": "Obtaining posteriors in R",
+    "section": "Visualize prior",
+    "text": "Visualize prior\nSuppose I pick hyperparameter values \\(a = 1\\) and \\(b = 4\\). What does this particular distribution look like?\n\ntheta_vals <- seq(0.01, 0.99, by = 0.01)\na <- 1\nb <- 4\n\nprior_vals <- dbeta(theta_vals, shape1 = a, shape2 = b)\n\nplot(theta_vals, prior_vals, type = \"l\", main = \"Prior\")"
+  },
+  {
+    "objectID": "weeks/class/posteriors_in_R_solns.html#verify-prior-is-a-proper-pdf",
+    "href": "weeks/class/posteriors_in_R_solns.html#verify-prior-is-a-proper-pdf",
+    "title": "Obtaining posteriors in R",
+    "section": "Verify prior is a proper PDF",
+    "text": "Verify prior is a proper PDF\nWe know the prior is a valid PDF because the Beta distribution is a well known distribution. But let’s double check by using R to verify that that the PDF integrates to 1.\nWe will write a function called beta_prior that takes in an argument theta as input, and should return the Beta density evaluated at that value of theta and our choice of hyperparameters. Then, we will integrate() our function over its support to see if the PDF in fact integrates to 1.\n\nbeta_prior <- function(theta){\n  to_return <- dbeta(theta, a, b)\n  return(to_return)\n}\n\nintegrate(beta_prior, lower = 0, upper = 1)\n\n1 with absolute error < 1.1e-14\n\n# to obtain the number by itself\nintegrate(beta_prior, lower = 0, upper = 1)$value\n\n[1] 1"
+  },
+  {
+    "objectID": "weeks/class/posteriors_in_R_solns.html#obtain-and-plot-posterior",
+    "href": "weeks/class/posteriors_in_R_solns.html#obtain-and-plot-posterior",
+    "title": "Obtaining posteriors in R",
+    "section": "Obtain and plot posterior",
+    "text": "Obtain and plot posterior\nNow suppose we observe \\(X = (3, 7, 3, 5, 6)\\).\n\nx <- c(3,7,3,5,6)\nn <- length(x)\n\n\nFrom known results\nWhat is the posterior for \\(\\theta\\) under our \\(\\text{Beta}(1,4)\\) prior given the observed data? From class work, we know:\n\\[\\theta | \\mathbf{x} \\sim \\text{Beta}(1 + n, 4 + \\sum_{i=1}^{n} x_{i})\\]\n\npost_vals <- dbeta(theta_vals, a + n, b + sum(x))\nplot(theta_vals, post_vals, type = \"l\", main = \"Using Beta posterior\")\n\n\n\n\n\n\nBy obtaining normalizing constant\nSuppose we didn’t know that the posterior is Beta. However, we know that the posterior is always proportional to the likelihood times prior; all we lack is the normalizing constant. So let’s write a function that evaluates the kernel of the posterior (i.e. the posterior up to proportionality), then use it to find the normalizing constant.\n\npost_kernel <- function(theta){\n  # obtain likelihood for theta under Geometric (up to proportionality)\n  lh <- 1\n  for(i in 1:n){\n    lh <- lh * ((1-theta)^x[i]) * theta\n  }\n  # prior (up to proportionality)\n  prior <- theta^(a-1) * (1-theta)^(b-1)\n  to_return <- lh * prior\n  return(to_return)\n}\n\nval <- integrate(post_kernel, 0, 1)$val\nval\n\n[1] 1.504799e-07\n\n# We can even verify this, since we calculated the normalizing constant analytically!\n(gamma(a + n) * gamma(b + sum(x)))/gamma(a + b + n + sum(x))\n\n[1] 1.504799e-07\n\npost_vals2 <- post_kernel(theta_vals) / val\n\nWe can see that 1) the posterior obtained through normalization agrees with the analytic result, and 2) the unnormalized posterior has exactly the same shape as the normalized:\n\npar(mfrow = c(1,2))\nplot(theta_vals, post_vals2, type = \"l\", main = \"Using normalization\")\nplot(theta_vals, post_kernel(theta_vals), type = \"l\", main = \"Unnormalized\",\n     ylab = \"density\")\n\n\n\n\nLastly, we can visualize the prior and posterior on the same plot by first creating one plot, then using the lines() function to add additional lines to the original plot.\n\nplot(theta_vals, post_vals2, type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\nlines(theta_vals, prior_vals, type = \"l\", col = \"orange\")"
+  },
+  {
+    "objectID": "weeks/templates/posteriors_in_R.html",
+    "href": "weeks/templates/posteriors_in_R.html",
+    "title": "Obtaining posteriors in R",
+    "section": "",
+    "text": "Suppose \\(X_{1},\\ldots, X_{5}\\) form a random sample from a \\(\\text{Geometric}(\\theta)\\) distribution, where \\(\\theta \\in (0,1)\\) is the unknown probability of success. We can use a Beta prior for \\(\\theta\\): \\(\\theta \\sim \\text{Beta}(a, b)\\)."
+  },
+  {
+    "objectID": "weeks/templates/posteriors_in_R.html#visualize-prior",
+    "href": "weeks/templates/posteriors_in_R.html#visualize-prior",
+    "title": "Obtaining posteriors in R",
+    "section": "Visualize prior",
+    "text": "Visualize prior\nSuppose I pick hyperparameter values \\(a = 1\\) and \\(b = 4\\). What does this particular distribution look like?\n\n# create vector of possible theta values\ntheta_vals <- seq(0.01, 0.99, by = 0.01)\n\n# set prior hyperparameters\n\n\n# evaluate the prior at each of the elements of theta_vals\nprior_vals <- \n\n# plot prior dist"
+  },
+  {
+    "objectID": "weeks/templates/posteriors_in_R.html#verify-prior-is-a-proper-pdf",
+    "href": "weeks/templates/posteriors_in_R.html#verify-prior-is-a-proper-pdf",
+    "title": "Obtaining posteriors in R",
+    "section": "Verify prior is a proper PDF",
+    "text": "Verify prior is a proper PDF\nWe know the prior is a valid PDF because the Beta distribution is a well known distribution. But let’s double check by using R to verify that that the PDF integrates to 1.\nWe will write a function called beta_prior that takes in an argument theta as input, and should return the Beta density evaluated at that value of theta and our choice of hyperparameters. Then, we will integrate() our function over its support to see if the PDF in fact integrates to 1.\n\n# write function that evaluates our prior\nbeta_prior <- function(theta){\n  \n}\n\n# verify that our prior integrates to 1"
+  },
+  {
+    "objectID": "weeks/templates/posteriors_in_R.html#obtain-and-plot-posterior",
+    "href": "weeks/templates/posteriors_in_R.html#obtain-and-plot-posterior",
+    "title": "Obtaining posteriors in R",
+    "section": "Obtain and plot posterior",
+    "text": "Obtain and plot posterior\nNow suppose we observe \\(X = (3, 1, 2, 5, 6)\\).\n\ndat <- c(3,1,2,5,6)\nn <- length(dat)\n\n\nFrom known results\nWhat is the posterior for \\(\\theta\\) under our \\(\\text{Beta}(2,2)\\) prior given the observed data? From class work, we know:\n\\[\\theta | \\mathbf{x} \\sim\\]\n\n# create vector of posterior values\n\n# plot posterior\n\n\n\nBy obtaining normalizing constant\nSuppose we didn’t know that the posterior is a Beta. However, we know that the posterior is always proportional to the likelihood times prior! So all we lack is the normalizing constant. We can write a function that evaluates the kernel of the posterior (i.e. all the parts that include \\(\\theta\\)).\n\n# write function that evaluate the kernel of the posterior for a given theta value\n\n# integrate the function to obtain normalizing constant\n\n# obtain normalizing constant \n\n# plot posterior\n\nWe can see that the unnormalized posterior has exactly the same shape:\n\nplot(theta_vals, post_kernel(theta_vals), type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\n\nWe can visualize the prior and posterior on the same plot by first creating one plot, then using the lines() function to add additional lines to the original plot.\n\nplot(theta_vals, post_vals, type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\nlines(theta_vals, prior_vals, type = \"l\", col = \"orange\")"
+  },
+  {
+    "objectID": "weeks/class/templates/posteriors_in_R.html",
+    "href": "weeks/class/templates/posteriors_in_R.html",
+    "title": "Obtaining posteriors in R",
+    "section": "",
+    "text": "Suppose \\(X_{1},\\ldots, X_{5}\\) form a random sample from a \\(\\text{Geometric}(\\theta)\\) distribution, where \\(\\theta \\in (0,1)\\) is the unknown probability of success. We can use a Beta prior for \\(\\theta\\): \\(\\theta \\sim \\text{Beta}(a, b)\\)."
+  },
+  {
+    "objectID": "weeks/class/templates/posteriors_in_R.html#visualize-prior",
+    "href": "weeks/class/templates/posteriors_in_R.html#visualize-prior",
+    "title": "Obtaining posteriors in R",
+    "section": "Visualize prior",
+    "text": "Visualize prior\nSuppose I pick hyperparameter values \\(a = 1\\) and \\(b = 4\\). What does this particular distribution look like?\n\n# create vector of possible theta values\ntheta_vals <- seq(0.01, 0.99, by = 0.01)\n\n# set prior hyperparameters\n\n\n# evaluate the prior at each of the elements of theta_vals\nprior_vals <- \n\n# plot prior dist"
+  },
+  {
+    "objectID": "weeks/class/templates/posteriors_in_R.html#verify-prior-is-a-proper-pdf",
+    "href": "weeks/class/templates/posteriors_in_R.html#verify-prior-is-a-proper-pdf",
+    "title": "Obtaining posteriors in R",
+    "section": "Verify prior is a proper PDF",
+    "text": "Verify prior is a proper PDF\nWe know the prior is a valid PDF because the Beta distribution is a well known distribution. But let’s double check by using R to verify that that the PDF integrates to 1.\nWe will write a function called beta_prior that takes in an argument theta as input, and should return the Beta density evaluated at that value of theta and our choice of hyperparameters. Then, we will integrate() our function over its support to see if the PDF in fact integrates to 1.\n\n# write function that evaluates our prior\nbeta_prior <- function(theta){\n  \n}\n\n# verify that our prior integrates to 1"
+  },
+  {
+    "objectID": "weeks/class/templates/posteriors_in_R.html#obtain-and-plot-posterior",
+    "href": "weeks/class/templates/posteriors_in_R.html#obtain-and-plot-posterior",
+    "title": "Obtaining posteriors in R",
+    "section": "Obtain and plot posterior",
+    "text": "Obtain and plot posterior\nNow suppose we observe \\(X = (3, 1, 2, 5, 6)\\).\n\ndat <- c(3,1,2,5,6)\nn <- length(dat)\n\n\nFrom known results\nWhat is the posterior for \\(\\theta\\) under our \\(\\text{Beta}(2,2)\\) prior given the observed data? From class work, we know:\n\\[\\theta | \\mathbf{x} \\sim\\]\n\n# create vector of posterior values\n\n# plot posterior\n\n\n\nBy obtaining normalizing constant\nSuppose we didn’t know that the posterior is a Beta. However, we know that the posterior is always proportional to the likelihood times prior! So all we lack is the normalizing constant. We can write a function that evaluates the kernel of the posterior (i.e. all the parts that include \\(\\theta\\)).\n\n# write function that evaluate the kernel of the posterior for a given theta value\n\n# integrate the function to obtain normalizing constant\n\n# obtain normalizing constant \n\n# plot posterior\n\nWe can see that the unnormalized posterior has exactly the same shape:\n\nplot(theta_vals, post_kernel(theta_vals), type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\n\nWe can visualize the prior and posterior on the same plot by first creating one plot, then using the lines() function to add additional lines to the original plot.\n\nplot(theta_vals, post_vals, type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\nlines(theta_vals, prior_vals, type = \"l\", col = \"orange\")"
   }
 ]

@@ -61,3 +61,14 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&di
     color: $body-color;
   }
 }
+
+/* css styles */
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+.styled {
+  font-size: 12px;
+}
+
+#btn1 {
+  background-color: #efb73e;
+}
+

@@ -14,11 +14,17 @@ title: "Week 02"
 
 -   None for today!
 
+-   Please bring a laptop with R ready to go
+
 **Class activity**
 
 -   Prior and posterior [practice problems](class/01_prior_post.pdf)
 
--   Please bring a laptop with R ready to go
+-   Computing posteriors in `R`
+
+    -   `.Rmd` template: {{< downloadthis class/templates/posteriors_in_R.Rmd dname="posteriors_in_R.Rmd" label=".Rmd" icon="arrow-down-short" class=styled id=btn1 >}}
+
+    -   Filled-in code: [computing posteriors in R](class/posteriors_in_R_solns.Rmd)
 
 ------------------------------------------------------------------------
 

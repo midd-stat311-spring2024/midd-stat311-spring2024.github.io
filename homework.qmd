@@ -9,3 +9,5 @@ Note: problem sets will be updated with new questions following each class. Comp
 
 -   [Homework 1](weeks/hw/hw1.pdf) (due Tuesday, 2/20 at 11:59pm)
     -   Problems assigned for Friday 2/16 technically cover material from Section 7.2, but we haven't done examples in class yet. You are welcome to work on these problems now, or wait until after class 2/20.
+-   [Homework 2](weeks/hw/hw2.pdf) (due Tuesday, 2/29 at 11:59pm)
+    -   `.Rmd` template: {{< downloadthis weeks/hw/templates/hw2_r.Rmd dname="hw2_r.Rmd" label=".Rmd" icon="arrow-down-short" class=styled id=btn1 >}}

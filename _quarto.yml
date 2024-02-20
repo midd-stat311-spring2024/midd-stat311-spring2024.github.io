@@ -1,10 +1,6 @@
 project:
   type: website
   output-dir: docs
-  render:
-    - "*.qmd"
-    - "*.Rmd"
-    - "!weeks/templates/"
 
 website:
   title: "STAT 311: Statistical Inference"
@@ -49,6 +45,5 @@ format:
     code-tools: false
 embed-resources: true
     
-
 editor: visual
 

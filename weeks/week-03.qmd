@@ -12,7 +12,7 @@ title: "Week 03"
 
 **Daily assignment**
 
--   TBA
+-   [Daily assignment](daily/DA_05.pdf)
 
 ------------------------------------------------------------------------
 

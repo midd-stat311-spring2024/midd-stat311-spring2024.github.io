@@ -47,7 +47,6 @@ To be completed and submitted to Canvas by 8:45am
 
 -   Conjugate prior [practice problem](class/02_conjugate.pdf)
 
-
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}
@@ -66,4 +65,6 @@ To be completed and submitted to Canvas by 8:45am
 
 **Class activity**
 
--   TBD
+-   Bayes estimator under absolute loss [proof](class/proof_bayes_est.qmd)
+
+-   Bayes estimator [practice problem](class/03_bayes_estimators.pdf)

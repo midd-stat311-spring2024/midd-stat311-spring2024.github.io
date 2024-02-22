@@ -6,7 +6,6 @@ format:
     height: 1000
     width: 2000
     include-before: [ '<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {enableAssistiveMml: false}});</script>']
-
 ---
 
 ## Theorem
@@ -23,7 +22,7 @@ Under absolute loss $L(\theta, a) = |\theta - a|$, a Bayes estimator for $\theta
 
 -   Assume that $\theta$ is continuous, so that if $m$ is the posterior median, then $\text{Pr}(\theta \geq m | \mathbf{x}) = \frac{1}{2} = \text{Pr}(\theta \leq m | \mathbf{x})$.
 
--   Let $a$ be any other estimator of $\theta$. Assume $a < m$. (The proof for $a > m$ is very similar.)
+-   Let $a$ be any other estimator of $\theta$. 
 
 -   We will show that
 
@@ -35,10 +34,12 @@ Under absolute loss $L(\theta, a) = |\theta - a|$, a Bayes estimator for $\theta
 
 ## Proof {.scrollable style="font-size: 90%;"}
 
+Let $m$ be the posterior median, and suppose $a < m$ is any other estimator.
+
 $$
 \begin{align}
-\mathbb{E}[L(\theta , a) | \mathbf{x}] & - \mathbb{E}[L(\theta, m) | \mathbf{x}] = \int |\theta - a| p(\theta | \mathbf{x}) d\theta - \int |\theta - m| p(\theta | \mathbf{x})d\theta \\ 
-&\class{fragment}{= \int \left(|\theta - a| - |\theta - m|\right) p(\theta | \mathbf{x})d\theta } \\
+\mathbb{E}[L(\theta , a) | \mathbf{x}] & - \mathbb{E}[L(\theta, m) | \mathbf{x}] = \int_{\Omega} |\theta - a| p(\theta | \mathbf{x}) d\theta - \int_{\Omega} |\theta - m| p(\theta | \mathbf{x})d\theta \\ 
+&\class{fragment}{= \int_{\Omega} \left(|\theta - a| - |\theta - m|\right) p(\theta | \mathbf{x})d\theta } \\
 &\class{fragment}{= \int_{-\infty}^{a} \left(|\theta - a| - |\theta - m|\right) p(\theta | \mathbf{x})d\theta + \int_{a}^{m} \left(|\theta - a| - |\theta - m|\right) p(\theta | \mathbf{x})d\theta + \int_{m}^{\infty} \left(|\theta - a| - |\theta - m|\right) p(\theta | \mathbf{x})d\theta }\\
 & \class{fragment}{= \int_{-\infty}^{a} ((a-\theta) - ( m - \theta)) p(\theta | \mathbf{x}) d\theta + \int_{a}^{m} ((\theta - a) - (m- \theta)) p(\theta | \mathbf{x}) d\theta  +
 \int_{m}^{\infty} ((\theta - a) - (\theta - m)) p(\theta | \mathbf{x}) d\theta} \\
@@ -49,6 +50,6 @@ $$
 &\class{fragment}{= (a-m) \text{Pr}(\theta \leq m | \mathbf{x}) +  (m-a) \text{Pr}(\theta \geq m | \mathbf{x})} \\
 &\class{fragment}{= (a-m)\left(\frac{1}{2}\right) + (m-a)\left(\frac{1}{2}\right)} \\
 &\class{fragment}{= (a-m)\left(\frac{1}{2}\right) - (a-m)\left(\frac{1}{2}\right)}\\
-&\class{fragment}{= 0}
+&\class{fragment}{= 0 \qquad \tiny{\square} }
 \end{align}
 $$

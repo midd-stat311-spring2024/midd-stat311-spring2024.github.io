@@ -42,8 +42,7 @@ format:
       - customs.scss
     toc: false
     page-layout: article
-    code-tools: false
-embed-resources: true
+
     
 editor: visual
 

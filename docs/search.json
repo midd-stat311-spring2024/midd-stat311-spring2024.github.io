@@ -1,80 +1,24 @@
 [
   {
-    "objectID": "weeks/week-08.html",
-    "href": "weeks/week-08.html",
-    "title": "Week 08",
+    "objectID": "weeks/hw/templates/hw2_r.html",
+    "href": "weeks/hw/templates/hw2_r.html",
+    "title": "STAT 311: Homework 2 (R)",
     "section": "",
-    "text": "Tuesday (10/31)\n\n\nCandidate job talk: Christian Stratton\n\n\n12:30-1:20pm in Warner 101\nTalk title: “An overview of Bayesian statistical methodology for ecological and environmental applications”\n\nTopics\n\nSummaries of distributions\nMoments\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nThursday (11/02)\n\n\nCandidate job talk: Maddie Rainey\n\n\n12:30-1:20pm in Warner 101\nTalk title: “Modeling Spatial Data with the Flexibility of Spatial Splines”\n\nTopics\n\nRecap Power and Taylor series\nMoment generating functions\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nFriday (11/03)\n\nLast day to drop classes\n\nMaterial through today is fair game for midterm 2!\n\nTopics\n\nMoment generating functions cont.\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity"
+    "text": "We want to answer the following question: How much does the prior distribution impact the posterior distribution of \\(\\theta\\)? Studying the impact of the prior distribution choice is called sensitivity analysis. More generally, sensitivity analysis occurs whenever we look at how varying our model assumptions impacts inference.\nWhen I arrived at Middlebury, I thought that the correct pronunciation of the school was “middle-BURRY”, but then a colleague told me that it is actually pronounced “middle-BERRY”. That being said, I’ve continued to hear both pronunciations around campus, and I think people just say “midd” to avoid the pronunciation issue altogether.\nLet \\(\\theta\\) be the true proportion of Middlebury students who pronounce the name as “middle-BURRY”. We will explore the posterior for \\(\\theta\\) under varying priors.\na) Choosing priors. Using the Beta distribution, construct and graph three possible prior distributions for \\(\\theta\\) by choosing different hyperparameters. For prior 1: make each value in the parameter space equally likely, for prior 2: make values in the center most likely, for prior 3: skew to the left.\nMake sure to state the hyperparameters for each prior, and try to pick Betas that are fairly different from each other. To learn more about a function, type ?command_name in the Console. e.g. ?dbeta\nBelow is a partially completed R chunk. Replace the underscores with relevant code, then change the eval = FALSE to eval = TRUE in the chunk header. You can run the code chunk by pressing the green triangle at the top-right of the chunk.\n\n# Sequence of parameter values (i.e. discretized parameter space)\np <- seq(0, 1, by = 0.01)\n\n# Prior 1\na1 <- ___\nb1 <- ___\nprior1 <- dbeta(x = p, shape1 = a1, shape2 = b1)\n\n# Prior 2\na2 <- ___\nb2 <- ___\nprior2 <- dbeta(x = p, shape1 = a2, shape2 = b2)\n\n# Prior 3\na3 <- ___\nb3 <- ___\nprior3 <- dbeta(____)\n\nplot(p, prior1, type=\"l\",ylab=\"Probability\", xlab=\"p\", col=\"green\", lwd=2, ylim=c(0,max(c(prior1, prior2, prior3))))\nlines(p,prior2,lty=2,col=\"blue\", lwd=2)\nlines(p,prior3,lty=3, col=\"purple\", lwd=2)\nlegend(\"topright\", legend=c(\"Prior 1\",\"Prior 2\", \"Prior 3\"),lty=1:3 , col=c(\"green\",\"blue\",\"purple\"))\n\nb) Collecting data. Ask 12 other Middlebury students (not in this class) to say the name of the college, and keep track of whether they pronounce it as “BURRY” (1) or “BERRY” (0). It’s important to not bias respondents by saying the name “Middlebury” yourself!\nSolution: enter the data here:\n\\(X_{1}\\):\n\\(X_{2}\\):\n\\(X_{3}\\):\n\\(X_{4}\\):\n\\(X_{5}\\):\n\\(X_{6}\\):\n\\(X_{7}\\):\n\\(X_{8}\\):\n\\(X_{9}\\):\n\\(X_{10}\\):\n\\(X_{11}\\):\n\\(X_{12}\\):\nc) Graphing posteriors (part 1). Using only the first three observations, compute and graph the three posterior distributions for the parameter based on your three prior distributions. Comment on any differences between the posteriors.\nAgain, replace the underscores with relevant code. Then change the eval = FALSE to eval = TRUE.\n\n# number of successes in first THREE observations\nx <- ___\n\n# number of observations under consideration\nn <- ___\n\n# posteriors\npost1_a <- dbeta(x=p, shape1 = ___, shape2 = ___)\npost2_a <- dbeta(x=p, shape1 = ___, shape2 = ___)\npost3_a <- dbeta(x=p, shape1 = ___, shape2 = ___)\n\n# plot\nplot(p, post1_a, type=\"l\",ylab=\"Probability\", xlab=\"p\", col=\"green\", lwd=2, ylim=c(0,max(c(post1_a, post2_a, post3_a))))\nlines(p,post2_a,lty=2,col=\"blue\", lwd=2)\nlines(p,post3_a,lty=3, col=\"purple\", lwd=2)\nlegend(\"topright\", legend=c(\"Prior 1\",\"Prior 2\", \"Prior 3\"),lty=1:3 , col=c(\"green\",\"blue\",\"purple\"))\n\nSolution:\nd) Graphing posteriors (part 2). Now using all of your observations, compute and graph the three posterior distributions for the parameter based on your three prior distributions. Comment on any differences between the posteriors.\nAgain, replace the underscores with relevant code. Then change the eval = FALSE to eval = TRUE.\n\nx2 <- ___\nn2 <- ___\n\n# posteriors\npost1_all <- dbeta(x=p, shape1 = ___, shape2 = ___)\npost2_all <- dbeta(x=p, shape1 = ___, shape2 = ___)\npost3_all <- dbeta(x=p, shape1 = ___, shape2 = ___)\n\nplot(p, post1_all, type=\"l\",ylab=\"Probability\", xlab=\"p\", col=\"green\", lwd=2, ylim=c(0,max(c(post1_all, post2_all, post3_all))))\nlines(p,post2_all,lty=2,col=\"blue\", lwd=2)\nlines(p,post3_all,lty=3, col=\"purple\", lwd=2)\nlegend(\"topright\", legend=c(\"Prior 1\",\"Prior 2\", \"Prior 3\"),lty=1:3 , col=c(\"green\",\"blue\",\"purple\"))\n\nSolution:\ne) Which prior distribution showed greater agreement with the data? Explain why it is important to select the prior distribution before collecting the data.\nSolution:"
   },
   {
-    "objectID": "weeks/week-09.html",
-    "href": "weeks/week-09.html",
-    "title": "Week 09",
-    "section": "",
-    "text": "Tuesday (11/07)\n\nTopics\n\nJoint distributions (discrete)\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nThursday (11/09)\n\nTopics\n\nJoint distribution (continuous and mixed)\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nFriday (11/10)\n\nTopics\n\n2D LOTUS\nCovariance and Correlation\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity"
-  },
-  {
-    "objectID": "weeks/week-04.html",
-    "href": "weeks/week-04.html",
-    "title": "Week 04",
-    "section": "",
-    "text": "Tuesday (10/03)\n\nTopics\n\nMore discrete RV’s\nCDF\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nThursday (10/05)\n\nTopics\n\nFunctions of RVs\nIndependence of RVs\nRVs in R\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nFriday (10/06)\n\nContent through today is fair game for Midterm 1\nTopics\n\nExpected value\nLOTUS\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity"
-  },
-  {
-    "objectID": "weeks/week-10.html",
-    "href": "weeks/week-10.html",
-    "title": "Week 10",
-    "section": "",
-    "text": "Tuesday (11/14)\n\nTopics\n\nChange of variable formula (1D and 2D)\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nNote the optional refresher video on change-of-variable from Calculus!\n\n\nClass activity\n\nClass activity\n\n\n\nThursday (11/16)\n\nMidterm II at 6-8pm tonight in Warner 104\nTopics\n\nMultinomial distribution\n\nDaily assignment\n\nDaily assignment\n\nNo submission to Canvas today, but please do skim the reading\n\n\nClass activity\n\nClass activity\n\n\n\nFriday (11/17)\n\nNo class! Take-home component of Midterm II released. Please consider using the usual class time to work on the take-home!\nHave a safe Thanksgiving break!"
-  },
-  {
-    "objectID": "weeks/week-11.html",
-    "href": "weeks/week-11.html",
-    "title": "Week 11",
-    "section": "",
-    "text": "Tuesday (11/28)\n\nTopics\n\nBeta distribution\nGamma distribution\nPoisson processes\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment (note, this is a bit longer than usual; please plan ahead!)\n\nClass activity\n\nClass activity\n\n\n\nThursday (11/30)\n\nTopics\n\nOrder statistics\nConditional expectation (given an event)\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nFriday (12/01)\n\nTopics\n\nConditional expectation (given a random variable)\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity"
-  },
-  {
-    "objectID": "weeks/week-05.html",
-    "href": "weeks/week-05.html",
-    "title": "Week 05",
-    "section": "",
-    "text": "Tuesday (10/10)\n\nTopics\n\nGeometric and Negative Binomial Distributions\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nThursday (10/12)\n\nMIDTERM 1 from 6-8pm in LIB 201\nTopics\n\nIndicator variables\nFundamental Bridge\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nFriday (10/06)\n\nFall break! No class!"
-  },
-  {
-    "objectID": "weeks/week-13.html",
-    "href": "weeks/week-13.html",
-    "title": "Week 13",
-    "section": "",
-    "text": "Monday (12/11)\n\nTopics\n\nCLT simulation in R\nExtra time for review?\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nTBD\n\nClass activity\n\nTBD"
-  },
-  {
-    "objectID": "weeks/week-07.html",
-    "href": "weeks/week-07.html",
-    "title": "Week 07",
-    "section": "",
-    "text": "Tuesday (10/24)\n\nTopics\n\nUniform distribution\nUniversality of the uniform\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nThursday (10/26)\n\nTopics\n\nNormal distribution\nContinuous random variables in R\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nFriday (10/27)\n\nTopics\n\nExponential distribution\nConnection between Exponential and Poisson\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity"
-  },
-  {
-    "objectID": "weeks/week-06.html",
-    "href": "weeks/week-06.html",
-    "title": "Week 06",
-    "section": "",
-    "text": "Tuesday (10/17)\n\nTopics\n\nVariance\nMore practice with the fundamental bridge\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nThursday (10/19)\n\nTopics\n\nPoisson distribution\nPoisson paradigm\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nFriday (10/20)\n\nTopics\n\nContinuous random variables\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity"
-  },
-  {
-    "objectID": "weeks/week-12.html",
-    "href": "weeks/week-12.html",
-    "title": "Week 12",
-    "section": "",
-    "text": "Tuesday (12/05)\n\nClass visit: Prof. Tang being observed by a colleague!\nTopics\n\nConditional variance\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nThursday (12/07)\n\nClass visit: Prof. Tang being observed by a colleague!\nTopics\n\nInequalities\nLaw of Large Numbers\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity\n\n\n\nFriday (12/08)\n\nTopics\n\nCentral Limit Theorem!\n\nDaily assignment\nTo be completed and submitted to Canvas by 7:45am\n\nDaily assignment\n\nClass activity\n\nClass activity"
+    "objectID": "weeks/hw/templates/hw2_r.html#question-2-assigned-for-friday-223",
+    "href": "weeks/hw/templates/hw2_r.html#question-2-assigned-for-friday-223",
+    "title": "STAT 311: Homework 2 (R)",
+    "section": "Question 2 (assigned for Friday 2/23)",
+    "text": "Question 2 (assigned for Friday 2/23)\nWe saw in class that the Normal distribution is the conjugate prior in the case of data from a Normal unknown mean and known variance. However, sometimes a conjugate prior does not accurately reflect prior knowledge and so we need to use a different prior. Suppose \\(X_{1}, \\ldots, X_{n} | \\theta \\sim N(\\theta, 1)\\) (conditionally independent) and let the prior for \\(\\theta\\) be \\[p(\\theta) = c e^{-|\\theta|}, \\qquad \\theta \\in \\mathbb{R}\\]\nfor some constant \\(c > 0\\) which is a normalizing constant that ensures the PDF integrates to 1.\na) Fill in the rest of the code below to write an R function for the kernel of the prior distribution of \\(\\theta\\) (i.e. your function takes the argument theta as input and should return a value equal to \\(e^{-|\\theta|}\\)). Then use the integrate() function to find the value of \\(c\\), which will be stored as the variable c in the code below. Set eval = TRUE when finished.\n(Note: the parameter space of \\(\\theta\\) is the entire real line, so the bounds for the integrate() function are -Inf and Inf).\n\nprior_kernel <- function(theta){\n  # write your code for the kernel of the prior here\n}\n\nval <- integrate(____)\n\n# normalizing constant for prior\nc <- ___\nc\n\nb) Suppose we observe \\(n = 6\\) data points: \\(X_{1} = 5, X_{2} = 4.1, X_{3} = 3.9, X_{4} = 6, X_{5} = 5.5, X_{6} = 4.8\\).\nThe function posterior_kernel() below takes in a value theta as input, and should return the posterior evaluated at theta, up to proportionality. Fill out the rest of the function. In the code below, sum_of_squares is manually calculating \\(\\sum_{i=1}^{n} (x_{i} - \\theta)^2\\) by iterating over each observation \\(i\\).\nIn particular, lh should be calculated using sum_of_squares.\nThen use your function and integrate() to find the normalizing constant of the posterior distribution of \\(\\theta\\) given the data. Call this normalizing constant c_post, and report its value. Set eval = TRUE when finished.\n\nposterior_kernel <- function(theta){\n  sum_of_squares <- 0\n  dat <- c(5, 4.1, 3.9, 6, 5.5, 4.8)\n  for(i in 1:length(dat)){\n    square_i <- (dat[i] - theta)^2\n    sum_of_squares <- sum_of_squares + square_i\n  }\n  lh <- ___ # likelihood up to proportionality \n  to_return <- ___ # this should be (likelihood) x (un-normalized prior evaluated at theta)\n  return(to_return)\n}\n\n# integrate\n\n# store/save normalizing constant\n\nc): Graph the exact prior and posterior distributions of \\(\\theta\\) on the same graph for the provided values of \\(\\theta \\in [-3, 10]\\). Here, “exact” means including the normalizing constants such that the distributions are proper PDFs.\n\ntheta_vals <- seq(-3, 10, 0.1)\n\n## plot posterior \nplot(____, ____, type=\"l\",ylab=\"Probability\", xlab=\"p\", col=\"green\", lwd=2)\n\n# add prior\nlines(____, ____,lty=2,col=\"blue\", lwd=2)\nlegend(\"topright\", legend=c(\"posterior\", \"prior\"),lty=1:3 , col=c(\"green\",\"blue\"))\n\nd): Use the integrate() function to find the Bayes estimate for \\(\\theta\\) under squared loss (you will need to write a new R function). Compare the Bayes estimate to the observed sample mean. (Recall that we can find the mean value of a vector of values using the mean() function.)\n\n# write new R function\n\n# obtain Bayes estimate\n\n# obtain sample mean\n\nSolution:"
   },
   {
     "objectID": "weeks/week-02.html",
     "href": "weeks/week-02.html",
     "title": "Week 02",
     "section": "",
-    "text": "Tuesday (02/20)\n\nTopics\n\nMore with posterior distributions\n\nDaily assignment\n\nNone for today!\nPlease bring a laptop with R ready to go\n\nClass activity\n\nPrior and posterior practice problems\n\n\n\nThursday (02/22)\n\nTopics\n\nConjugate priors\nImproper priors\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nDaily assignment\n\nClass activity\n\nComputing posteriors in R\n\n.Rmd template:  .Rmd \nFilled-in code: computing posteriors in R\n\n\n\n\nFriday (02/23)\n\nTopics\n\nBayes estimators\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nDaily assignment"
+    "text": "Tuesday (02/20)\n\nTopics\n\nMore with posterior distributions\n\nDaily assignment\n\nNone for today!\nPlease bring a laptop with R ready to go\n\nClass activity\n\nPrior and posterior practice problems\n\n\n\nThursday (02/22)\n\nTopics\n\nConjugate priors\nImproper priors\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nDaily assignment\n\nClass activity\n\nComputing posteriors in R\n\n.Rmd template:  .Rmd \nFilled-in code: computing posteriors in R\n\nConjugate prior practice problem\n\n\n\nFriday (02/23)\n\nTopics\n\nBayes estimators\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nDaily assignment\n\nClass activity\n\nTBD"
   },
   {
     "objectID": "weeks/week-03.html",
@@ -89,6 +33,83 @@
     "title": "Week 01",
     "section": "",
     "text": "Tuesday (02/13)\n\nTopics\n\nWelcome!\nCourse logistics\n\nDaily assignment\n\nReview syllabus\nOpen (or re-download) RStudio and make sure everything is working\n\nClass activity\n\nIntroduction to inference\n\n\n\nThursday (02/15)\n\nTopics\n\nCore terminology\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nDaily assignment\n\n\n\nFriday (02/16)\n\nTopics\n\nPrior distributions\nPosterior distributions\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nDaily assignment"
+  },
+  {
+    "objectID": "weeks/class/posteriors_in_R_solns.html",
+    "href": "weeks/class/posteriors_in_R_solns.html",
+    "title": "Obtaining posteriors in R",
+    "section": "",
+    "text": "Suppose \\(X_{1},\\ldots, X_{5}\\) form a random sample from a \\(\\text{Geometric}(\\theta)\\) distribution, where \\(\\theta \\in (0,1)\\) is the unknown probability of success. We can use a Beta prior for \\(\\theta\\): \\(\\theta \\sim \\text{Beta}(a, b)\\)."
+  },
+  {
+    "objectID": "weeks/class/posteriors_in_R_solns.html#visualize-prior",
+    "href": "weeks/class/posteriors_in_R_solns.html#visualize-prior",
+    "title": "Obtaining posteriors in R",
+    "section": "Visualize prior",
+    "text": "Visualize prior\nSuppose I pick hyperparameter values \\(a = 1\\) and \\(b = 4\\). What does this particular distribution look like?\n\ntheta_vals <- seq(0.01, 0.99, by = 0.01)\na <- 1\nb <- 4\n\nprior_vals <- dbeta(theta_vals, shape1 = a, shape2 = b)\n\nplot(theta_vals, prior_vals, type = \"l\", main = \"Prior\")"
+  },
+  {
+    "objectID": "weeks/class/posteriors_in_R_solns.html#verify-prior-is-a-proper-pdf",
+    "href": "weeks/class/posteriors_in_R_solns.html#verify-prior-is-a-proper-pdf",
+    "title": "Obtaining posteriors in R",
+    "section": "Verify prior is a proper PDF",
+    "text": "Verify prior is a proper PDF\nWe know the prior is a valid PDF because the Beta distribution is a well known distribution. But let’s double check by using R to verify that that the PDF integrates to 1.\nWe will write a function called beta_prior that takes in an argument theta as input, and should return the Beta density evaluated at that value of theta and our choice of hyperparameters. Then, we will integrate() our function over its support to see if the PDF in fact integrates to 1.\n\nbeta_prior <- function(theta){\n  to_return <- dbeta(theta, a, b)\n  return(to_return)\n}\n\nintegrate(beta_prior, lower = 0, upper = 1)\n\n1 with absolute error < 1.1e-14\n\n# to obtain the number by itself\nintegrate(beta_prior, lower = 0, upper = 1)$value\n\n[1] 1"
+  },
+  {
+    "objectID": "weeks/class/posteriors_in_R_solns.html#obtain-and-plot-posterior",
+    "href": "weeks/class/posteriors_in_R_solns.html#obtain-and-plot-posterior",
+    "title": "Obtaining posteriors in R",
+    "section": "Obtain and plot posterior",
+    "text": "Obtain and plot posterior\nNow suppose we observe \\(X = (3, 7, 3, 5, 6)\\).\n\nx <- c(3,7,3,5,6)\nn <- length(x)\n\n\nFrom known results\nWhat is the posterior for \\(\\theta\\) under our \\(\\text{Beta}(1,4)\\) prior given the observed data? From class work, we know:\n\\[\\theta | \\mathbf{x} \\sim \\text{Beta}(1 + n, 4 + \\sum_{i=1}^{n} x_{i})\\]\n\npost_vals <- dbeta(theta_vals, a + n, b + sum(x))\nplot(theta_vals, post_vals, type = \"l\", main = \"Using Beta posterior\")\n\n\n\n\n\n\nBy obtaining normalizing constant\nSuppose we didn’t know that the posterior is Beta. However, we know that the posterior is always proportional to the likelihood times prior; all we lack is the normalizing constant. So let’s write a function that evaluates the kernel of the posterior (i.e. the posterior up to proportionality), then use it to find the normalizing constant.\n\npost_kernel <- function(theta){\n  # obtain likelihood for theta under Geometric (up to proportionality)\n  lh <- 1\n  for(i in 1:n){\n    lh <- lh * ((1-theta)^x[i]) * theta\n  }\n  # prior (up to proportionality)\n  prior <- theta^(a-1) * (1-theta)^(b-1)\n  to_return <- lh * prior\n  return(to_return)\n}\n\nval <- integrate(post_kernel, 0, 1)$val\nval\n\n[1] 1.504799e-07\n\n# We can even verify this, since we calculated the normalizing constant analytically!\n(gamma(a + n) * gamma(b + sum(x)))/gamma(a + b + n + sum(x))\n\n[1] 1.504799e-07\n\npost_vals2 <- post_kernel(theta_vals) / val\n\nWe can see that 1) the posterior obtained through normalization agrees with the analytic result, and 2) the unnormalized posterior has exactly the same shape as the normalized:\n\npar(mfrow = c(1,2))\nplot(theta_vals, post_vals2, type = \"l\", main = \"Using normalization\")\nplot(theta_vals, post_kernel(theta_vals), type = \"l\", main = \"Unnormalized\",\n     ylab = \"density\")\n\n\n\n\nLastly, we can visualize the prior and posterior on the same plot by first creating one plot, then using the lines() function to add additional lines to the original plot.\n\nplot(theta_vals, post_vals2, type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\nlines(theta_vals, prior_vals, type = \"l\", col = \"orange\")"
+  },
+  {
+    "objectID": "weeks/class/templates/posteriors_in_R.html",
+    "href": "weeks/class/templates/posteriors_in_R.html",
+    "title": "Obtaining posteriors in R",
+    "section": "",
+    "text": "Suppose \\(X_{1},\\ldots, X_{5}\\) form a random sample from a \\(\\text{Geometric}(\\theta)\\) distribution, where \\(\\theta \\in (0,1)\\) is the unknown probability of success. We can use a Beta prior for \\(\\theta\\): \\(\\theta \\sim \\text{Beta}(a, b)\\)."
+  },
+  {
+    "objectID": "weeks/class/templates/posteriors_in_R.html#visualize-prior",
+    "href": "weeks/class/templates/posteriors_in_R.html#visualize-prior",
+    "title": "Obtaining posteriors in R",
+    "section": "Visualize prior",
+    "text": "Visualize prior\nSuppose I pick hyperparameter values \\(a = 1\\) and \\(b = 4\\). What does this particular distribution look like?\n\n# create vector of possible theta values\ntheta_vals <- seq(0.01, 0.99, by = 0.01)\n\n# set prior hyperparameters\n\n\n# evaluate the prior at each of the elements of theta_vals\nprior_vals <- \n\n# plot prior dist"
+  },
+  {
+    "objectID": "weeks/class/templates/posteriors_in_R.html#verify-prior-is-a-proper-pdf",
+    "href": "weeks/class/templates/posteriors_in_R.html#verify-prior-is-a-proper-pdf",
+    "title": "Obtaining posteriors in R",
+    "section": "Verify prior is a proper PDF",
+    "text": "Verify prior is a proper PDF\nWe know the prior is a valid PDF because the Beta distribution is a well known distribution. But let’s double check by using R to verify that that the PDF integrates to 1.\nWe will write a function called beta_prior that takes in an argument theta as input, and should return the Beta density evaluated at that value of theta and our choice of hyperparameters. Then, we will integrate() our function over its support to see if the PDF in fact integrates to 1.\n\n# write function that evaluates our prior\nbeta_prior <- function(theta){\n  \n}\n\n# verify that our prior integrates to 1"
+  },
+  {
+    "objectID": "weeks/class/templates/posteriors_in_R.html#obtain-and-plot-posterior",
+    "href": "weeks/class/templates/posteriors_in_R.html#obtain-and-plot-posterior",
+    "title": "Obtaining posteriors in R",
+    "section": "Obtain and plot posterior",
+    "text": "Obtain and plot posterior\nNow suppose we observe \\(X = (3, 1, 2, 5, 6)\\).\n\ndat <- c(3,1,2,5,6)\nn <- length(dat)\n\n\nFrom known results\nWhat is the posterior for \\(\\theta\\) under our \\(\\text{Beta}(2,2)\\) prior given the observed data? From class work, we know:\n\\[\\theta | \\mathbf{x} \\sim\\]\n\n# create vector of posterior values\n\n# plot posterior\n\n\n\nBy obtaining normalizing constant\nSuppose we didn’t know that the posterior is a Beta. However, we know that the posterior is always proportional to the likelihood times prior! So all we lack is the normalizing constant. We can write a function that evaluates the kernel of the posterior (i.e. all the parts that include \\(\\theta\\)).\n\n# write function that evaluate the kernel of the posterior for a given theta value\n\n# integrate the function to obtain normalizing constant\n\n# obtain normalizing constant \n\n# plot posterior\n\nWe can see that the unnormalized posterior has exactly the same shape:\n\nplot(theta_vals, post_kernel(theta_vals), type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\n\nWe can visualize the prior and posterior on the same plot by first creating one plot, then using the lines() function to add additional lines to the original plot.\n\nplot(theta_vals, post_vals, type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\nlines(theta_vals, prior_vals, type = \"l\", col = \"orange\")"
+  },
+  {
+    "objectID": "weeks/class/proof_bayes_est.html#theorem",
+    "href": "weeks/class/proof_bayes_est.html#theorem",
+    "title": "Bayes estimator under absolute loss",
+    "section": "Theorem",
+    "text": "Theorem\nUnder absolute loss \\(L(\\theta, a) = |\\theta - a|\\), a Bayes estimator for \\(\\theta\\) is any posterior median of \\(\\theta\\).\n\nThat is, a Bayes estimator is a value \\(\\delta(\\mathbf{X}) \\equiv m\\) such that \\(\\text{Pr}(\\theta \\leq m | \\mathbf{x}) \\leq \\frac{1}{2}\\) and \\(\\text{Pr}(\\theta \\geq m | \\mathbf{x}) \\leq \\frac{1}{2}\\).\nNote that when \\(\\theta\\) is continuous, there exists a single median."
+  },
+  {
+    "objectID": "weeks/class/proof_bayes_est.html#proof-set-up",
+    "href": "weeks/class/proof_bayes_est.html#proof-set-up",
+    "title": "Bayes estimator under absolute loss",
+    "section": "Proof set-up",
+    "text": "Proof set-up\n\nNote that the absolute value function is not differentiable, so proving a maximum/minimum cannot rely on derivatives!\nAssume that \\(\\theta\\) is continuous, so that if \\(m\\) is the posterior median, then \\(\\text{Pr}(\\theta \\geq m | \\mathbf{x}) = \\frac{1}{2} = \\text{Pr}(\\theta \\leq m | \\mathbf{x})\\).\nLet \\(a\\) be any other estimator of \\(\\theta\\). Assume \\(a < m\\). (The proof for \\(a > m\\) is very similar.)\nWe will show that\n\\[\n\\mathbb{E}[L(\\theta , a) | \\mathbf{x}] - \\mathbb{E}[L(\\theta, m) | \\mathbf{x}]  \\geq 0\n\\]\nthus demonstrating that \\(m\\) minimizes the expected loss."
+  },
+  {
+    "objectID": "weeks/class/proof_bayes_est.html#proof",
+    "href": "weeks/class/proof_bayes_est.html#proof",
+    "title": "Bayes estimator under absolute loss",
+    "section": "Proof",
+    "text": "Proof\n\\[\n\\begin{align}\n\\mathbb{E}[L(\\theta , a) | \\mathbf{x}] & - \\mathbb{E}[L(\\theta, m) | \\mathbf{x}] = \\int |\\theta - a| p(\\theta | \\mathbf{x}) d\\theta - \\int |\\theta - m| p(\\theta | \\mathbf{x})d\\theta \\\\\n&\\class{fragment}{= \\int \\left(|\\theta - a| - |\\theta - m|\\right) p(\\theta | \\mathbf{x})d\\theta } \\\\\n&\\class{fragment}{= \\int_{-\\infty}^{a} \\left(|\\theta - a| - |\\theta - m|\\right) p(\\theta | \\mathbf{x})d\\theta + \\int_{a}^{m} \\left(|\\theta - a| - |\\theta - m|\\right) p(\\theta | \\mathbf{x})d\\theta + \\int_{m}^{\\infty} \\left(|\\theta - a| - |\\theta - m|\\right) p(\\theta | \\mathbf{x})d\\theta }\\\\\n& \\class{fragment}{= \\int_{-\\infty}^{a} ((a-\\theta) - ( m - \\theta)) p(\\theta | \\mathbf{x}) d\\theta + \\int_{a}^{m} ((\\theta - a) - (m- \\theta)) p(\\theta | \\mathbf{x}) d\\theta  +\n\\int_{m}^{\\infty} ((\\theta - a) - (\\theta - m)) p(\\theta | \\mathbf{x}) d\\theta} \\\\\n&\\class{fragment}{= \\int_{-\\infty}^{a} (a - m)  p(\\theta | \\mathbf{x}) d\\theta + \\int_{a}^{m} (2\\theta - a- m)  p(\\theta | \\mathbf{x}) d\\theta + \\int_{m}^{\\infty} (m-a) p(\\theta | \\mathbf{x}) d\\theta} \\\\\n&\\class{fragment}{\\color{orange}{\\geq}  \\int_{-\\infty}^{a} (a - m)  p(\\theta | \\mathbf{x}) d\\theta + \\int_{a}^{m} (2\\color{orange}{a} - a- m)  p(\\theta | \\mathbf{x}) d\\theta + \\int_{m}^{\\infty} (m-a) p(\\theta | \\mathbf{x}) d\\theta} \\\\\n&\\class{fragment}{= (a-m)\\text{Pr}(\\theta \\leq a | \\mathbf{x}) + \\color{purple}{(a-m)\\text{Pr}(a  < \\theta \\leq m | \\mathbf{x}) }+ (m-a) \\text{Pr}(\\theta \\geq m | \\mathbf{x})} \\\\\n&\\class{fragment}{ = (a-m)\\text{Pr}(\\theta \\leq a | \\mathbf{x}) + \\color{purple}{(a-m) \\text{Pr}(\\theta \\leq m | \\mathbf{x})  - (a-m) \\text{Pr}(\\theta \\leq a | \\mathbf{x})} + (m-a) \\text{Pr}(\\theta \\geq m | \\mathbf{x}) } \\\\\n&\\class{fragment}{= (a-m) \\text{Pr}(\\theta \\leq m | \\mathbf{x}) +  (m-a) \\text{Pr}(\\theta \\geq m | \\mathbf{x})} \\\\\n&\\class{fragment}{= (a-m)\\left(\\frac{1}{2}\\right) + (m-a)\\left(\\frac{1}{2}\\right)} \\\\\n&\\class{fragment}{= (a-m)\\left(\\frac{1}{2}\\right) - (a-m)\\left(\\frac{1}{2}\\right)}\\\\\n&\\class{fragment}{= 0}\n\\end{align}\n\\]"
   },
   {
     "objectID": "homework.html",
@@ -126,150 +147,10 @@
     "text": "No need to start worrying about these yet!"
   },
   {
-    "objectID": "exam.html#sec-midterm2",
-    "href": "exam.html#sec-midterm2",
-    "title": "Exams",
-    "section": "Midterm 2",
-    "text": "Midterm 2\nMidterm 2 will feature both an in-person component and a take-home component. Some aspects of the take-home component will require R, whereas the in-person part will not.\nMaterial through the end of Week 8 (up to and including MGFs) is fair game for this midterm. The exam will be lightly cumulative, but with emphasis on material covered since the first midterm.\nThe grading will be as follows: score on in-person component + score on take-home = final score on Midterm 2.\n\nI will host a review session on Sunday, 11/12 from 3-5pm in Warner 105!\n\nPractice problems here! Solutions will be posted beginning of Week 10.\nUpdate 11/09/23: I accidentally included a problem that requires topics we have not covered yet. I have now removed it from the practice problems.\n\nIn-person component\n6-8 pm on Thursday, 11/16/23 in Warner 104\nFormat and Resources\n\nYou are allowed one, double-sided 8.5x11 cheat sheet.\n\nYou may write definitions, theorems, properties, distributions, and other “factual” type of information. You are not allowed to write any worked out examples or problems.\nYou should write down all of the PMFs/PDFs for the “common” distributions, along with expected values, variances, MGFs, and CDFs if we have learned them or seen them in the textbook\nThe cheat sheet will be submitted alongside your midterm.\n\nQuestions on the in-class exam will be similar in difficulty and scope to questions from both Daily Assignments and Class Activities.\n\n\n\nTake-home component\nAvailable from 8:00am on Friday, 11/17/23 through 11:59pm on Sunday, 11/19/23.\nWe will not have class on Friday, 11/17/23.\n\nThe take-home is assigned in such a way to give flexibility in travel and so you can fully enjoy your Thanksgiving break starting at 2pm on Friday (if you so choose). Therefore, I hope that some of you use the usual class time to work on the take-home.\n\nFormat\n\nThe take-home will be made available on Canvas. You will have 3 hours from opening the assignment to complete the take-home component of the midterm.\n\nIt is your responsibility to make sure that everything is uploaded in time.\nYour solutions should be neatly written or typed. If you scan a handwritten assignment, be sure to review the legibility of your scan and upload before you submit your assignment.\n\nQuestions on the take-home exam will be similar in difficulty and scope to questions on homework.\n\nResources\n\nYou should e-mail Prof. Tang with clarifying questions only! I will do my best to answer within a few hours of you sending the email, but you should expect a longer wait if you send an email between the hours of 8pm and 8am.\nYou may use any notes you’ve taken for this class, your work on any previous homework, in-class, and daily assignments, any solutions posted to the course Canvas site, comments you’ve received on homework or assignments through Canvas, and Blitzstein’s textbook/videos.\nYou may not use any other resources other than those listed above. You may not seek answers to exam questions online or ChatGPT, or in other textbooks, and may not work with others on the exam.\n\n\n\nRevisions\nThere is an opportunity to earn points back on the second midterm, but if you take advantage of the opportunity, there is the potential of receiving an overall lower score on the midterm. Details:\n\nFrom 12/11 at 5:00 pm - 12/13 11:59pm, new problems will be made available via Canvas quiz. Upon starting the quiz, will have 60 minutes to submit your solutions.\n\nResources for the revision are the same as the resources for the take-home component (see above).\n\nYour updated Midterm 2 score will be a weighted average of your original midterm 2 score and your score on the new problem(s): \\[\\text{new score} = 0.8(\\text{original score}) + 0.2(\\text{revision score})\\]\n\nDepending on how you do on the revision, your new score may be lower than the original. See this figure:\n\n\n\nFind your original score on the x-axis. Then based on how you do on the revision problem (colors), you can find your updated score (y-axis).\n\n\n\nYou are welcome to “start” the quiz on Canvas and decide to not finish it. I will only grade and update scores for those who submit a solution to the quiz."
-  },
-  {
-    "objectID": "exam.html#sec-final",
-    "href": "exam.html#sec-final",
-    "title": "Exams",
-    "section": "Final exam",
-    "text": "Final exam\n\nAn opportunity to celebrate all that you have learned this semester!!\n\nThe final exam will be in-person on the college-assigned date and time of Thursday, 12/14 from 2-5pm. in WNS 105 (our usual classroom).\nMaterial from the entire semester is fair game and the final is lightly cumulative, but there will be a heavy emphasis on content covered after the second midterm (Week 9 content onward).\nPractice problems are available here, with solutions provided on Canvas after our final class. Note that some of these problems are more difficult than I would expect you to be able to do on the final. Practicing on harder problems means you’ll be better prepared for the actual final!\n\nI will also be having office hours on Tuesday, 12/12 from 11:00am-12:00pm, then from 3:30-4:30pm.\n\nResources\n\nYou are allowed one, double-sided 8.5x11 cheat sheet.\n\nYou may write definitions, theorems, properties, distributions, and other “factual” type of information. You are not allowed to write any worked out examples or problems.\nThe cheat sheet will be submitted alongside your midterm.\n\nYou will be provided a “distribution sheet” that lists the PMFs/PDFs of the “common” distributions we have covered, along with their expected values and variances.\n\nI will share the distribution sheet with you on the final day of class so you won’t be surprised when you take the exam\n\nUpdate 12/11 ~5:00pm: added Multinomial distribution to sheet. Thanks Thomas for reminding me! Note that expectation and variance are not provided for it…\n\nFormulas for MGFs or CDFs will not be provided on this distribution sheet.\nYou are welcome to write the formulas for other distributions you have encountered in this course on your note sheet."
-  },
-  {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
     "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome!\nPrior and posterior distributions\n\n\n\nWeek 02\n\nConjugate priors\nBayes estimators\n\n\n\nWeek 03\n\nMaximum likelihood estimation"
-  },
-  {
-    "objectID": "weeks/class/posteriors_in_R.html",
-    "href": "weeks/class/posteriors_in_R.html",
-    "title": "Obtaining posteriors in R",
-    "section": "",
-    "text": "Suppose \\(X_{1},\\ldots, X_{5}\\) form a random sample from a \\(\\text{Geometric}(\\theta)\\) distribution, where \\(\\theta \\in (0,1)\\) is the unknown probability of success. We can use a Beta prior for \\(\\theta\\): \\(\\theta \\sim \\text{Beta}(a, b)\\)."
-  },
-  {
-    "objectID": "weeks/class/posteriors_in_R.html#visualize-prior",
-    "href": "weeks/class/posteriors_in_R.html#visualize-prior",
-    "title": "Obtaining posteriors in R",
-    "section": "Visualize prior",
-    "text": "Visualize prior\nSuppose I pick hyperparameter values \\(a = 1\\) and \\(b = 4\\). What does this particular distribution look like?\n\n# create vector of possible theta values\ntheta_vals <- seq(0.01, 0.99, by = 0.01)\n\n# set prior hyperparameters\n\n\n# evaluate the prior at each of the elements of theta_vals\nprior_vals <- \n\n# plot prior dist"
-  },
-  {
-    "objectID": "weeks/class/posteriors_in_R.html#verify-prior-is-a-proper-pdf",
-    "href": "weeks/class/posteriors_in_R.html#verify-prior-is-a-proper-pdf",
-    "title": "Obtaining posteriors in R",
-    "section": "Verify prior is a proper PDF",
-    "text": "Verify prior is a proper PDF\nWe know the prior is a valid PDF because the Beta distribution is a well known distribution. But let’s double check by using R to verify that that the PDF integrates to 1.\nWe will write a function called beta_prior that takes in an argument theta as input, and should return the Beta density evaluated at that value of theta and our choice of hyperparameters. Then, we will integrate() our function over its support to see if the PDF in fact integrates to 1.\n\n# write function that evaluates our prior\nbeta_prior <- function(theta){\n  \n}\n\n# verify that our prior integrates to 1"
-  },
-  {
-    "objectID": "weeks/class/posteriors_in_R.html#obtain-and-plot-posterior",
-    "href": "weeks/class/posteriors_in_R.html#obtain-and-plot-posterior",
-    "title": "Obtaining posteriors in R",
-    "section": "Obtain and plot posterior",
-    "text": "Obtain and plot posterior\nNow suppose we observe \\(X = (3, 1, 2, 5, 6)\\).\n\ndat <- c(3,1,2,5,6)\nn <- length(dat)\n\n\nFrom known results\nWhat is the posterior for \\(\\theta\\) under our \\(\\text{Beta}(2,2)\\) prior given the observed data? From class work, we know:\n\\[\\theta | \\mathbf{x} \\sim\\]\n\n# create vector of posterior values\n\n# plot posterior\n\n\n\nBy obtaining normalizing constant\nSuppose we didn’t know that the posterior is a Beta. However, we know that the posterior is always proportional to the likelihood times prior! So all we lack is the normalizing constant. We can write a function that evaluates the kernel of the posterior (i.e. all the parts that include \\(\\theta\\)).\n\n# write function that evaluate the kernel of the posterior for a given theta value\n\n# integrate the function to obtain normalizing constant\n\n# obtain normalizing constant \n\n# plot posterior\n\nWe can see that the unnormalized posterior has exactly the same shape:\n\nplot(theta_vals, post_kernel(theta_vals), type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\n\nWe can visualize the prior and posterior on the same plot by first creating one plot, then using the lines() function to add additional lines to the original plot.\n\nplot(theta_vals, post_vals, type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\nlines(theta_vals, prior_vals, type = \"l\", col = \"orange\")"
-  },
-  {
-    "objectID": "weeks/class/posteriors_in_R_solns.html",
-    "href": "weeks/class/posteriors_in_R_solns.html",
-    "title": "Obtaining posteriors in R",
-    "section": "",
-    "text": "Suppose \\(X_{1},\\ldots, X_{5}\\) form a random sample from a \\(\\text{Geometric}(\\theta)\\) distribution, where \\(\\theta \\in (0,1)\\) is the unknown probability of success. We can use a Beta prior for \\(\\theta\\): \\(\\theta \\sim \\text{Beta}(a, b)\\)."
-  },
-  {
-    "objectID": "weeks/class/posteriors_in_R_solns.html#visualize-prior",
-    "href": "weeks/class/posteriors_in_R_solns.html#visualize-prior",
-    "title": "Obtaining posteriors in R",
-    "section": "Visualize prior",
-    "text": "Visualize prior\nSuppose I pick hyperparameter values \\(a = 1\\) and \\(b = 4\\). What does this particular distribution look like?\n\ntheta_vals <- seq(0.01, 0.99, by = 0.01)\na <- 1\nb <- 4\n\nprior_vals <- dbeta(theta_vals, shape1 = a, shape2 = b)\n\nplot(theta_vals, prior_vals, type = \"l\", main = \"Prior\")"
-  },
-  {
-    "objectID": "weeks/class/posteriors_in_R_solns.html#verify-prior-is-a-proper-pdf",
-    "href": "weeks/class/posteriors_in_R_solns.html#verify-prior-is-a-proper-pdf",
-    "title": "Obtaining posteriors in R",
-    "section": "Verify prior is a proper PDF",
-    "text": "Verify prior is a proper PDF\nWe know the prior is a valid PDF because the Beta distribution is a well known distribution. But let’s double check by using R to verify that that the PDF integrates to 1.\nWe will write a function called beta_prior that takes in an argument theta as input, and should return the Beta density evaluated at that value of theta and our choice of hyperparameters. Then, we will integrate() our function over its support to see if the PDF in fact integrates to 1.\n\nbeta_prior <- function(theta){\n  to_return <- dbeta(theta, a, b)\n  return(to_return)\n}\n\nintegrate(beta_prior, lower = 0, upper = 1)\n\n1 with absolute error < 1.1e-14\n\n# to obtain the number by itself\nintegrate(beta_prior, lower = 0, upper = 1)$value\n\n[1] 1"
-  },
-  {
-    "objectID": "weeks/class/posteriors_in_R_solns.html#obtain-and-plot-posterior",
-    "href": "weeks/class/posteriors_in_R_solns.html#obtain-and-plot-posterior",
-    "title": "Obtaining posteriors in R",
-    "section": "Obtain and plot posterior",
-    "text": "Obtain and plot posterior\nNow suppose we observe \\(X = (3, 7, 3, 5, 6)\\).\n\nx <- c(3,7,3,5,6)\nn <- length(x)\n\n\nFrom known results\nWhat is the posterior for \\(\\theta\\) under our \\(\\text{Beta}(1,4)\\) prior given the observed data? From class work, we know:\n\\[\\theta | \\mathbf{x} \\sim \\text{Beta}(1 + n, 4 + \\sum_{i=1}^{n} x_{i})\\]\n\npost_vals <- dbeta(theta_vals, a + n, b + sum(x))\nplot(theta_vals, post_vals, type = \"l\", main = \"Using Beta posterior\")\n\n\n\n\n\n\nBy obtaining normalizing constant\nSuppose we didn’t know that the posterior is Beta. However, we know that the posterior is always proportional to the likelihood times prior; all we lack is the normalizing constant. So let’s write a function that evaluates the kernel of the posterior (i.e. the posterior up to proportionality), then use it to find the normalizing constant.\n\npost_kernel <- function(theta){\n  # obtain likelihood for theta under Geometric (up to proportionality)\n  lh <- 1\n  for(i in 1:n){\n    lh <- lh * ((1-theta)^x[i]) * theta\n  }\n  # prior (up to proportionality)\n  prior <- theta^(a-1) * (1-theta)^(b-1)\n  to_return <- lh * prior\n  return(to_return)\n}\n\nval <- integrate(post_kernel, 0, 1)$val\nval\n\n[1] 1.504799e-07\n\n# We can even verify this, since we calculated the normalizing constant analytically!\n(gamma(a + n) * gamma(b + sum(x)))/gamma(a + b + n + sum(x))\n\n[1] 1.504799e-07\n\npost_vals2 <- post_kernel(theta_vals) / val\n\nWe can see that 1) the posterior obtained through normalization agrees with the analytic result, and 2) the unnormalized posterior has exactly the same shape as the normalized:\n\npar(mfrow = c(1,2))\nplot(theta_vals, post_vals2, type = \"l\", main = \"Using normalization\")\nplot(theta_vals, post_kernel(theta_vals), type = \"l\", main = \"Unnormalized\",\n     ylab = \"density\")\n\n\n\n\nLastly, we can visualize the prior and posterior on the same plot by first creating one plot, then using the lines() function to add additional lines to the original plot.\n\nplot(theta_vals, post_vals2, type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\nlines(theta_vals, prior_vals, type = \"l\", col = \"orange\")"
-  },
-  {
-    "objectID": "weeks/templates/posteriors_in_R.html",
-    "href": "weeks/templates/posteriors_in_R.html",
-    "title": "Obtaining posteriors in R",
-    "section": "",
-    "text": "Suppose \\(X_{1},\\ldots, X_{5}\\) form a random sample from a \\(\\text{Geometric}(\\theta)\\) distribution, where \\(\\theta \\in (0,1)\\) is the unknown probability of success. We can use a Beta prior for \\(\\theta\\): \\(\\theta \\sim \\text{Beta}(a, b)\\)."
-  },
-  {
-    "objectID": "weeks/templates/posteriors_in_R.html#visualize-prior",
-    "href": "weeks/templates/posteriors_in_R.html#visualize-prior",
-    "title": "Obtaining posteriors in R",
-    "section": "Visualize prior",
-    "text": "Visualize prior\nSuppose I pick hyperparameter values \\(a = 1\\) and \\(b = 4\\). What does this particular distribution look like?\n\n# create vector of possible theta values\ntheta_vals <- seq(0.01, 0.99, by = 0.01)\n\n# set prior hyperparameters\n\n\n# evaluate the prior at each of the elements of theta_vals\nprior_vals <- \n\n# plot prior dist"
-  },
-  {
-    "objectID": "weeks/templates/posteriors_in_R.html#verify-prior-is-a-proper-pdf",
-    "href": "weeks/templates/posteriors_in_R.html#verify-prior-is-a-proper-pdf",
-    "title": "Obtaining posteriors in R",
-    "section": "Verify prior is a proper PDF",
-    "text": "Verify prior is a proper PDF\nWe know the prior is a valid PDF because the Beta distribution is a well known distribution. But let’s double check by using R to verify that that the PDF integrates to 1.\nWe will write a function called beta_prior that takes in an argument theta as input, and should return the Beta density evaluated at that value of theta and our choice of hyperparameters. Then, we will integrate() our function over its support to see if the PDF in fact integrates to 1.\n\n# write function that evaluates our prior\nbeta_prior <- function(theta){\n  \n}\n\n# verify that our prior integrates to 1"
-  },
-  {
-    "objectID": "weeks/templates/posteriors_in_R.html#obtain-and-plot-posterior",
-    "href": "weeks/templates/posteriors_in_R.html#obtain-and-plot-posterior",
-    "title": "Obtaining posteriors in R",
-    "section": "Obtain and plot posterior",
-    "text": "Obtain and plot posterior\nNow suppose we observe \\(X = (3, 1, 2, 5, 6)\\).\n\ndat <- c(3,1,2,5,6)\nn <- length(dat)\n\n\nFrom known results\nWhat is the posterior for \\(\\theta\\) under our \\(\\text{Beta}(2,2)\\) prior given the observed data? From class work, we know:\n\\[\\theta | \\mathbf{x} \\sim\\]\n\n# create vector of posterior values\n\n# plot posterior\n\n\n\nBy obtaining normalizing constant\nSuppose we didn’t know that the posterior is a Beta. However, we know that the posterior is always proportional to the likelihood times prior! So all we lack is the normalizing constant. We can write a function that evaluates the kernel of the posterior (i.e. all the parts that include \\(\\theta\\)).\n\n# write function that evaluate the kernel of the posterior for a given theta value\n\n# integrate the function to obtain normalizing constant\n\n# obtain normalizing constant \n\n# plot posterior\n\nWe can see that the unnormalized posterior has exactly the same shape:\n\nplot(theta_vals, post_kernel(theta_vals), type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\n\nWe can visualize the prior and posterior on the same plot by first creating one plot, then using the lines() function to add additional lines to the original plot.\n\nplot(theta_vals, post_vals, type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\nlines(theta_vals, prior_vals, type = \"l\", col = \"orange\")"
-  },
-  {
-    "objectID": "weeks/class/templates/posteriors_in_R.html",
-    "href": "weeks/class/templates/posteriors_in_R.html",
-    "title": "Obtaining posteriors in R",
-    "section": "",
-    "text": "Suppose \\(X_{1},\\ldots, X_{5}\\) form a random sample from a \\(\\text{Geometric}(\\theta)\\) distribution, where \\(\\theta \\in (0,1)\\) is the unknown probability of success. We can use a Beta prior for \\(\\theta\\): \\(\\theta \\sim \\text{Beta}(a, b)\\)."
-  },
-  {
-    "objectID": "weeks/class/templates/posteriors_in_R.html#visualize-prior",
-    "href": "weeks/class/templates/posteriors_in_R.html#visualize-prior",
-    "title": "Obtaining posteriors in R",
-    "section": "Visualize prior",
-    "text": "Visualize prior\nSuppose I pick hyperparameter values \\(a = 1\\) and \\(b = 4\\). What does this particular distribution look like?\n\n# create vector of possible theta values\ntheta_vals <- seq(0.01, 0.99, by = 0.01)\n\n# set prior hyperparameters\n\n\n# evaluate the prior at each of the elements of theta_vals\nprior_vals <- \n\n# plot prior dist"
-  },
-  {
-    "objectID": "weeks/class/templates/posteriors_in_R.html#verify-prior-is-a-proper-pdf",
-    "href": "weeks/class/templates/posteriors_in_R.html#verify-prior-is-a-proper-pdf",
-    "title": "Obtaining posteriors in R",
-    "section": "Verify prior is a proper PDF",
-    "text": "Verify prior is a proper PDF\nWe know the prior is a valid PDF because the Beta distribution is a well known distribution. But let’s double check by using R to verify that that the PDF integrates to 1.\nWe will write a function called beta_prior that takes in an argument theta as input, and should return the Beta density evaluated at that value of theta and our choice of hyperparameters. Then, we will integrate() our function over its support to see if the PDF in fact integrates to 1.\n\n# write function that evaluates our prior\nbeta_prior <- function(theta){\n  \n}\n\n# verify that our prior integrates to 1"
-  },
-  {
-    "objectID": "weeks/class/templates/posteriors_in_R.html#obtain-and-plot-posterior",
-    "href": "weeks/class/templates/posteriors_in_R.html#obtain-and-plot-posterior",
-    "title": "Obtaining posteriors in R",
-    "section": "Obtain and plot posterior",
-    "text": "Obtain and plot posterior\nNow suppose we observe \\(X = (3, 1, 2, 5, 6)\\).\n\ndat <- c(3,1,2,5,6)\nn <- length(dat)\n\n\nFrom known results\nWhat is the posterior for \\(\\theta\\) under our \\(\\text{Beta}(2,2)\\) prior given the observed data? From class work, we know:\n\\[\\theta | \\mathbf{x} \\sim\\]\n\n# create vector of posterior values\n\n# plot posterior\n\n\n\nBy obtaining normalizing constant\nSuppose we didn’t know that the posterior is a Beta. However, we know that the posterior is always proportional to the likelihood times prior! So all we lack is the normalizing constant. We can write a function that evaluates the kernel of the posterior (i.e. all the parts that include \\(\\theta\\)).\n\n# write function that evaluate the kernel of the posterior for a given theta value\n\n# integrate the function to obtain normalizing constant\n\n# obtain normalizing constant \n\n# plot posterior\n\nWe can see that the unnormalized posterior has exactly the same shape:\n\nplot(theta_vals, post_kernel(theta_vals), type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\n\nWe can visualize the prior and posterior on the same plot by first creating one plot, then using the lines() function to add additional lines to the original plot.\n\nplot(theta_vals, post_vals, type = \"l\", main = \"Prior and posterior\",\n     ylab = \"density\")\nlines(theta_vals, prior_vals, type = \"l\", col = \"orange\")"
-  },
-  {
-    "objectID": "weeks/hw/templates/hw2_r.html",
-    "href": "weeks/hw/templates/hw2_r.html",
-    "title": "STAT 311: Homework 2 (R)",
-    "section": "",
-    "text": "We want to answer the following question: How much does the prior distribution impact the posterior distribution of \\(\\theta\\)? Studying the impact of the prior distribution choice is called sensitivity analysis. More generally, sensitivity analysis occurs whenever we look at how varying our model assumptions impacts inference.\nWhen I arrived at Middlebury, I thought that the correct pronunciation of the school was “middle-BURRY”, but then a colleague told me that it is actually pronounced “middle-BERRY”. That being said, I’ve continued to hear both pronunciations around campus, and I think people just say “midd” to avoid the pronunciation issue altogether.\nLet \\(\\theta\\) be the true proportion of Middlebury students who pronounce the name as “middle-BURRY”. We will explore the posterior for \\(\\theta\\) under varying priors.\na) Choosing priors. Using the Beta distribution, construct and graph three possible prior distributions for \\(\\theta\\) by choosing different hyperparameters. For prior 1: make each value in the parameter space equally likely, for prior 2: make values in the center most likely, for prior 3: skew to the left.\nMake sure to state the hyperparameters for each prior, and try to pick Betas that are fairly different from each other. To learn more about a function, type ?command_name in the Console. e.g. ?dbeta\nBelow is a partially completed R chunk. Replace the underscores with relevant code, then change the eval = FALSE to eval = TRUE in the chunk header. You can run the code chunk by pressing the green triangle at the top-right of the chunk.\n\n# Sequence of parameter values (i.e. discretized parameter space)\np <- seq(0, 1, by = 0.01)\n\n# Prior 1\na1 <- ___\nb1 <- ___\nprior1 <- dbeta(x = p, shape1 = a1, shape2 = b1)\n\n# Prior 2\na2 <- ___\nb2 <- ___\nprior2 <- dbeta(x = p, shape1 = a2, shape2 = b2)\n\n# Prior 3\na3 <- ___\nb3 <- ___\nprior3 <- dbeta(____)\n\nplot(p, prior1, type=\"l\",ylab=\"Probability\", xlab=\"p\", col=\"green\", lwd=2, ylim=c(0,max(c(prior1, prior2, prior3))))\nlines(p,prior2,lty=2,col=\"blue\", lwd=2)\nlines(p,prior3,lty=3, col=\"purple\", lwd=2)\nlegend(\"topright\", legend=c(\"Prior 1\",\"Prior 2\", \"Prior 3\"),lty=1:3 , col=c(\"green\",\"blue\",\"purple\"))\n\nb) Collecting data. Ask 12 other Middlebury students (not in this class) to say the name of the college, and keep track of whether they pronounce it as “BURRY” (1) or “BERRY” (0). It’s important to not bias respondents by saying the name “Middlebury” yourself!\nSolution: enter the data here:\n\\(X_{1}\\):\n\\(X_{2}\\):\n\\(X_{3}\\):\n\\(X_{4}\\):\n\\(X_{5}\\):\n\\(X_{6}\\):\n\\(X_{7}\\):\n\\(X_{8}\\):\n\\(X_{9}\\):\n\\(X_{10}\\):\n\\(X_{11}\\):\n\\(X_{12}\\):\nc) Graphing posteriors (part 1). Using only the first three observations, compute and graph the three posterior distributions for the parameter based on your three prior distributions. Comment on any differences between the posteriors.\nAgain, replace the underscores with relevant code. Then change the eval = FALSE to eval = TRUE.\n\n# number of successes in first THREE observations\nx <- ___\n\n# number of observations under consideration\nn <- ___\n\n# posteriors\npost1_a <- dbeta(x=p, shape1 = ___, shape2 = ___)\npost2_a <- dbeta(x=p, shape1 = ___, shape2 = ___)\npost3_a <- dbeta(x=p, shape1 = ___, shape2 = ___)\n\n# plot\nplot(p, post1_a, type=\"l\",ylab=\"Probability\", xlab=\"p\", col=\"green\", lwd=2, ylim=c(0,max(c(post1_a, post2_a, post3_a))))\nlines(p,post2_a,lty=2,col=\"blue\", lwd=2)\nlines(p,post3_a,lty=3, col=\"purple\", lwd=2)\nlegend(\"topright\", legend=c(\"Prior 1\",\"Prior 2\", \"Prior 3\"),lty=1:3 , col=c(\"green\",\"blue\",\"purple\"))\n\nSolution:\nd) Graphing posteriors (part 2). Now using all of your observations, compute and graph the three posterior distributions for the parameter based on your three prior distributions. Comment on any differences between the posteriors.\nAgain, replace the underscores with relevant code. Then change the eval = FALSE to eval = TRUE.\n\nx2 <- ___\nn2 <- ___\n\n# posteriors\npost1_all <- dbeta(x=p, shape1 = ___, shape2 = ___)\npost2_all <- dbeta(x=p, shape1 = ___, shape2 = ___)\npost3_all <- dbeta(x=p, shape1 = ___, shape2 = ___)\n\nplot(p, post1_all, type=\"l\",ylab=\"Probability\", xlab=\"p\", col=\"green\", lwd=2, ylim=c(0,max(c(post1_all, post2_all, post3_all))))\nlines(p,post2_all,lty=2,col=\"blue\", lwd=2)\nlines(p,post3_all,lty=3, col=\"purple\", lwd=2)\nlegend(\"topright\", legend=c(\"Prior 1\",\"Prior 2\", \"Prior 3\"),lty=1:3 , col=c(\"green\",\"blue\",\"purple\"))\n\nSolution:\ne) Which prior distribution showed greater agreement with the data? Explain why it is important to select the prior distribution before collecting the data.\nSolution:"
-  },
-  {
-    "objectID": "weeks/hw/templates/hw2_r.html#question-2-assigned-for-friday-223",
-    "href": "weeks/hw/templates/hw2_r.html#question-2-assigned-for-friday-223",
-    "title": "STAT 311: Homework 2 (R)",
-    "section": "Question 2 (assigned for Friday 2/23)",
-    "text": "Question 2 (assigned for Friday 2/23)\nWe saw in class that the Normal distribution is the conjugate prior in the case of data from a Normal unknown mean and known variance. However, sometimes a conjugate prior does not accurately reflect prior knowledge and so we need to use a different prior. Suppose \\(X_{1}, \\ldots, X_{n} | \\theta \\sim N(\\theta, 1)\\) (conditionally independent) and let the prior for \\(\\theta\\) be \\[p(\\theta) = c e^{-|\\theta|}, \\qquad \\theta \\in \\mathbb{R}\\]\nfor some constant \\(c > 0\\) which is a normalizing constant that ensures the PDF integrates to 1.\na) Fill in the rest of the code below to write an R function for the kernel of the prior distribution of \\(\\theta\\) (i.e. your function takes the argument theta as input and should return a value equal to \\(e^{-|\\theta|}\\)). Then use the integrate() function to find the value of \\(c\\), which will be stored as the variable c in the code below. Set eval = TRUE when finished.\n(Note: the parameter space of \\(\\theta\\) is the entire real line, so the bounds for the integrate() function are -Inf and Inf).\n\nprior_kernel <- function(theta){\n  # write your code for the kernel of the prior here\n}\n\nval <- integrate(____)\n\n# normalizing constant for prior\nc <- ___\nc\n\nb) Suppose we observe \\(n = 6\\) data points: \\(X_{1} = 5, X_{2} = 4.1, X_{3} = 3.9, X_{4} = 6, X_{5} = 5.5, X_{6} = 4.8\\).\nThe function posterior_kernel() below takes in a value theta as input, and should return the posterior evaluated at theta, up to proportionality. Fill out the rest of the function. In the code below, sum_of_squares is manually calculating \\(\\sum_{i=1}^{n} (x_{i} - \\theta)^2\\) by iterating over each observation \\(i\\).\nIn particular, lh should be calculated using sum_of_squares.\nThen use your function and integrate() to find the normalizing constant of the posterior distribution of \\(\\theta\\) given the data. Call this normalizing constant c_post, and report its value. Set eval = TRUE when finished.\n\nposterior_kernel <- function(theta){\n  sum_of_squares <- 0\n  dat <- c(5, 4.1, 3.9, 6, 5.5, 4.8)\n  for(i in 1:length(dat)){\n    square_i <- (dat[i] - theta)^2\n    sum_of_squares <- sum_of_squares + square_i\n  }\n  lh <- ___ # likelihood up to proportionality \n  to_return <- ___ # this should be (likelihood) x (un-normalized prior evaluated at theta)\n  return(to_return)\n}\n\n# integrate\n\n# store/save normalizing constant\n\nc): Graph the exact prior and posterior distributions of \\(\\theta\\) on the same graph for the provided values of \\(\\theta \\in [-3, 10]\\). Here, “exact” means including the normalizing constants such that the distributions are proper PDFs.\n\ntheta_vals <- seq(-3, 10, 0.1)\n\n## plot posterior \nplot(____, ____, type=\"l\",ylab=\"Probability\", xlab=\"p\", col=\"green\", lwd=2)\n\n# add prior\nlines(____, ____,lty=2,col=\"blue\", lwd=2)\nlegend(\"topright\", legend=c(\"posterior\", \"prior\"),lty=1:3 , col=c(\"green\",\"blue\"))\n\nd): Use the integrate() function to find the Bayes estimate for \\(\\theta\\) under squared loss (you will need to write a new R function). Compare the Bayes estimate to the observed sample mean. (Recall that we can find the mean value of a vector of values using the mean() function.)\n\n# write new R function\n\n# obtain Bayes estimate\n\n# obtain sample mean\n\nSolution:"
   }
 ]

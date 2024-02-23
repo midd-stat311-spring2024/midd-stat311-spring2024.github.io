@@ -26,9 +26,7 @@ title: "Week 03"
 
 **Daily assignment**
 
-To be completed and submitted to Canvas by 8:45am
-
--   TBD
+-   Nothing official, though I suggest re-reading Section 7.5
 
 ------------------------------------------------------------------------
 
@@ -39,9 +37,10 @@ To be completed and submitted to Canvas by 8:45am
 **Topics**
 
 -   Properties of MLEs
+-   Consistency
 
 **Daily assignment**
 
 To be completed and submitted to Canvas by 8:45am
 
--   TBD
+-   [Daily assignment](daily/DA_06.pdf)

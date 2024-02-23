@@ -1,0 +1,43 @@
+---
+title: "Week 05"
+---
+
+::: {style="color: #6284a2"}
+### Tuesday (03/12)
+:::
+
+**Topics**
+
+-   Sufficiency
+
+**Daily assignment**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #6284a2"}
+### Thursday (03/14)
+:::
+
+**Topics**
+
+-   Cramer-Rao Lower Bound
+
+**Daily assignment**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #6284a2"}
+### Friday (03/15)
+:::
+
+**Topics**
+
+-   Estimation activity
+
+**Daily assignment**
+
+-   None for today!

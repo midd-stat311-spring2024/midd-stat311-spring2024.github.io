@@ -151,6 +151,20 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome!\nPrior and posterior distributions\n\n\n\nWeek 02\n\nConjugate priors\nBayes estimators\n\n\n\nWeek 03\n\nMaximum likelihood estimation"
+    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome!\nPrior and posterior distributions\n\n\n\nWeek 02\n\nConjugate priors\nBayes estimators\n\n\n\nWeek 03\n\nMaximum likelihood estimation\n\n\n\nWeek 04\n\nMethod of moments\nBias, variance, MSE"
+  },
+  {
+    "objectID": "weeks/week-04.html",
+    "href": "weeks/week-04.html",
+    "title": "Week 04",
+    "section": "",
+    "text": "Tuesday (03/05)\n\nTopics\n\nMethod of Moments\nMean squared error\n\nDaily assignment\n\nTBD\n\n\n\nThursday (03/07)\n\nTopics\n\nBias and variance of an estimator\nBias-variance trade-off\n\nDaily assignment\n\nTBD\n\n\n\nFriday (03/08)\n\nTopics\n\nFisher information\nAsymptotic distribution of MLE\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nTBD"
+  },
+  {
+    "objectID": "weeks/week-05.html",
+    "href": "weeks/week-05.html",
+    "title": "Week 05",
+    "section": "",
+    "text": "Tuesday (03/12)\n\nTopics\n\nSufficiency\n\nDaily assignment\n\nTBD\n\n\n\nThursday (03/14)\n\nTopics\n\nCramer-Rao Lower Bound\n\nDaily assignment\n\nTBD\n\n\n\nFriday (03/15)\n\nTopics\n\nEstimation activity\n\nDaily assignment\n\nNone for today!"
   }
 ]

@@ -21,3 +21,8 @@ A high-level overview of the semester's topics are presented here. Please select
 ### [Week 03](weeks/week-03.qmd)
 
 -   Maximum likelihood estimation
+
+### [Week 04](weeks/week-04.qmd)
+
+-   Method of moments
+-   Bias, variance, MSE

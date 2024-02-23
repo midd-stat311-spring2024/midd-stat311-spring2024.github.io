@@ -1,0 +1,48 @@
+---
+title: "Week 04"
+---
+
+::: {style="color: #6284a2"}
+### Tuesday (03/05)
+:::
+
+**Topics**
+
+-   Method of Moments
+-   Mean squared error
+
+**Daily assignment**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #6284a2"}
+### Thursday (03/07)
+:::
+
+**Topics**
+
+-   Bias and variance of an estimator
+-   Bias-variance trade-off
+
+**Daily assignment**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #6284a2"}
+### Friday (03/08)
+:::
+
+**Topics**
+
+-   Fisher information
+-   Asymptotic distribution of MLE
+
+**Daily assignment**
+
+To be completed and submitted to Canvas by 8:45am
+
+-   TBD

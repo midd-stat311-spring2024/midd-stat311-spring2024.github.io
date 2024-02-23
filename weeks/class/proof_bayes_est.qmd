@@ -12,7 +12,7 @@ format:
 
 Under absolute loss $L(\theta, a) = |\theta - a|$, a Bayes estimator for $\theta$ is any posterior median of $\theta$.
 
--   That is, a Bayes estimator is a value $\delta(\mathbf{X}) \equiv m$ such that $\text{Pr}(\theta \leq m | \mathbf{x}) \leq \frac{1}{2}$ and $\text{Pr}(\theta \geq m | \mathbf{x}) \leq \frac{1}{2}$.
+-   That is, a Bayes estimator is a function $\delta(\mathbf{X}) \equiv m$ such that $\text{Pr}(\theta \leq m | \mathbf{x}) \geq \frac{1}{2}$ and $\text{Pr}(\theta \geq m | \mathbf{x}) \geq \frac{1}{2}$.
 
 -   Note that when $\theta$ is continuous, there exists a single median.
 

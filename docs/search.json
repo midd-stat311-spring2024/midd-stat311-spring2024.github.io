@@ -95,7 +95,7 @@
     "href": "weeks/class/proof_bayes_est.html#theorem",
     "title": "Bayes estimator under absolute loss",
     "section": "Theorem",
-    "text": "Theorem\nUnder absolute loss \\(L(\\theta, a) = |\\theta - a|\\), a Bayes estimator for \\(\\theta\\) is any posterior median of \\(\\theta\\).\n\nThat is, a Bayes estimator is a value \\(\\delta(\\mathbf{X}) \\equiv m\\) such that \\(\\text{Pr}(\\theta \\leq m | \\mathbf{x}) \\leq \\frac{1}{2}\\) and \\(\\text{Pr}(\\theta \\geq m | \\mathbf{x}) \\leq \\frac{1}{2}\\).\nNote that when \\(\\theta\\) is continuous, there exists a single median."
+    "text": "Theorem\nUnder absolute loss \\(L(\\theta, a) = |\\theta - a|\\), a Bayes estimator for \\(\\theta\\) is any posterior median of \\(\\theta\\).\n\nThat is, a Bayes estimator is a function \\(\\delta(\\mathbf{X}) \\equiv m\\) such that \\(\\text{Pr}(\\theta \\leq m | \\mathbf{x}) \\geq \\frac{1}{2}\\) and \\(\\text{Pr}(\\theta \\geq m | \\mathbf{x}) \\geq \\frac{1}{2}\\).\nNote that when \\(\\theta\\) is continuous, there exists a single median."
   },
   {
     "objectID": "weeks/class/proof_bayes_est.html#proof-set-up",

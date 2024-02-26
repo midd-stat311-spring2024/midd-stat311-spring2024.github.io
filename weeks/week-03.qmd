@@ -26,7 +26,7 @@ title: "Week 03"
 
 **Daily assignment**
 
--   Nothing official, though I suggest re-reading Section 7.5
+-   Nothing official, though I suggest re-reading Section 7.5 and digging out your multivariable calculus notes to remember what a Hessian matrix is!
 
 ------------------------------------------------------------------------
 

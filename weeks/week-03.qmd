@@ -14,6 +14,10 @@ title: "Week 03"
 
 -   [Daily assignment](daily/DA_05.pdf)
 
+**Class activity**
+
+-   [MLE](class/04_MLE_1.pdf) practice problems
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}

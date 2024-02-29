@@ -8,7 +8,8 @@ title: "Week 05"
 
 **Topics**
 
--   Sufficiency
+-   Fisher information
+-   Asymptotic distribution of MLE
 
 **Daily assignment**
 
@@ -22,7 +23,7 @@ title: "Week 05"
 
 **Topics**
 
--   Cramer-Rao Lower Bound
+-   Sampling distribution of a statistic
 
 **Daily assignment**
 

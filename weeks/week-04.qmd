@@ -9,11 +9,14 @@ title: "Week 04"
 **Topics**
 
 -   Method of Moments
--   Mean squared error
 
 **Daily assignment**
 
 -   [Daily assignment](daily/DA_07.pdf)
+
+**Class activity**
+
+-   Methof of Moments simulation
 
 ------------------------------------------------------------------------
 
@@ -23,8 +26,9 @@ title: "Week 04"
 
 **Topics**
 
--   Bias and variance of an estimator
--   Bias-variance trade-off
+-   Mean squared error of an estimator
+
+-   Bias of an estimator
 
 **Daily assignment**
 
@@ -38,11 +42,8 @@ title: "Week 04"
 
 **Topics**
 
--   Fisher information
--   Asymptotic distribution of MLE
+-   Bias-variance trade-off
 
 **Daily assignment**
 
-To be completed and submitted to Canvas by 8:45am
-
--   TBD
+-   Nothing to hand-in, but review notes from yesterday.

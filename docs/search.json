@@ -116,7 +116,7 @@
     "href": "homework.html",
     "title": "Homework",
     "section": "",
-    "text": "Note: problem sets will be updated with new questions following each class. Completed homework should be submitted to Canvas unless otherwise noted.\n\nHomework 1\n\nHomework 1 (due Tuesday, 2/20 at 11:59pm)\n\nProblems assigned for Friday 2/16 technically cover material from Section 7.2, but we haven’t done examples in class yet. You are welcome to work on these problems now, or wait until after class 2/20.\n\nHomework 2 (due Tuesday, 2/29 at 11:59pm)\n\nNote: associated R problems can be found and completed in the following file: .Rmd template:  .Rmd \n\nA rendered version for easier reading can be viewed here: HW 2: R (rendered)\n\n\nHomework 3 (due Tuesday, 3/05 at 11:59pm)"
+    "text": "Note: problem sets will be updated with new questions following each class. Completed homework should be submitted to Canvas unless otherwise noted.\n\nHomework 1\n\nHomework 1 (due Tuesday, 2/20 at 11:59pm)\n\nProblems assigned for Friday 2/16 technically cover material from Section 7.2, but we haven’t done examples in class yet. You are welcome to work on these problems now, or wait until after class 2/20.\n\nHomework 2 (due Tuesday, 2/29 at 11:59pm)\n\nNote: associated R problems can be found and completed in the following file: .Rmd template:  .Rmd \n\nA rendered version for easier reading can be viewed here: HW 2: R (rendered)\n\n\nHomework 3 (due Tuesday, 3/05 at 11:59pm)\n\nNote: I swapped the order of problems 3 and 5. The version as of Thursday, 2/29 is correct."
   },
   {
     "objectID": "index.html",
@@ -158,13 +158,13 @@
     "href": "weeks/week-04.html",
     "title": "Week 04",
     "section": "",
-    "text": "Tuesday (03/05)\n\nTopics\n\nMethod of Moments\nMean squared error\n\nDaily assignment\n\nDaily assignment\n\n\n\nThursday (03/07)\n\nTopics\n\nBias and variance of an estimator\nBias-variance trade-off\n\nDaily assignment\n\nTBD\n\n\n\nFriday (03/08)\n\nTopics\n\nFisher information\nAsymptotic distribution of MLE\n\nDaily assignment\nTo be completed and submitted to Canvas by 8:45am\n\nTBD"
+    "text": "Tuesday (03/05)\n\nTopics\n\nMethod of Moments\n\nDaily assignment\n\nDaily assignment\n\nClass activity\n\nMethof of Moments simulation\n\n\n\nThursday (03/07)\n\nTopics\n\nMean squared error of an estimator\nBias of an estimator\n\nDaily assignment\n\nTBD\n\n\n\nFriday (03/08)\n\nTopics\n\nBias-variance trade-off\n\nDaily assignment\n\nNothing to hand-in, but review notes from yesterday."
   },
   {
     "objectID": "weeks/week-05.html",
     "href": "weeks/week-05.html",
     "title": "Week 05",
     "section": "",
-    "text": "Tuesday (03/12)\n\nTopics\n\nSufficiency\n\nDaily assignment\n\nTBD\n\n\n\nThursday (03/14)\n\nTopics\n\nCramer-Rao Lower Bound\n\nDaily assignment\n\nTBD\n\n\n\nFriday (03/15)\n\nTopics\n\nEstimation activity\n\nDaily assignment\n\nNone for today!"
+    "text": "Tuesday (03/12)\n\nTopics\n\nFisher information\nAsymptotic distribution of MLE\n\nDaily assignment\n\nTBD\n\n\n\nThursday (03/14)\n\nTopics\n\nSampling distribution of a statistic\n\nDaily assignment\n\nTBD\n\n\n\nFriday (03/15)\n\nTopics\n\nEstimation activity\n\nDaily assignment\n\nNone for today!"
   }
 ]

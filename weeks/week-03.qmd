@@ -32,6 +32,10 @@ title: "Week 03"
 
 -   Nothing official, though I suggest re-reading Section 7.5 and digging out your multivariable calculus notes to remember what a Hessian matrix is!
 
+**Class activity**
+
+-   [More MLE](class/05_MLE_2.pdf) practice problems
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}

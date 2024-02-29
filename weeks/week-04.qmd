@@ -13,7 +13,7 @@ title: "Week 04"
 
 **Daily assignment**
 
--   TBD
+-   [Daily assignment](daily/DA_07.pdf)
 
 ------------------------------------------------------------------------
 

@@ -16,7 +16,11 @@ title: "Week 04"
 
 **Class activity**
 
--   Method of Moments simulation
+```{=html}
+<!--
+-   Method of Moments [simulation](class/mark_recapture.Rmd)
+-->
+```
 
 ------------------------------------------------------------------------
 
@@ -33,6 +37,8 @@ title: "Week 04"
 **Daily assignment**
 
 -   [Daily assignment](daily/DA_08.pdf)
+
+**Class activity**
 
 ------------------------------------------------------------------------
 

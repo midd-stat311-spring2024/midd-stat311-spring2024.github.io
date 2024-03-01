@@ -16,7 +16,7 @@ title: "Week 04"
 
 **Class activity**
 
--   Methof of Moments simulation
+-   Method of Moments simulation
 
 ------------------------------------------------------------------------
 
@@ -32,7 +32,7 @@ title: "Week 04"
 
 **Daily assignment**
 
--   TBD
+-   [Daily assignment](daily/DA_08.pdf)
 
 ------------------------------------------------------------------------
 
@@ -46,4 +46,4 @@ title: "Week 04"
 
 **Daily assignment**
 
--   Nothing to hand-in, but review notes from yesterday.
+-   Nothing official, but review notes from yesterday.

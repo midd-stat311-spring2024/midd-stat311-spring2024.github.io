@@ -52,3 +52,7 @@ title: "Week 03"
 To be completed and submitted to Canvas by 8:45am
 
 -   [Daily assignment](daily/DA_06.pdf)
+
+**Class activity**
+
+-   [Invariance and consistency](class/06_MLE_properties.pdf) practice problems

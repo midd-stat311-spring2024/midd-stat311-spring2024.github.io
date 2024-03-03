@@ -1,15 +1,17 @@
 ---
-title: "Week 05"
+title: "Week 06"
 ---
 
+No problem set this week to give space to study for the midterm! However, there are still daily assignments.
+
 ::: {style="color: #6284a2"}
-### Tuesday (03/12)
+### Tuesday (03/26)
 :::
 
 **Topics**
 
--   Estimation activity
--   Fisher information
+-   Sampling distribution of a statistic
+-   Chi-squared distribution
 
 **Daily assignment**
 
@@ -18,13 +20,12 @@ title: "Week 05"
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}
-### Thursday (03/14)
+### Thursday (03/28)
 :::
 
 **Topics**
 
--   Asymptotic distribution of MLE
--   CRLB
+-   Joint dist. of sample mean and variance
 
 **Daily assignment**
 
@@ -33,13 +34,15 @@ title: "Week 05"
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}
-### Friday (03/15)
+### Friday (03/29)
 :::
 
 **Topics**
 
--   EM algorithm
+-   $t$ distribution
 
 **Daily assignment**
 
--   None!
+-   TBD
+
+**Midterm I Released**

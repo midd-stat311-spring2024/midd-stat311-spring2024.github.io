@@ -1,15 +1,28 @@
 ---
-title: "Week 05"
+title: "Week 07"
 ---
 
 ::: {style="color: #6284a2"}
-### Tuesday (03/12)
+### Tuesday (04/02)
 :::
 
 **Topics**
 
--   Estimation activity
--   Fisher information
+-   $t$ distribution (cont.)
+
+**Daily assignment**
+
+-   None
+
+------------------------------------------------------------------------
+
+::: {style="color: #6284a2"}
+### Thursday (04/04)
+:::
+
+**Topics**
+
+-   Confidence intervals
 
 **Daily assignment**
 
@@ -18,28 +31,15 @@ title: "Week 05"
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}
-### Thursday (03/14)
+### Friday (04/05)
 :::
 
 **Topics**
 
--   Asymptotic distribution of MLE
--   CRLB
+-   Confidence intervals (cont.)
 
 **Daily assignment**
 
 -   TBD
 
-------------------------------------------------------------------------
-
-::: {style="color: #6284a2"}
-### Friday (03/15)
-:::
-
-**Topics**
-
--   EM algorithm
-
-**Daily assignment**
-
--   None!
+**Midterm I Released**

@@ -26,3 +26,10 @@ A high-level overview of the semester's topics are presented here. Please select
 
 -   Method of moments
 -   Bias, variance, MSE
+
+### [Week 05](weeks/week-05.qmd)
+
+-   Fisher information
+-   Cramer-Rao Lower Bound
+
+### SPRING BREAK

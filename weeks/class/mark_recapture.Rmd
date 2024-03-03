@@ -61,11 +61,11 @@ m <- 300
 R <- replicate(n_sims, mark_recapture(marked, m))
 
 # calculate MoM estimate
-N_hat <- r * m / R
+N_hat_vec <- r * m / R
 
 # plot
 library(tidyverse)
-data.frame(N_hat) %>%
+data.frame(N_hat = N_hat_vec) %>%
   ggplot(., aes(x = N_hat)) +
   geom_histogram() +
   geom_vline(xintercept = N_true, col = "red", linetype = "dashed")

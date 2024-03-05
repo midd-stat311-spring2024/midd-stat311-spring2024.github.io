@@ -1,8 +1,10 @@
 ---
 title: "Method of Moments: Mark-Recapture Simulation"
 date: "2024-03-05"
-output: html_document
-editor_options: 
+output:
+  pdf_document: default
+  html_document: default
+editor_options:
   chunk_output_type: console
 ---
 

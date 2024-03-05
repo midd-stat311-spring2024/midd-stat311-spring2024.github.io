@@ -13,14 +13,13 @@ title: "Week 04"
 **Daily assignment**
 
 -   [Daily assignment](daily/DA_07.pdf)
+-   Please bring a laptop to class tomorrow!
 
 **Class activity**
 
-```{=html}
-<!--
 -   Method of Moments [simulation](class/mark_recapture.Rmd)
--->
-```
+
+-   Method of Moments [practice problems](class/07_MM.pdf)
 
 ------------------------------------------------------------------------
 

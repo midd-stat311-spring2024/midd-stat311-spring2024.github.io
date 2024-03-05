@@ -51,7 +51,7 @@ mark_recapture <- function(marked, m){
 }
 ```
 
-Now we actually simulate! I can choose how many simulations to run. Then I use the `replicate()` function to repeatedly perform the simulations. The outcome to each replicate gets stored in `R`, which I use to obtain the method of moments estimates over repeated samples.
+Now we actually simulate! I can choose how many simulations to run. Then I use the `replicate()` function to repeatedly perform the simulations. The outcome all the replicates gets stored in a vector of length `n_sims` called `R`, which I use to obtain the method of moments estimates over repeated samples.
 
 ```{r}
 # choose number of simulations

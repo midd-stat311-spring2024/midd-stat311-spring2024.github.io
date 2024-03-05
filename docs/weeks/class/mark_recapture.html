@@ -284,7 +284,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(x)</span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Now we actually simulate! I can choose how many simulations to run. Then I use the <code>replicate()</code> function to repeatedly perform the simulations. The outcome to each replicate gets stored in <code>R</code>, which I use to obtain the method of moments estimates over repeated samples.</p>
+<p>Now we actually simulate! I can choose how many simulations to run. Then I use the <code>replicate()</code> function to repeatedly perform the simulations. The outcome all the replicates gets stored in a vector of length <code>n_sims</code> called <code>R</code>, which I use to obtain the method of moments estimates over repeated samples.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># choose number of simulations</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>n_sims <span class="ot">&lt;-</span> <span class="dv">10000</span></span>

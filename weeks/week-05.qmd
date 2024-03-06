@@ -12,12 +12,11 @@ title: "Week 05"
 
 **Topics**
 
--   Estimation activity
 -   Fisher information
 
 **Daily assignment**
 
--   TBD
+-   [Daily assignment](daily/DA_09.pdf)
 
 ------------------------------------------------------------------------
 

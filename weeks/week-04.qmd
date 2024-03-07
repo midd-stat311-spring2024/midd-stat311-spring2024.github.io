@@ -39,6 +39,8 @@ title: "Week 04"
 
 **Class activity**
 
+-   Bias [practice problems](class/08_bias.pdf)
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}

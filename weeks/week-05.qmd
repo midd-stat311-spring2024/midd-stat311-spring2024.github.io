@@ -31,7 +31,7 @@ title: "Week 05"
 
 **Daily assignment**
 
--   TBD
+-   [Daily assignment](daily/DA_10.pdf)
 
 ------------------------------------------------------------------------
 

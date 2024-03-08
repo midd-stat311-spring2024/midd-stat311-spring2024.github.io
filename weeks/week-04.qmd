@@ -54,3 +54,7 @@ title: "Week 04"
 **Daily assignment**
 
 -   Nothing official, but review notes from yesterday.
+
+**Class activity**
+
+-   MSE [practice problems](class/09_MSE.pdf)

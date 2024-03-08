@@ -9,16 +9,13 @@ editor_options:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-# Note: if you have never installed tidyverse, you will have to do so now. In the CONSOLE at the bottom, paste in and run the the following code (without the #):
-# install.packages("tidyverse")
-
-# You will see some text running for a bit, but eventually everything should be successful! Then run this chunk again.
-library(tidyverse)
 ```
+
+**BEFORE SUBMITTING, CHECK YOUR KNITTED FILE. Did you provide written answers where you see Solution? Are all the results showing? If not, be sure to set `eval = TRUE` in the chunk header. Submissions where the code is not evaluated will not receive full credit.**
 
 ## Question 1
 
-We will now simulate some German Tank data, obtain estimates of the number of tanks, and compare the estimators.
+We will simulate some German Tank data, obtain estimates of the number of tanks, and compare the estimators. You may want to refer back to the Mark-Recapture code from 03/05.
 
 a)  Create three variables:
     -   `n_sim` for the number of simulations (set this to be at least 1000)
@@ -39,7 +36,7 @@ b)  Write a function called `sim_tanks` that takes in two arguments: the true nu
 
 ```
 
-c)  Using the `replicate()` function, simulate this problem for `n_sim` iterations. Then use the `t()` function to take the *transpose* of the output such that you have 3 columns and `n_sim` rows. Be sure to store your output into a variable!
+c)  Using the `replicate()` function, simulate the German Tank data for `n_sim` iterations. Then use the `t()` function to take the *transpose* of the output such that you have an object that has 3 columns and `n_sim` rows. Be sure to store your output into a variable!
 
 *In the Console, take a look at the output. Make sure you understand what each row/column represents!*
 
@@ -49,7 +46,9 @@ set.seed(311)
 
 ```
 
-d)  Using your simulations from (c), obtain the empirical mean, variance, and MSE of $\hat{N}_{1}$, $\hat{N}_{2}$, and $\hat{N}_{3}$. You can access a specific column $j$ of matrix $M$ using the following code: `M[,j]`. Similarly, to access a specific row: `M[j,]`. Comment on how the values compare across the estimates. Based on what you've found, which estimator(s) appear to be unbiased? Which estimator(s) appear to be "best"?
+d)  Using your simulations from (c), obtain the empirical mean, variance, and MSE of $\hat{N}_{1}$, $\hat{N}_{2}$, and $\hat{N}_{3}$. You can access a specific column $j$ of matrix $M$ using the following code: `M[,j]`. Similarly, to access a specific row $j$: `M[j,]`. Comment on how the values compare across the estimates. Based on what you've found, which estimator(s) appear to be unbiased? Which estimator(s) appear to be "best"?
+
+*Note: do not use the empirical mean and variances to obtain the empirical MSE. Approximate the MSE of an estimator* $\delta(X)$ *from its definition of* $E[(\delta(X) - \theta)^2]$*.*
 
 ```{r}
 # means
@@ -64,11 +63,13 @@ d)  Using your simulations from (c), obtain the empirical mean, variance, and MS
 
 **Solution**:
 
-e)  Lastly, we will visualize the simulations of the estimates. Run the first line of code below and then take a look at what `df` looks like by typing `View(df)` in the Console.
+e)  Lastly, we will visualize the simulations of the estimates. Run the line code of code where we create `df` and then take a look at what `df` looks like by typing `View(df)` in the Console. Then fill in the remaining code and then set `eval = TRUE` before knitting. Briefly comment on what you notice.
 
-Then fill in the remaining code and then set `eval = TRUE` before knitting. Briefly comment on what you notice.
+*Note: if you have never installed tidyverse, you will have to do so now. In the CONSOLE at the bottom, paste in and run the the following code:* `install.packages("tidyverse")`. *The installation may take a few minutes, but then you should be good to go!*
 
 ```{r eval = FALSE}
+library(tidyverse)
+
 df <- data.frame(R) %>%
   rename("N1" = 1, "N2" = 2, "N3" = 3) %>%
   pivot_longer(cols = 1:3, names_to = "estimator", values_to = "estimate") 

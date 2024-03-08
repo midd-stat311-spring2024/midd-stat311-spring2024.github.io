@@ -2,10 +2,6 @@
 title: "Week 05"
 ---
 
-**Material through the end of this week is fair game for Midterm 1!**
-
-------------------------------------------------------------------------
-
 ::: {style="color: #6284a2"}
 ### Tuesday (03/12)
 :::
@@ -23,6 +19,8 @@ title: "Week 05"
 ::: {style="color: #6284a2"}
 ### Thursday (03/14)
 :::
+
+**Material through today is fair game for Midterm 1!**
 
 **Topics**
 

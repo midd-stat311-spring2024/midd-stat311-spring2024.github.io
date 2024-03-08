@@ -15,9 +15,5 @@ Note: problem sets will be updated with new questions following each class. Comp
 -   [Homework 3](weeks/hw/hw3.pdf) (due Tuesday, 3/05 at 11:59pm)
     -   **Note**: I swapped the order of problems 3 and 5. The version as of Thursday, 2/29 is correct.
 -   [Homework 4](weeks/hw/hw4.pdf) (due Tuesday, 3/12 at 11:59pm)
-
-```{=html}
-<!--
- A rendered version for easier reading can be viewed here: [HW 4: R (rendered)](weeks/hw/templates/hw4_r.Rmd)
- -->
-```
+    -   **Note**: associated `R` problems completed in the following file: `.Rmd` template: {{< downloadthis weeks/hw/templates/hw4_r.Rmd dname="hw4_r" label=".Rmd" icon="arrow-down-short" class=styled id=btn1 >}}
+        -   A rendered version for easier reading can be viewed here: [HW 4: R (rendered)](weeks/hw/templates/hw4_r.Rmd)

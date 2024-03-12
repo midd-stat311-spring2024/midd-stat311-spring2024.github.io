@@ -26,7 +26,7 @@ Your solutions should be neatly written or typed. If you scan your handwritten s
 
 This midterm is open-book, but not open-people. That is, the only person you are allowed to talk to about the midterm while it is "live" (available to the class) is Prof. Tang. This means that you should not ask someone if they've taken the midterm, how it went, etc. until after the official due date.
 
-The may use any notes you've taken for this class and your MATH/STAT 310 course, your work on previous assignments/practice problems and its associated feedback, my recorded videos, and DeGroot and Schervish’s textbook. For problems asking you to perform analyses or computations in R, remember that you may reference any of the R help files by typing `?functionname`.
+You may use any notes you've taken for this class and your MATH/STAT 310 course, your work on previous assignments/practice problems and its associated feedback, my recorded videos, and DeGroot and Schervish’s textbook. For problems asking you to perform analyses or computations in R, remember that you may reference any of the R help files by typing `?functionname`.
 
 You may also use WolframAlpha, Maple, Mathematica, Desmos, or Symbolab to assist with calculating integrals, derivatives, or algebraic simplification. If you use technology to assist calculating, please clearly reference the cite you used to assist you, and write down the explicit expression/code you input.
 
@@ -48,5 +48,3 @@ For extra practice, several additional review problems will be made available be
 
  -->
 ```
-
-

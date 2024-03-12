@@ -14,6 +14,10 @@ title: "Week 05"
 
 -   [Daily assignment](daily/DA_09.pdf)
 
+**Class activity**
+
+-   Fisher information [practice problems](class/10_fisher.pdf)
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}
@@ -44,3 +48,15 @@ title: "Week 05"
 **Daily assignment**
 
 -   None!
+
+**Class activity**
+
+-   EM algorithm notes (forthcoming)
+
+```{=html}
+<!--
+-   Example [implementation](class/EM_solns.qmd)
+
+    -   Downloadable `.Rmd` template {{< downloadthis class/templates/EM_normal_mixture.Rmd dname="EM_normal_mixture" label=".Rmd" icon="arrow-down-short" class=styled id=btn1 >}} and data {{< downloadthis class/data/normal_mixture_data.Rda dname="normal_mixture_data" label=".Rda" icon="arrow-down-short" class=styled id=btn1 >}}
+-->
+```

@@ -1,7 +1,7 @@
 ---
 title: "EM: Mixture of Normals"
 author: "Becky Tang"
-date: "2024-03-03"
+date: "2024-03-15"
 output: html_document
 editor_options: 
   chunk_output_type: console
@@ -21,15 +21,35 @@ x <- c(rnorm(sum(y == 1), mus[1], 1),
 x <- sample(x)
 ```
 
-```{r}
+## Load data and visualize
+
+```{r echo = T, eval = F}
 library(tidyverse)
+# change the file path if needed
 x <- readRDS("~/Downloads/normal_mixture_data.Rda")
 data.frame(x = x) %>%
   ggplot(., aes(x= x))+
   geom_histogram(bins = 15)
 ```
 
+```{r echo = F, eval = T}
+library(tidyverse)
+x <- readRDS("data/normal_mixture_data.Rda")
+data.frame(x = x) %>%
+  ggplot(., aes(x= x))+
+  geom_histogram(bins = 15)
+```
+
+## E-step
+
+We will write a function called `e.step` that will calculate $P(Y_{i} = j | x_{i}, \boldsymbol{\theta} = \boldsymbol{\theta}^{old})$ for given values `mu` and `p`.
+
 ```{r}
+# x = observed data
+# n = number of observations
+# m = number of mixture components
+# mu = m-vector of means mu
+# p = m-vector of component proportions
 e.step <- function(x, n, m, mu, p){
   tau_mat <- matrix(NA, nrow = n, ncol = m)
   for(i in 1:n){
@@ -40,6 +60,7 @@ e.step <- function(x, n, m, mu, p){
 }
 ```
 
+## Run EM algorithm
 
 ```{r}
 # set m and n
@@ -59,6 +80,7 @@ p_store <- matrix(NA, nrow = n_sim, ncol = m)
 mu_store[1,] <- mu_old
 p_store[1,] <- p_old
 
+# run algorithm
 for(s in 2:n_sim){
   # E-step
   tau_mat <- e.step(x, n, m, mu_old, p_old)
@@ -72,13 +94,25 @@ for(s in 2:n_sim){
   # just to keep track to monitor convergence
   mu_store[s,] <- mu_old
   p_store[s,] <- p_old
-  
 }
 ```
 
+### Assess convergence
+
+We will look at the last few iterations to see if the algorithm as converged. If not, we need to increase the number of simulations!
+
 ```{r}
-# assess convergence by looking at the last few iterations
+# tail() shows last six elements of a vector/matrix
 tail(mu_store)
 tail(p_store)
 ```
 
+::: {.callout-tip collapse="true"}
+## Expand to see true values
+
+The true parameter values are:
+
+$\boldsymbol{\mu}$: (`r mus`)
+
+$\mathbf{p}$: (`r p`)
+:::

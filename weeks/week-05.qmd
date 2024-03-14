@@ -35,6 +35,10 @@ title: "Week 05"
 
 -   [Daily assignment](daily/DA_10.pdf)
 
+**Class activity**
+
+-   CRLB [practice problems](class/11_crlb.pdf)
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}

@@ -55,7 +55,11 @@ title: "Week 05"
 
 **Class activity**
 
--   EM algorithm notes (forthcoming)
+-   EM algorithm notes ([not filled in](class/EM.pdf)) and (filled in, forthcoming)
+
+-   Example
+
+    -   Downloadable `.Rmd` template {{< downloadthis class/templates/EM_normal_mixture.Rmd dname="EM_normal_mixture" label=".Rmd" icon="arrow-down-short" class=styled id=btn1 >}} and data {{< downloadthis class/data/normal_mixture_data.Rda dname="normal_mixture_data" label=".Rda" icon="arrow-down-short" class=styled id=btn1 >}}
 
 ```{=html}
 <!--

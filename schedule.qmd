@@ -33,3 +33,8 @@ A high-level overview of the semester's topics are presented here. Please select
 -   Cramer-Rao Lower Bound
 
 ### SPRING BREAK
+
+### [Week 06](weeks/week-06.qmd)
+
+-   $\chi^2$ and $t$ distributions
+-   Joint distribution of sample mean and variance

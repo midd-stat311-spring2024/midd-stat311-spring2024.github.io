@@ -221,6 +221,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a href="../../weeks/week-05.html" class="sidebar-item-text sidebar-link">Week 05</a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-06.html" class="sidebar-item-text sidebar-link">Week 06</a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -276,7 +281,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="e-step" class="level2">
 <h2 class="anchored" data-anchor-id="e-step">E-step</h2>
-<p>We will write a function called <code>e.step</code> that will calculate <span class="math inline">\(P(Y_{i} = j | x_{i}, \boldsymbol{\theta} = \boldsymbol{\theta}^{old})\)</span> for given values <code>mu</code> and <code>p</code>.</p>
+<p>We will write a function called <code>e.step</code> that will calculate <span class="math inline">\(P(Y_{i} = j | x_{i}, \boldsymbol{\theta} = \boldsymbol{\theta}^{old})\)</span> for given values <code>mu</code> and <code>p</code>. When we call this function, we will pass in <span class="math inline">\(\boldsymbol{\mu}^{old}\)</span> and <span class="math inline">\(\mathbf{p}^{old}\)</span> for <code>mu</code> and <code>p</code>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># x = observed data</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># n = number of observations</span></span>
@@ -286,7 +291,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>e.step <span class="ot">&lt;-</span> <span class="cf">function</span>(x, n, m, mu, p){</span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  tau_mat <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="cn">NA</span>, <span class="at">nrow =</span> n, <span class="at">ncol =</span> m)</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n){</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    p_yij <span class="ot">&lt;-</span> <span class="fu">dnorm</span>(x[i], mu_old, <span class="dv">1</span>) <span class="sc">*</span> p_old</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    p_yij <span class="ot">&lt;-</span> <span class="fu">dnorm</span>(x[i], mu, <span class="dv">1</span>) <span class="sc">*</span> p</span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    tau_mat[i,] <span class="ot">&lt;-</span> p_yij<span class="sc">/</span><span class="fu">sum</span>(p_yij)</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(tau_mat)</span>
@@ -301,7 +306,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="dv">3</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># number of iterations until convergence; depends on the problem!</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>n_sim <span class="ot">&lt;-</span> <span class="dv">50</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>n_sim <span class="ot">&lt;-</span> <span class="dv">108</span></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize</span></span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>mu_old <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">10</span>)</span>
@@ -336,25 +341,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># tail() shows last six elements of a vector/matrix</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(mu_store)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>          [,1]     [,2]     [,3]
-[45,] 1.564003 4.764206 7.078663
-[46,] 1.563962 4.764083 7.078418
-[47,] 1.563926 4.763974 7.078202
-[48,] 1.563893 4.763878 7.078011
-[49,] 1.563865 4.763792 7.077841
-[50,] 1.563840 4.763717 7.077692</code></pre>
+<pre><code>           [,1]     [,2]     [,3]
+[103,] 1.563647 4.763139 7.076542
+[104,] 1.563647 4.763138 7.076542
+[105,] 1.563647 4.763138 7.076541
+[106,] 1.563647 4.763138 7.076541
+[107,] 1.563647 4.763138 7.076541
+[108,] 1.563647 4.763138 7.076541</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(p_store)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           [,1]      [,2]      [,3]
-[45,] 0.2609560 0.5555167 0.1835273
-[46,] 0.2609480 0.5554821 0.1835699
-[47,] 0.2609410 0.5554515 0.1836075
-[48,] 0.2609348 0.5554244 0.1836408
-[49,] 0.2609293 0.5554004 0.1836703
-[50,] 0.2609244 0.5553792 0.1836964</code></pre>
+[103,] 0.260887 0.5552163 0.1838967
+[104,] 0.260887 0.5552163 0.1838967
+[105,] 0.260887 0.5552162 0.1838967
+[106,] 0.260887 0.5552162 0.1838968
+[107,] 0.260887 0.5552162 0.1838968
+[108,] 0.260887 0.5552162 0.1838968</code></pre>
 </div>
 </div>
+<p>It seems like we hit convergence after 106 iterations. Depending on the problem, we may need fewer or more iterations.</p>
+<p>Our MLEs are <span class="math inline">\(\hat{\boldsymbol{\mu}}_{MLE} =\)</span> (1.5636468, 4.7631381, 7.076541) and <span class="math inline">\(\hat{\mathbf{p}}_{MLE} =\)</span> (0.260887, 0.5552162, 0.1838968). How did we do?</p>
 <div class="callout-tip callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">

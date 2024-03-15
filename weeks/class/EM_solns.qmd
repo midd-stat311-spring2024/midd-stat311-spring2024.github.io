@@ -42,7 +42,7 @@ data.frame(x = x) %>%
 
 ## E-step
 
-We will write a function called `e.step` that will calculate $P(Y_{i} = j | x_{i}, \boldsymbol{\theta} = \boldsymbol{\theta}^{old})$ for given values `mu` and `p`.
+We will write a function called `e.step` that will calculate $P(Y_{i} = j | x_{i}, \boldsymbol{\theta} = \boldsymbol{\theta}^{old})$ for given values `mu` and `p`. When we call this function, we will pass in $\boldsymbol{\mu}^{old}$ and $\mathbf{p}^{old}$ for `mu` and `p`.
 
 ```{r}
 # x = observed data
@@ -53,7 +53,7 @@ We will write a function called `e.step` that will calculate $P(Y_{i} = j | x_{i
 e.step <- function(x, n, m, mu, p){
   tau_mat <- matrix(NA, nrow = n, ncol = m)
   for(i in 1:n){
-    p_yij <- dnorm(x[i], mu_old, 1) * p_old
+    p_yij <- dnorm(x[i], mu, 1) * p
     tau_mat[i,] <- p_yij/sum(p_yij)
   }
   return(tau_mat)
@@ -68,7 +68,7 @@ n <- length(x)
 m <- 3
 
 # number of iterations until convergence; depends on the problem!
-n_sim <- 50
+n_sim <- 108
 
 # initialize
 mu_old <- c(0, 5, 10)
@@ -106,6 +106,10 @@ We will look at the last few iterations to see if the algorithm as converged. If
 tail(mu_store)
 tail(p_store)
 ```
+
+It seems like we hit convergence after 106 iterations. Depending on the problem, we may need fewer or more iterations.
+
+Our MLEs are $\hat{\boldsymbol{\mu}}_{MLE} =$ (`r mu_store[n_sim,]`) and $\hat{\mathbf{p}}_{MLE} =$ (`r p_store[n_sim,]`). How did we do?
 
 ::: {.callout-tip collapse="true"}
 ## Expand to see true values

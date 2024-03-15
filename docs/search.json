@@ -116,7 +116,7 @@
     "href": "homework.html",
     "title": "Homework",
     "section": "",
-    "text": "Note: problem sets will be updated with new questions following each class. Completed homework should be submitted to Canvas unless otherwise noted.\n\nHomework 1\n\nHomework 1 (due Tuesday, 2/20 at 11:59pm)\n\nProblems assigned for Friday 2/16 technically cover material from Section 7.2, but we haven’t done examples in class yet. You are welcome to work on these problems now, or wait until after class 2/20.\n\nHomework 2 (due Tuesday, 2/29 at 11:59pm)\n\nNote: associated R problems can be found and completed in the following .Rmd template:  .Rmd \n\nA rendered version for easier reading can be viewed here: HW 2: R (rendered)\n\n\nHomework 3 (due Tuesday, 3/05 at 11:59pm)\n\nNote: I swapped the order of problems 3 and 5. The version as of Thursday, 2/29 is correct.\n\nHomework 4 (due Tuesday, 3/12 at 11:59pm)\n\nNote: associated R problems can be completed in the following .Rmd template:  .Rmd \n\nA rendered version for easier reading can be viewed here: HW 4: R (rendered)\n\n\nHomework 5 (due Tuesday, 3/29 at 11:59pm)"
+    "text": "Note: problem sets will be updated with new questions following each class. Completed homework should be submitted to Canvas unless otherwise noted.\n\nHomework 1 (due Tuesday, 2/20 at 11:59pm)\n\nProblems assigned for Friday 2/16 technically cover material from Section 7.2, but we haven’t done examples in class yet. You are welcome to work on these problems now, or wait until after class 2/20.\n\nHomework 2 (due Tuesday, 2/29 at 11:59pm)\n\nNote: associated R problems can be found and completed in the following .Rmd template:  .Rmd \n\nA rendered version for easier reading can be viewed here: HW 2: R (rendered)\n\n\nHomework 3 (due Tuesday, 3/05 at 11:59pm)\n\nNote: I swapped the order of problems 3 and 5. The version as of Thursday, 2/29 is correct.\n\nHomework 4 (due Tuesday, 3/12 at 11:59pm)\n\nNote: associated R problems can be completed in the following .Rmd template:  .Rmd \n\nA rendered version for easier reading can be viewed here: HW 4: R (rendered)\n\n\nHomework 5 (due Tuesday, 3/29 at 11:59pm)\nExtra credit opportunity about EM algorithm (due Monday, 4/01 at 11:59pm)\n\nImplement using the following .Rmd template:  .Rmd \n\nA rendered version for easier reading can be viewed here"
   },
   {
     "objectID": "index.html",
@@ -130,7 +130,7 @@
     "href": "index.html#major-announcements",
     "title": "Statistical Inference",
     "section": "Major Announcements",
-    "text": "Major Announcements\n\nHomework 5 is shorter (only covers material from Tuesday and Thursday of Week 5). It will be due after spring break!\nDetails about Midterm 1 have been shared. Read through the details and please do come to class with clarifying questions about the format!\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
+    "text": "Major Announcements\n\nExtra credit opportunity about EM algorithm can be found in Homework tab. Have fun with it!\nDetails about Midterm 1 have been shared. Read through the details and please do come to class with clarifying questions about the format!\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
   },
   {
     "objectID": "index.html#course-details",
@@ -165,7 +165,7 @@
     "href": "weeks/week-05.html",
     "title": "Week 05",
     "section": "",
-    "text": "Tuesday (03/12)\n\nTopics\n\nFisher information\n\nDaily assignment\n\nDaily assignment\n\nClass activity\n\nFisher information practice problems\n\n\n\nThursday (03/14)\n\nMaterial through today is fair game for Midterm 1!\nTopics\n\nAsymptotic distribution of MLE\nCRLB\n\nDaily assignment\n\nDaily assignment\n\nClass activity\n\nCRLB practice problems\n\n\n\nFriday (03/15)\n\nTopics\n\nEM algorithm\n\nDaily assignment\n\nNone!\n\nClass activity\n\nEM algorithm notes (not filled in) and (filled in, forthcoming)\nExample\n\nDownloadable .Rmd template  .Rmd  and data  .Rda"
+    "text": "Tuesday (03/12)\n\nTopics\n\nFisher information\n\nDaily assignment\n\nDaily assignment\n\nClass activity\n\nFisher information practice problems\n\n\n\nThursday (03/14)\n\nMaterial through today is fair game for Midterm 1!\nTopics\n\nAsymptotic distribution of MLE\nCRLB\n\nDaily assignment\n\nDaily assignment\n\nClass activity\n\nCRLB practice problems\n\n\n\nFriday (03/15)\n\nTopics\n\nEM algorithm\n\nDaily assignment\n\nNone!\n\nClass activity\n\nEM algorithm notes (not filled in) and (filled in)\nExample\n\nDownloadable .Rmd template  .Rmd  and data  .Rda \nImplemented example"
   },
   {
     "objectID": "weeks/class/mark_recapture.html",
@@ -235,14 +235,14 @@
     "href": "weeks/class/EM_solns.html#e-step",
     "title": "EM: Mixture of Normals",
     "section": "E-step",
-    "text": "E-step\nWe will write a function called e.step that will calculate \\(P(Y_{i} = j | x_{i}, \\boldsymbol{\\theta} = \\boldsymbol{\\theta}^{old})\\) for given values mu and p.\n\n# x = observed data\n# n = number of observations\n# m = number of mixture components\n# mu = m-vector of means mu\n# p = m-vector of component proportions\ne.step <- function(x, n, m, mu, p){\n  tau_mat <- matrix(NA, nrow = n, ncol = m)\n  for(i in 1:n){\n    p_yij <- dnorm(x[i], mu_old, 1) * p_old\n    tau_mat[i,] <- p_yij/sum(p_yij)\n  }\n  return(tau_mat)\n}"
+    "text": "E-step\nWe will write a function called e.step that will calculate \\(P(Y_{i} = j | x_{i}, \\boldsymbol{\\theta} = \\boldsymbol{\\theta}^{old})\\) for given values mu and p. When we call this function, we will pass in \\(\\boldsymbol{\\mu}^{old}\\) and \\(\\mathbf{p}^{old}\\) for mu and p.\n\n# x = observed data\n# n = number of observations\n# m = number of mixture components\n# mu = m-vector of means mu\n# p = m-vector of component proportions\ne.step <- function(x, n, m, mu, p){\n  tau_mat <- matrix(NA, nrow = n, ncol = m)\n  for(i in 1:n){\n    p_yij <- dnorm(x[i], mu, 1) * p\n    tau_mat[i,] <- p_yij/sum(p_yij)\n  }\n  return(tau_mat)\n}"
   },
   {
     "objectID": "weeks/class/EM_solns.html#run-em-algorithm",
     "href": "weeks/class/EM_solns.html#run-em-algorithm",
     "title": "EM: Mixture of Normals",
     "section": "Run EM algorithm",
-    "text": "Run EM algorithm\n\n# set m and n\nn <- length(x)\nm <- 3\n\n# number of iterations until convergence; depends on the problem!\nn_sim <- 50\n\n# initialize\nmu_old <- c(0, 5, 10)\np_old <- rep(1/m, m)\n\n# create matrices for storing iterations\nmu_store <- matrix(NA, nrow = n_sim, ncol = m)\np_store <- matrix(NA, nrow = n_sim, ncol = m)\nmu_store[1,] <- mu_old\np_store[1,] <- p_old\n\n# run algorithm\nfor(s in 2:n_sim){\n  # E-step\n  tau_mat <- e.step(x, n, m, mu_old, p_old)\n  \n  # M-step and update in one go\n  for(j in 1:m){\n    mu_old[j] <- sum(x * tau_mat[,j])/sum(tau_mat[,j])\n    p_old[j] <- sum(tau_mat[,j])/n\n  }\n  \n  # just to keep track to monitor convergence\n  mu_store[s,] <- mu_old\n  p_store[s,] <- p_old\n}\n\n\nAssess convergence\nWe will look at the last few iterations to see if the algorithm as converged. If not, we need to increase the number of simulations!\n\n# tail() shows last six elements of a vector/matrix\ntail(mu_store)\n\n          [,1]     [,2]     [,3]\n[45,] 1.564003 4.764206 7.078663\n[46,] 1.563962 4.764083 7.078418\n[47,] 1.563926 4.763974 7.078202\n[48,] 1.563893 4.763878 7.078011\n[49,] 1.563865 4.763792 7.077841\n[50,] 1.563840 4.763717 7.077692\n\ntail(p_store)\n\n           [,1]      [,2]      [,3]\n[45,] 0.2609560 0.5555167 0.1835273\n[46,] 0.2609480 0.5554821 0.1835699\n[47,] 0.2609410 0.5554515 0.1836075\n[48,] 0.2609348 0.5554244 0.1836408\n[49,] 0.2609293 0.5554004 0.1836703\n[50,] 0.2609244 0.5553792 0.1836964\n\n\n\n\n\n\n\n\nExpand to see true values\n\n\n\n\n\nThe true parameter values are:\n\\(\\boldsymbol{\\mu}\\): (2, 5, 7)\n\\(\\mathbf{p}\\): (0.3, 0.5, 0.2)"
+    "text": "Run EM algorithm\n\n# set m and n\nn <- length(x)\nm <- 3\n\n# number of iterations until convergence; depends on the problem!\nn_sim <- 108\n\n# initialize\nmu_old <- c(0, 5, 10)\np_old <- rep(1/m, m)\n\n# create matrices for storing iterations\nmu_store <- matrix(NA, nrow = n_sim, ncol = m)\np_store <- matrix(NA, nrow = n_sim, ncol = m)\nmu_store[1,] <- mu_old\np_store[1,] <- p_old\n\n# run algorithm\nfor(s in 2:n_sim){\n  # E-step\n  tau_mat <- e.step(x, n, m, mu_old, p_old)\n  \n  # M-step and update in one go\n  for(j in 1:m){\n    mu_old[j] <- sum(x * tau_mat[,j])/sum(tau_mat[,j])\n    p_old[j] <- sum(tau_mat[,j])/n\n  }\n  \n  # just to keep track to monitor convergence\n  mu_store[s,] <- mu_old\n  p_store[s,] <- p_old\n}\n\n\nAssess convergence\nWe will look at the last few iterations to see if the algorithm as converged. If not, we need to increase the number of simulations!\n\n# tail() shows last six elements of a vector/matrix\ntail(mu_store)\n\n           [,1]     [,2]     [,3]\n[103,] 1.563647 4.763139 7.076542\n[104,] 1.563647 4.763138 7.076542\n[105,] 1.563647 4.763138 7.076541\n[106,] 1.563647 4.763138 7.076541\n[107,] 1.563647 4.763138 7.076541\n[108,] 1.563647 4.763138 7.076541\n\ntail(p_store)\n\n           [,1]      [,2]      [,3]\n[103,] 0.260887 0.5552163 0.1838967\n[104,] 0.260887 0.5552163 0.1838967\n[105,] 0.260887 0.5552162 0.1838967\n[106,] 0.260887 0.5552162 0.1838968\n[107,] 0.260887 0.5552162 0.1838968\n[108,] 0.260887 0.5552162 0.1838968\n\n\nIt seems like we hit convergence after 106 iterations. Depending on the problem, we may need fewer or more iterations.\nOur MLEs are \\(\\hat{\\boldsymbol{\\mu}}_{MLE} =\\) (1.5636468, 4.7631381, 7.076541) and \\(\\hat{\\mathbf{p}}_{MLE} =\\) (0.260887, 0.5552162, 0.1838968). How did we do?\n\n\n\n\n\n\nExpand to see true values\n\n\n\n\n\nThe true parameter values are:\n\\(\\boldsymbol{\\mu}\\): (2, 5, 7)\n\\(\\mathbf{p}\\): (0.3, 0.5, 0.2)"
   },
   {
     "objectID": "weeks/class/templates/EM_normal_mixture.html",
@@ -264,5 +264,33 @@
     "title": "EM: Mixture of Normals",
     "section": "EM algorithm",
     "text": "EM algorithm\n\n# set m and n\n\n\n# number of iterations until convergence; depends on the problem!\n\n# initialize\n\n\n# create matrices for storing iterations\n\n# Run algorithm\n\nfor(s in 2:___){\n  # E-step\n  \n  # M-step and update in one go\n\n  \n  # store to monitor convergence\n\n  \n}\n\n\nAsses convergence\n\n# assess convergence by looking at the last few iterations"
+  },
+  {
+    "objectID": "weeks/hw/templates/EM_multinom.html",
+    "href": "weeks/hw/templates/EM_multinom.html",
+    "title": "EM algorithm: Extra Credit",
+    "section": "",
+    "text": "Be sure to set eval = TRUE before submitting!"
+  },
+  {
+    "objectID": "weeks/hw/templates/EM_multinom.html#e-step-function",
+    "href": "weeks/hw/templates/EM_multinom.html#e-step-function",
+    "title": "EM algorithm: Extra Credit",
+    "section": "E-step function",
+    "text": "E-step function\nFill in the remainder of the e_step function which takes in the observed phenotype counts x (vector of length 3) and allele frequencies p (vector of length 3). Using x and p, the function should return a vector of length six of the expected genotype count for each of the six genotypes.\n\n# x = observed phenotype counts (carbonaria, insularia, typica)\n# p = allele probabilities (carbonaria, insularia, typica)\n\ne_step <- function(x, p){\n  n_cc <- \n  n_ci <- \n  n_ct <- \n  n_ii <-\n  n_it <- \n  n_tt <-\n  return()\n}"
+  },
+  {
+    "objectID": "weeks/hw/templates/EM_multinom.html#m-step-function",
+    "href": "weeks/hw/templates/EM_multinom.html#m-step-function",
+    "title": "EM algorithm: Extra Credit",
+    "section": "M-step function",
+    "text": "M-step function\nFill in the remainder of the m_step function which takes in the observed phenotype counts x (vector of length 3) and expected genotype counts n (vector of length 6). This function should return a vector of length three of the new estimate of \\(\\boldsymbol{\\theta}\\).\n\n# x = observed phenotype counts (carbonaria, insularia, typica)\n# n = expected genotype counts (CC, CI, CT, II, IT, TT)\nm_step <- function(x, n){\n  p_c <- \n  p_i <- \n  p_t <- \n  return()\n}"
+  },
+  {
+    "objectID": "weeks/hw/templates/EM_multinom.html#implementation",
+    "href": "weeks/hw/templates/EM_multinom.html#implementation",
+    "title": "EM algorithm: Extra Credit",
+    "section": "Implementation",
+    "text": "Implementation\nWe have the following observed counts/data of the three phenotypes for the peppered moths: \\(X = (85, 196, 341)\\).\n\nx <- c(85, 196, 341)\n\nNow to implement the algorithm, complete the following:\n\nCreate a vector p_old of length three that initializes the algorithm with the three alleles being equal in frequency.\nCreate a variable n_sim that sets the number of iterations you’d like to run the algorithm for. I recommend you start with something relatively small just to test your code. You can always modify this value later on!\nCreate a matrix p_mat that will hold/store the \\(\\hat{\\mathbf{p}}\\) estimates from each iteration of the algorithm. Use the matrix() function to do this (think about what dimensions you’ll need p_mat to have). You can fill the matrix with NA or 0 values.\nReplace the first row of p_mat with your initial value/guess for \\(\\mathbf{p}\\).\nComplete the for loop where you iterate between the E and M steps by calling the appropriate functions and passing in the appropriate arguments. You may need to create an additional variable or two.\n\nThen go ahead and run this code chunk (make sure you’ve run all of the previous chunks first).\n\n# 1. Initialize\n\n# 2. Set number of iterations\n\n# 3. Create p_mat\n\n# 4. Replace first row of p_mat\n\n# 5. for loop to run algorithm\n\nfor(i in 2:n_sim){\n  # e_step\n  \n  # m_step\n  \n  # store estimate in p_mat\n\n}\n\n\nAssess convergence and state results.\n\nRun your algorithm until convergence. Roughly how many iterations did we need until we hit convergence?\n\nSolution:\n\nWhat are your maximum likelihood estimates for the frequencies of the three alleles \\(C\\), \\(I\\), and \\(T\\) under the assumption of Hardy-Weinberg?\n\nSolution:\n\nOptional: what are the maximum likelihood estimate for the frequencies of the three alleles \\(C\\), \\(I\\), and \\(T\\) if we don’t assume Hardy-Weinberg?\n\nSolution:"
   }
 ]

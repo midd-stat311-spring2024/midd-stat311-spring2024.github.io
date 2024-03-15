@@ -47,7 +47,7 @@ m_step <- function(x, n){
 
 ## Implementation
 
-We have the following observed counts/data of the three phenotypes for the peppered moths: $X = (85, 196, 341)$.
+We have the following observed counts/data of the three phenotypes for the peppered moths: $X = (N_{C} = 85, N_{I} = 196, N_{T} = 341)$.
 
 ```{r}
 x <- c(85, 196, 341)

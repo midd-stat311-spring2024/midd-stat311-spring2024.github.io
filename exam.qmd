@@ -57,3 +57,5 @@ In both parts of the midterm, you will be required to write and/or type the hono
 ### Review Problems
 
 For extra practice, additional review problems will be made available below towards the end of Spring Break. While these questions are representative of the typical scope and difficulty of individual exam questions, this review is not comprehensive, nor does it necessarily represent the expected amount of time for it will take for you to complete the exam.
+
+-   Midterm 1 [review problems](weeks/exam/midterm1_review_problems.pdf)

@@ -130,7 +130,7 @@
     "href": "index.html#major-announcements",
     "title": "Statistical Inference",
     "section": "Major Announcements",
-    "text": "Major Announcements\n\nDetails about Midterm 1 have been shared. Read through the details and please do come to class with clarifying questions about the format!\n\nReview problems have been posted on the “Exams” tab\n\nExtra credit opportunity about EM algorithm can be found in Homework tab. Have fun with it!\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
+    "text": "Major Announcements\n\nPlease fill out this anonymous mid-semester feedback survey by Friday, 03/29 at 5:00pm!!!\n\nI really do value your feedback and try to make changes that make sense for the class.\n\nDetails about Midterm 1 have been shared. Read through the details and please do come to class with clarifying questions about the format!\n\nReview problems have been posted on the “Exams” tab\nSolutions to selected homework and practice problems are available on Canvas under “Files”. If you have questions about other problems, please come ask them in person!!\n\nExtra credit opportunity about EM algorithm can be found in Homework tab. Have fun with it!\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
   },
   {
     "objectID": "index.html#course-details",
@@ -151,7 +151,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome!\nPrior and posterior distributions\n\n\n\nWeek 02\n\nConjugate priors\nBayes estimators\n\n\n\nWeek 03\n\nMaximum likelihood estimation\n\n\n\nWeek 04\n\nMethod of moments\nBias, variance, MSE\n\n\n\nWeek 05\n\nFisher information\nCramer-Rao Lower Bound\n\n\n\nSPRING BREAK\n\n\nWeek 06\n\n\\(\\chi^2\\) and \\(t\\) distributions\nJoint distribution of sample mean and variance"
+    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome!\nPrior and posterior distributions\n\n\n\nWeek 02\n\nConjugate priors\nBayes estimators\n\n\n\nWeek 03\n\nMaximum likelihood estimation\n\n\n\nWeek 04\n\nMethod of moments\nBias, variance, MSE\n\n\n\nWeek 05\n\nFisher information\nCramer-Rao Lower Bound\n\n\n\nSPRING BREAK\n\n\nWeek 06\n\n\\(\\chi^2\\) and \\(t\\) distributions\nJoint distribution of sample mean and variance\n\n\n\nWeek 07\n\nConfidence intervals"
   },
   {
     "objectID": "weeks/week-04.html",
@@ -186,14 +186,14 @@
     "href": "weeks/week-07.html",
     "title": "Week 07",
     "section": "",
-    "text": "Tuesday (04/02)\n\nTopics\n\n\\(t\\) distribution (cont.)\n\nDaily assignment\n\nNone\n\n\n\nThursday (04/04)\n\nTopics\n\nConfidence intervals\n\nDaily assignment\n\nTBD\n\n\n\nFriday (04/05)\n\nTopics\n\nConfidence intervals (cont.)\n\nDaily assignment\n\nTBD\n\nMidterm I Released"
+    "text": "Tuesday (04/02)\n\nTopics\n\n\\(t\\) distribution (cont.)\n\nDaily assignment\n\nNone\n\n\n\nThursday (04/04)\n\nTopics\n\nConfidence intervals\n\nDaily assignment\n\nTBD\n\n\n\nFriday (04/05)\n\nTopics\n\nConfidence intervals (cont.)\n\nDaily assignment\n\nTBD"
   },
   {
     "objectID": "weeks/week-06.html",
     "href": "weeks/week-06.html",
     "title": "Week 06",
     "section": "",
-    "text": "No problem set this week to give space to study for the midterm! However, there are still daily assignments.\n\nTuesday (03/26)\n\nTopics\n\nSampling distribution of a statistic\nChi-squared distribution\n\nDaily assignment\n\nDaily assignment\n\n\n\nThursday (03/28)\n\nTopics\n\nJoint dist. of sample mean and variance\n\nDaily assignment\n\nDaily assignment\n\n\n\nFriday (03/29)\n\nTopics\n\n\\(t\\) distribution\n\nDaily assignment\n\nDaily assignment\n\nMidterm 1 live at 5:00pm"
+    "text": "No problem set this week to give space to study for the midterm! However, there are still daily assignments.\n\nTuesday (03/26)\n\nTopics\n\nSampling distribution of a statistic\nChi-squared distribution\n\nDaily assignment\n\nDaily assignment\n\nClass activity\n\nMGF refresher practice problems\n\n\n\nThursday (03/28)\n\nTopics\n\nJoint dist. of sample mean and variance\n\nDaily assignment\n\nDaily assignment\n\n\n\nFriday (03/29)\n\nTopics\n\n\\(t\\) distribution\n\nDaily assignment\n\nDaily assignment\n\nMidterm 1 live at 5:00pm"
   },
   {
     "objectID": "weeks/class/EM.html",

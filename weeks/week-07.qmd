@@ -9,6 +9,7 @@ title: "Week 07"
 **Topics**
 
 -   $t$ distribution (cont.)
+-   Introduce final project
 
 **Daily assignment**
 
@@ -41,5 +42,3 @@ title: "Week 07"
 **Daily assignment**
 
 -   TBD
-
-**Midterm I Released**

@@ -17,6 +17,10 @@ No problem set this week to give space to study for the midterm! However, there 
 
 -   [Daily assignment](daily/DA_11.pdf)
 
+**Class activity**
+
+-   MGF refresher [practice problems](class/12_MGF.pdf)
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}

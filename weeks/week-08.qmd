@@ -1,0 +1,44 @@
+---
+title: "Week 08"
+---
+
+::: {style="color: #6284a2"}
+### Tuesday (04/09)
+:::
+
+**Topics**
+
+-   Empirical CDF
+-   The bootstrap
+
+**Daily assignment**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #6284a2"}
+### Thursday (04/11)
+:::
+
+**Topics**
+
+-   The non-parametric bootstrap
+
+**Daily assignment**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #6284a2"}
+### Friday (04/12)
+:::
+
+**Topics**
+
+-   Bootstrap confidence intervals
+
+**Daily assignment**
+
+-   TBD

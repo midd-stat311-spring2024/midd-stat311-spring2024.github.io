@@ -130,7 +130,7 @@
     "href": "index.html#major-announcements",
     "title": "Statistical Inference",
     "section": "Major Announcements",
-    "text": "Major Announcements\n\nPlease fill out this anonymous mid-semester feedback survey by Friday, 03/29 at 5:00pm!!!\n\nI really do value your feedback and try to make changes that make sense for the class.\n\nDetails about Midterm 1 have been shared. Read through the details and please do come to class with clarifying questions about the format!\n\nReview problems have been posted on the “Exams” tab\nSolutions to selected homework and practice problems are available on Canvas under “Files”. If you have questions about other problems, please come ask them in person!!\n\nExtra credit opportunity about EM algorithm can be found in Homework tab. Have fun with it!\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
+    "text": "Major Announcements\n\nPlease fill out this anonymous mid-semester feedback survey by Friday, 03/29 at 5:00pm!!!\n\nI really do value your feedback and try to make changes that make sense for the class.\n\nDetails about Midterm 1 have been shared. Read through the details and please do come to class with clarifying questions about the format!\n\nReview problems have been posted on the “Exams” tab.\nSolutions to the above review problems and selected homework and practice problems are available on Canvas under “Files”. If you have questions about other problems, please come ask them in person!!\n\nExtra credit opportunity about EM algorithm can be found in Homework tab. Have fun with it!\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
   },
   {
     "objectID": "index.html#course-details",
@@ -193,7 +193,7 @@
     "href": "weeks/week-06.html",
     "title": "Week 06",
     "section": "",
-    "text": "No problem set this week to give space to study for the midterm! However, there are still daily assignments.\n\nTuesday (03/26)\n\nTopics\n\nSampling distribution of a statistic\nChi-squared distribution\n\nDaily assignment\n\nDaily assignment\n\nClass activity\n\nMGF refresher practice problems\n\n\n\nThursday (03/28)\n\nTopics\n\nJoint dist. of sample mean and variance\n\nDaily assignment\n\nDaily assignment\n\n\n\nFriday (03/29)\n\nTopics\n\n\\(t\\) distribution\n\nDaily assignment\n\nDaily assignment\n\nMidterm 1 live at 5:00pm"
+    "text": "No problem set this week to give space to study for the midterm! However, there are still daily assignments.\n\nTuesday (03/26)\n\nTopics\n\nSampling distribution of a statistic\nChi-squared distribution\n\nDaily assignment\n\nDaily assignment\n\nClass activity\n\nMGF refresher practice problems\n\n\n\nThursday (03/28)\n\nTopics\n\nJoint dist. of sample mean and variance\n\nDaily assignment\n\nDaily assignment\n\nClass activity\n\nCovariance and Normal distribution properties refresher\nSampling dist. of Normal variance estimators practice problems\n\n\n\nFriday (03/29)\n\nTopics\n\n\\(t\\) distribution\n\nDaily assignment\n\nDaily assignment\n\nMidterm 1 live at 5:00pm"
   },
   {
     "objectID": "weeks/class/EM.html",
@@ -292,5 +292,12 @@
     "title": "EM algorithm: Extra Credit",
     "section": "Implementation",
     "text": "Implementation\nWe have the following observed counts/data of the three phenotypes for the peppered moths: \\(X = (N_{C} = 85, N_{I} = 196, N_{T} = 341)\\).\n\nx <- c(85, 196, 341)\n\nNow to implement the algorithm, complete the following:\n\nCreate a vector p_old of length three that initializes the algorithm with the three alleles being equal in frequency.\nCreate a variable n_sim that sets the number of iterations you’d like to run the algorithm for. I recommend you start with something relatively small just to test your code. You can always modify this value later on!\nCreate a matrix p_mat that will hold/store the \\(\\hat{\\mathbf{p}}\\) estimates from each iteration of the algorithm. Use the matrix() function to do this (think about what dimensions you’ll need p_mat to have). You can fill the matrix with NA or 0 values.\nReplace the first row of p_mat with your initial value/guess for \\(\\mathbf{p}\\).\nComplete the for loop where you iterate between the E and M steps by calling the appropriate functions and passing in the appropriate arguments. You may need to create an additional variable or two.\n\nThen go ahead and run this code chunk (make sure you’ve run all of the previous chunks first).\n\n# 1. Initialize\n\n# 2. Set number of iterations\n\n# 3. Create p_mat\n\n# 4. Replace first row of p_mat\n\n# 5. for loop to run algorithm\n\nfor(i in 2:n_sim){\n  # e_step\n  \n  # m_step\n  \n  # store estimate in p_mat\n\n}\n\n\nAssess convergence and state results.\n\nRun your algorithm until convergence. Roughly how many iterations did we need until we hit convergence?\n\nSolution:\n\nWhat are your maximum likelihood estimates for the frequencies of the three alleles \\(C\\), \\(I\\), and \\(T\\) under the assumption of Hardy-Weinberg?\n\nSolution:\n\nOptional: what are the maximum likelihood estimate for the frequencies of the three alleles \\(C\\), \\(I\\), and \\(T\\) if we don’t assume Hardy-Weinberg?\n\nSolution:"
+  },
+  {
+    "objectID": "weeks/week-08.html",
+    "href": "weeks/week-08.html",
+    "title": "Week 08",
+    "section": "",
+    "text": "Tuesday (04/09)\n\nTopics\n\nEmpirical CDF\nThe bootstrap\n\nDaily assignment\n\nTBD\n\n\n\nThursday (04/11)\n\nTopics\n\nThe non-parametric bootstrap\n\nDaily assignment\n\nTBD\n\n\n\nFriday (04/12)\n\nTopics\n\nBootstrap confidence intervals\n\nDaily assignment\n\nTBD"
   }
 ]

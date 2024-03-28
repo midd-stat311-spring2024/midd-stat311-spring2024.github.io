@@ -39,8 +39,6 @@ No problem set this week to give space to study for the midterm! However, there 
 
 -   Covariance and Normal distribution [properties refresher](files/cov_normal_properties.pdf)
 
--   Sampling dist. of Normal variance estimators [practice problems](class/13_joint_dist.pdf)
-
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}
@@ -49,10 +47,15 @@ No problem set this week to give space to study for the midterm! However, there 
 
 **Topics**
 
+-   Joint dist. of sample mean and variance (cont.)
 -   $t$ distribution
 
 **Daily assignment**
 
 -   [Daily assignment](daily/DA_13.pdf)
+
+**Class activity**
+
+-   Sampling dist. of Normal variance estimators [practice problems](class/13_joint_dist.pdf)
 
 **Midterm 1 live at 5:00pm**

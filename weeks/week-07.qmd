@@ -41,4 +41,4 @@ title: "Week 07"
 
 **Daily assignment**
 
--   TBD
+-   [Daily assignment](daily/DA_15.pdf)

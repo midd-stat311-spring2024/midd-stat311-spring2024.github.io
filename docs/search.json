@@ -130,7 +130,7 @@
     "href": "index.html#major-announcements",
     "title": "Statistical Inference",
     "section": "Major Announcements",
-    "text": "Major Announcements\n\nPlease fill out this anonymous mid-semester feedback survey by Friday, 03/29 at 5:00pm!!!\n\nI really do value your feedback and try to make changes that make sense for the class.\n\nDetails about Midterm 1 have been shared. Read through the details and please do come to class with clarifying questions about the format!\n\nReview problems have been posted on the “Exams” tab.\nSolutions to the above review problems and selected homework and practice problems are available on Canvas under “Files”. If you have questions about other problems, please come ask them in person!!\n\nExtra credit opportunity about EM algorithm can be found in Homework tab. Have fun with it!\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
+    "text": "Major Announcements\n\nExtra credit opportunity about EM algorithm can be found in Homework tab. Have fun with it!\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
   },
   {
     "objectID": "index.html#course-details",
@@ -186,7 +186,7 @@
     "href": "weeks/week-07.html",
     "title": "Week 07",
     "section": "",
-    "text": "Tuesday (04/02)\n\nTopics\n\n\\(t\\) distribution (cont.)\nIntroduce final project\n\nDaily assignment\n\nNone\n\n\n\nThursday (04/04)\n\nTopics\n\nConfidence intervals\n\nDaily assignment\n\nDaily assignment\n\n\n\nFriday (04/05)\n\nTopics\n\nConfidence intervals (cont.)\n\nDaily assignment\n\nDaily assignment"
+    "text": "Tuesday (04/02)\n\nTopics\n\n\\(t\\) distribution (cont.)\nIntroduce final project\n\nDaily assignment\n\nNone\n\nClass activity\n\n\\(t\\) distribution practice problem\n\n\n\nThursday (04/04)\n\nTopics\n\nConfidence intervals\n\nDaily assignment\n\nDaily assignment\n\n\n\nFriday (04/05)\n\nTopics\n\nConfidence intervals (cont.)\n\nDaily assignment\n\nDaily assignment"
   },
   {
     "objectID": "weeks/week-06.html",
@@ -299,5 +299,12 @@
     "title": "Week 08",
     "section": "",
     "text": "Tuesday (04/09)\n\nTopics\n\nEmpirical CDF\nThe bootstrap\n\nDaily assignment\n\nTBD\n\n\n\nThursday (04/11)\n\nTopics\n\nThe non-parametric bootstrap\n\nDaily assignment\n\nTBD\n\n\n\nFriday (04/12)\n\nTopics\n\nBootstrap confidence intervals\n\nDaily assignment\n\nTBD"
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Final project",
+    "section": "",
+    "text": "Downloadable PDF with final project description here.\nKey dates:\n\nSaturday 04/27 at 12:00pm: project proposal due\nSaturday 05/11 at 12:00pm: rough draft due\nSaturday 05/18 at 2:00pm: project presentations during exam period\nMonday 05/20 at 11:59pm: final draft and reflection due"
   }
 ]

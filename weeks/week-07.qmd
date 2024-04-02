@@ -15,6 +15,10 @@ title: "Week 07"
 
 -   None
 
+**Class activity**
+
+-   $t$ distribution [practice problem](daily/14_t_dist.pdf)
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}

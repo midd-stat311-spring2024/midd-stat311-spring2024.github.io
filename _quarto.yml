@@ -16,6 +16,8 @@ website:
         text: "Homework"
       - file: exam.qmd
         text: "Exams"
+      - file: project.qmd
+        text: "Final project"
     right:
       - icon: bar-chart-fill
         href: https://middlebury.instructure.com/

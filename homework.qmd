@@ -19,3 +19,5 @@ Note: problem sets will be updated with new questions following each class. Comp
 -   [Extra credit opportunity](weeks/hw/EM_multinom_description.pdf) about EM algorithm (due Monday, 4/01 at 11:59pm)
     -   Implement using the following `.Rmd` template: {{< downloadthis weeks/hw/templates/EM_multinom.Rmd dname="EM_multinom" label=".Rmd" icon="arrow-down-short" class=styled id=btn1 >}}
         -   A rendered version for easier reading can be viewed [here](weeks/hw/templates/EM_multinom.Rmd)
+-   [Homework 6](weeks/hw/hw6.pdf) (due Wednesday, 4/10 at 11:59pm)
+    -   **Note** the atypical due date!

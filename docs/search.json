@@ -116,7 +116,7 @@
     "href": "homework.html",
     "title": "Homework",
     "section": "",
-    "text": "Note: problem sets will be updated with new questions following each class. Completed homework should be submitted to Canvas unless otherwise noted.\n\nHomework 1 (due Tuesday, 2/20 at 11:59pm)\n\nProblems assigned for Friday 2/16 technically cover material from Section 7.2, but we haven’t done examples in class yet. You are welcome to work on these problems now, or wait until after class 2/20.\n\nHomework 2 (due Tuesday, 2/29 at 11:59pm)\n\nNote: associated R problems can be found and completed in the following .Rmd template:  .Rmd \n\nA rendered version for easier reading can be viewed here: HW 2: R (rendered)\n\n\nHomework 3 (due Tuesday, 3/05 at 11:59pm)\n\nNote: I swapped the order of problems 3 and 5. The version as of Thursday, 2/29 is correct.\n\nHomework 4 (due Tuesday, 3/12 at 11:59pm)\n\nNote: associated R problems can be completed in the following .Rmd template:  .Rmd \n\nA rendered version for easier reading can be viewed here: HW 4: R (rendered)\n\n\nHomework 5 (due Tuesday, 3/29 at 11:59pm)\nExtra credit opportunity about EM algorithm (due Monday, 4/01 at 11:59pm)\n\nImplement using the following .Rmd template:  .Rmd \n\nA rendered version for easier reading can be viewed here"
+    "text": "Note: problem sets will be updated with new questions following each class. Completed homework should be submitted to Canvas unless otherwise noted.\n\nHomework 1 (due Tuesday, 2/20 at 11:59pm)\n\nProblems assigned for Friday 2/16 technically cover material from Section 7.2, but we haven’t done examples in class yet. You are welcome to work on these problems now, or wait until after class 2/20.\n\nHomework 2 (due Tuesday, 2/29 at 11:59pm)\n\nNote: associated R problems can be found and completed in the following .Rmd template:  .Rmd \n\nA rendered version for easier reading can be viewed here: HW 2: R (rendered)\n\n\nHomework 3 (due Tuesday, 3/05 at 11:59pm)\n\nNote: I swapped the order of problems 3 and 5. The version as of Thursday, 2/29 is correct.\n\nHomework 4 (due Tuesday, 3/12 at 11:59pm)\n\nNote: associated R problems can be completed in the following .Rmd template:  .Rmd \n\nA rendered version for easier reading can be viewed here: HW 4: R (rendered)\n\n\nHomework 5 (due Tuesday, 3/29 at 11:59pm)\nExtra credit opportunity about EM algorithm (due Monday, 4/01 at 11:59pm)\n\nImplement using the following .Rmd template:  .Rmd \n\nA rendered version for easier reading can be viewed here\n\n\nHomework 6 (due Wednesday, 4/10 at 11:59pm)\n\nNote the atypical due date!"
   },
   {
     "objectID": "index.html",
@@ -130,14 +130,14 @@
     "href": "index.html#major-announcements",
     "title": "Statistical Inference",
     "section": "Major Announcements",
-    "text": "Major Announcements\n\nNew (proposed) office hours schedule as follows:\n\nMondays 2:00-4:00pm (starting on 04/15)\nTuesdays 10:45am-12:00pm (as usual)\nCancel the Thursday office hours\nHowever, I’m travelling this coming Monday 4/08, so I will either:\n\nHave some make-up office hours this Friday 10:45am-12:45pm\nExtend due date of Homework 6 to Wednesday and have make-up hours on Wednesday\n\n\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
+    "text": "Major Announcements\n\nFinal project announced. Take a look at the description!\nNew office hours schedule as follows:\n\nMondays 2:00-4:00pm (starting on 04/15)\nTuesdays 10:45am-12:00pm (as usual)\nHowever, I’m travelling this coming Monday 4/08, so I will extend due date of Homework 6 to Wednesday 04/10 and have the following make-up office hours:\n\nFriday 04/05 from 10:45am-11:45am\nWednesday 04/10 from 3:30-4:30pm\n\n\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
   },
   {
     "objectID": "index.html#course-details",
     "href": "index.html#course-details",
     "title": "Statistical Inference",
     "section": "Course Details",
-    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 9:45-10:35am in WNS 011\nOffice hours: T 10:45am-12pm, R 3-5pm\nSyllabus (most recent update: 02/15/24 to reflect updated office hours)\nDistribution sheet (from MATH/STAT 310)"
+    "text": "Course Details\nInstructor: Becky Tang\n\nOffice: WNS 214\nEmail: btang@middlebury.edu\n\nMeeting times: TRF 9:45-10:35am in WNS 011\nOffice hours: M 2:00-4:00pm, T 10:45am-12pm\nSyllabus (most recent update: 02/15/24 to reflect updated office hours)\nDistribution sheet (from MATH/STAT 310)"
   },
   {
     "objectID": "exam.html",

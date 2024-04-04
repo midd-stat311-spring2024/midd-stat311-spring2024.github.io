@@ -1,0 +1,89 @@
+---
+title: "Empirical Bootstrap"
+author: "Becky Tang"
+date: "2024-04-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.width = 5, fig.height = 3)
+```
+
+## Example 1: bootstrapping for a mean
+
+Consider the following sample of eruption times (in seconds) of the Old Faithful geyser:
+
+```{r}
+# obtain data
+data("faithful")
+x <- faithful$eruptions * 60
+hist(x)
+```
+
+Perhaps we'd like to obtain a bootstrap distribution for the mean eruption time.
+
+```{r}
+n <- length(x)
+B <- 5000
+delta_star <- rep(NA, B)
+for(i in 1:B){
+  # if size isn't specified in sample(), defaults to length of x!
+  xstar <- sample(x, replace = T)
+  delta_star[i] <- mean(xstar) 
+}
+
+# bootstrap distribution of means
+hist(delta_star)
+
+# bootstrap estimate of bias
+mean(delta_star) - mean(x)
+```
+
+## Example 2: bootstrapping for MSE
+
+The coefficient of variation of a distribution is the quantity $\frac{\sigma}{\mu}$, where $\sigma$ and $\mu$ are the standard deviation and mean of the distribution, respectively. Let us generate some Poisson data and obtain estimates of the mean squared error (MSE) of the estimator $\frac{s}{\bar{x}}$ where $s$ is the sample standard deviation and $\bar{x}$ is the sample mean.
+
+```{r}
+# generate some Poisson data
+lambda_true <- 1
+n <- 20
+x <- rpois(n, lambda_true)
+```
+
+An estimate for coefficient variation from the data is:
+
+```{r}
+cv_hat <- sd(x)/mean(x)
+cv_hat
+```
+
+### Bootstrap estimate
+
+```{r}
+B <- 5000
+delta_star <- rep(NA, B)
+for(i in 1:B){
+  xstar <- sample(x, replace = T)
+  delta_star[i] <- sd(xstar)/mean(xstar)
+}
+hist(delta_star)
+
+# bootstrap estimate of MSE
+mean((delta_star - cv_hat)^2)
+```
+
+### "Monte Carlo" estimate
+
+Since we know the true distribution, we don't need to bootstrap to estimate the MSE of $\frac{s}{\bar{x}}$ for $\frac{\sigma}{\mu}$. That is, rather than resampling from the original observation `x`, we can actually simulate new data sets from the Poisson distribution. Then we can compare the estimates to the true coefficient of variation, which for a $\text{Poisson}(\lambda)$ distribution is $\frac{\sqrt{\lambda}}{\lambda}$. 
+
+```{r}
+delta_hat <- rep(NA, B)
+for(i in 1:B){
+  x_new <- rpois(n, lambda_true)
+  delta_hat[i] <- sd(x_new)/mean(x_new)
+}
+hist(delta_hat)
+
+cv_true <- sqrt(lambda_true)/lambda_true
+mean((delta_hat - cv_true)^2)
+```

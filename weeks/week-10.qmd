@@ -1,29 +1,15 @@
 ---
-title: "Week 08"
+title: "Week 10"
 ---
 
 ::: {style="color: #6284a2"}
-### Tuesday (04/09)
+### Tuesday (04/23)
 :::
 
 **Topics**
 
--   Empirical CDF
--   The bootstrap
-
-**Daily assignment**
-
--   [Daily assignment](daily/DA_16.pdf)
-
-------------------------------------------------------------------------
-
-::: {style="color: #6284a2"}
-### Thursday (04/11)
-:::
-
-**Topics**
-
--   The non-parametric bootstrap
+-   More on hypothesis tests
+-   Equivalence of Confidence Sets and Hypothesis Tests
 
 **Daily assignment**
 
@@ -32,12 +18,26 @@ title: "Week 08"
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}
-### Friday (04/12)
+### Thursday (04/25)
 :::
 
 **Topics**
 
--   Bootstrap confidence intervals
+-   Neyman-Pearson Lemma
+
+**Daily assignment**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #6284a2"}
+### Friday (04/26)
+:::
+
+**Topics**
+
+-   $t$-test
 
 **Daily assignment**
 

@@ -42,3 +42,7 @@ A high-level overview of the semester's topics are presented here. Please select
 ### [Week 07](weeks/week-07.qmd)
 
 -   Confidence intervals
+
+### [Week 08](weeks/week-08.qmd)
+
+-   Bootstrapping

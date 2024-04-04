@@ -1,29 +1,15 @@
 ---
-title: "Week 08"
+title: "Week 11"
 ---
 
 ::: {style="color: #6284a2"}
-### Tuesday (04/09)
+### Tuesday (04/30)
 :::
 
 **Topics**
 
--   Empirical CDF
--   The bootstrap
-
-**Daily assignment**
-
--   [Daily assignment](daily/DA_16.pdf)
-
-------------------------------------------------------------------------
-
-::: {style="color: #6284a2"}
-### Thursday (04/11)
-:::
-
-**Topics**
-
--   The non-parametric bootstrap
+-   Two-sample $t$-test
+-   $F$ distribution
 
 **Daily assignment**
 
@@ -32,12 +18,28 @@ title: "Week 08"
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}
-### Friday (04/12)
+### Thursday (05/02)
 :::
 
 **Topics**
 
--   Bootstrap confidence intervals
+-   $F$-test
+
+**Daily assignment**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #6284a2"}
+### Friday (05/03)
+:::
+
+**Midterm 2 today!**
+
+**Topics**
+
+-   TBD
 
 **Daily assignment**
 

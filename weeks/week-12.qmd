@@ -1,29 +1,15 @@
 ---
-title: "Week 08"
+title: "Week 12"
 ---
 
 ::: {style="color: #6284a2"}
-### Tuesday (04/09)
+### Tuesday (05/07)
 :::
 
 **Topics**
 
--   Empirical CDF
--   The bootstrap
-
-**Daily assignment**
-
--   [Daily assignment](daily/DA_16.pdf)
-
-------------------------------------------------------------------------
-
-::: {style="color: #6284a2"}
-### Thursday (04/11)
-:::
-
-**Topics**
-
--   The non-parametric bootstrap
+-   Method of lease squares
+-   SLR
 
 **Daily assignment**
 
@@ -32,12 +18,26 @@ title: "Week 08"
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}
-### Friday (04/12)
+### Thursday (05/09)
 :::
 
 **Topics**
 
--   Bootstrap confidence intervals
+-   Inference for SLR
+
+**Daily assignment**
+
+-   TBD
+
+------------------------------------------------------------------------
+
+::: {style="color: #6284a2"}
+### Friday (05/11)
+:::
+
+**Topics**
+
+-   Inference for SLR (cont.)
 
 **Daily assignment**
 

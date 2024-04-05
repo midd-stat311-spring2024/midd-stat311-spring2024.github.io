@@ -46,3 +46,7 @@ title: "Week 07"
 **Daily assignment**
 
 -   [Daily assignment](daily/DA_15.pdf)
+
+**Class activity**
+
+-   Confidence interval [practice problems](class/15_ci.pdf)

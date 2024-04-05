@@ -6,9 +6,14 @@ title: "Week 08"
 ### Tuesday (04/09)
 :::
 
+Note: Homework 6 due tomorrow 4/10!
+
 **Topics**
 
+-   Finish up CIs
+
 -   Empirical CDF
+
 -   The bootstrap
 
 **Daily assignment**
@@ -21,13 +26,16 @@ title: "Week 08"
 ### Thursday (04/11)
 :::
 
+Bring your laptops!
+
 **Topics**
 
--   The non-parametric bootstrap
+-   Bootstrap distribution
+-   Bootstrap confidence intervals
 
 **Daily assignment**
 
--   TBD
+-   None!
 
 ------------------------------------------------------------------------
 
@@ -35,9 +43,11 @@ title: "Week 08"
 ### Friday (04/12)
 :::
 
+Bring your laptops!
+
 **Topics**
 
--   Bootstrap confidence intervals
+-   Bootstrap confidence intervals (cont.)
 
 **Daily assignment**
 

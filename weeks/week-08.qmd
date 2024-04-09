@@ -14,8 +14,6 @@ Note: Homework 6 due tomorrow 4/10!
 
 -   Empirical CDF
 
--   The bootstrap
-
 **Daily assignment**
 
 -   [Daily assignment](daily/DA_16.pdf)

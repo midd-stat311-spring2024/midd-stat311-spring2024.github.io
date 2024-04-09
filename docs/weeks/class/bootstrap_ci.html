@@ -125,6 +125,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -285,6 +286,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="non-parametric">Non-parametric</h2>
 <section id="bootstrap-ci-for-median" class="level3">
 <h3 class="anchored" data-anchor-id="bootstrap-ci-for-median">Bootstrap CI for median</h3>
+<p>Suppose we want a 95% confidence interval for the median eruption time of Old Faithful. Define <span class="math inline">\(\delta = m - M\)</span> where <span class="math inline">\(m\)</span> is the sample median and <span class="math inline">\(M\)</span> is the true median. Then we want quantiles <span class="math inline">\(a, b\)</span> of <span class="math inline">\(\delta\)</span> such that <span class="math inline">\(0.95 = P(a \leq \delta \leq b)\)</span>. Why? Re-arranging, we have <span class="math inline">\(0.95 = P(m -a \geq M \geq m - b)\)</span>! Unfortunately, we don’t know the distribution of <span class="math inline">\(\delta\)</span>, so we approximate it via bootstrapping. We will assume <span class="math inline">\(\hat{F} = \hat{F}_{n}\)</span>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"faithful"</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> faithful<span class="sc">$</span>eruptions <span class="sc">*</span> <span class="dv">60</span></span>
@@ -303,9 +305,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="bootstrap_ci_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
 </div>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># (approximate) bootstrap CI</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>ci <span class="ot">&lt;-</span> samp_med <span class="sc">-</span> <span class="fu">quantile</span>(delta_star, <span class="fu">c</span>(<span class="fl">0.975</span>, <span class="fl">0.025</span>))</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(ci) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"2.5"</span>, <span class="st">"97.5"</span>)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>ci</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>a_star <span class="ot">&lt;-</span> <span class="fu">quantile</span>(delta_star, <span class="fl">0.025</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>b_star <span class="ot">&lt;-</span> <span class="fu">quantile</span>(delta_star, <span class="fl">0.975</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>ci <span class="ot">&lt;-</span> samp_med <span class="sc">-</span> <span class="fu">c</span>(b_star, a_star)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(ci) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"2.5"</span>, <span class="st">"97.5"</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>ci</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   2.5   97.5 
 233.49 250.02 </code></pre>
@@ -316,6 +320,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="bootstrap-ci-for-proportion" class="level3">
 <h3 class="anchored" data-anchor-id="bootstrap-ci-for-proportion">Bootstrap CI for proportion</h3>
+<p>Recall from Homework 3: in a sample from the Chinese population of Hong Kong in 1937, blood types occurred wit the following frequencies:</p>
+<ul>
+<li><p>AA: 342</p></li>
+<li><p>Aa: 500</p></li>
+<li><p>aa: 187</p></li>
+</ul>
+<p>Assuming Hardy-Weinberg, the MLE estimate of the true frequency <span class="math inline">\(\theta\)</span> of A is <span class="math inline">\(\hat{\theta} = \frac{2n_{AA} + n_{Aa}}{n} \approx 0.575\)</span> . Can we get a 90% confidence interval for <span class="math inline">\(\theta\)</span>?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"AA"</span>, <span class="dv">342</span>), <span class="fu">rep</span>(<span class="st">"Aa"</span>, <span class="dv">500</span>), <span class="fu">rep</span>(<span class="st">"aa"</span>, <span class="dv">187</span>))</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(x)</span>
@@ -328,10 +339,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  delta_star[i] <span class="ot">&lt;-</span> (<span class="dv">2</span><span class="sc">*</span><span class="fu">sum</span>(x_star <span class="sc">==</span> <span class="st">"AA"</span> ) <span class="sc">+</span> <span class="fu">sum</span>(x_star <span class="sc">==</span> <span class="st">"Aa"</span>))<span class="sc">/</span>(<span class="dv">2</span><span class="sc">*</span>n) <span class="sc">-</span> theta_hat</span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>theta_hat <span class="sc">-</span> <span class="fu">quantile</span>(delta_star, <span class="fu">c</span>(<span class="fl">0.975</span>, <span class="fl">0.025</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co"># (approximate) bootstrap CI</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>a_star <span class="ot">&lt;-</span> <span class="fu">quantile</span>(delta_star, <span class="fl">0.025</span>)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>b_star <span class="ot">&lt;-</span> <span class="fu">quantile</span>(delta_star, <span class="fl">0.975</span>)</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>ci <span class="ot">&lt;-</span> theta_hat <span class="sc">-</span> <span class="fu">c</span>(b_star, a_star)</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(ci) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"0.05"</span>, <span class="fl">0.95</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>ci</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>    97.5%      2.5% 
-0.5534500 0.5962099 </code></pre>
+<pre><code>     0.05      0.95 
+0.5544218 0.5976798 </code></pre>
 </div>
 </div>
 </section>
@@ -356,12 +373,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="bootstrap_ci_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># (approximate) bootstrap CI</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>ci <span class="ot">&lt;-</span> samp_med <span class="sc">-</span> <span class="fu">quantile</span>(delta_star, <span class="fu">c</span>(<span class="fl">0.975</span>, <span class="fl">0.025</span>))</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(ci) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"2.5"</span>, <span class="st">"97.5"</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>ci</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>a_star <span class="ot">&lt;-</span> <span class="fu">quantile</span>(delta_star, <span class="fl">0.025</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>b_star <span class="ot">&lt;-</span> <span class="fu">quantile</span>(delta_star, <span class="fl">0.975</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>ci <span class="ot">&lt;-</span> samp_med <span class="sc">-</span> <span class="fu">c</span>(b_star, a_star)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(ci) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"2.5"</span>, <span class="st">"97.5"</span>)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>ci</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     2.5     97.5 
-260.2404 280.8233 </code></pre>
+260.4536 280.5890 </code></pre>
 </div>
 </div>
 

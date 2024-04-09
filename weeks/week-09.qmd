@@ -10,11 +10,10 @@ title: "Week 09"
 
 -   Introduction to Hypothesis tests
 -   Power
--   Significance level
 
 **Daily assignment**
 
--   TBD
+-   [Daily assignment](daily/DA_17.pdf)
 
 ------------------------------------------------------------------------
 
@@ -24,6 +23,7 @@ title: "Week 09"
 
 **Topics**
 
+-   Significance level
 -   Size of test
 -   p-values
 
@@ -43,4 +43,4 @@ title: "Week 09"
 
 **Daily assignment**
 
--   None! But it's a good idea to skim over readings and notes from this week.
+-   None! But it's an EXCELLENT idea to skim over readings and notes from this week.

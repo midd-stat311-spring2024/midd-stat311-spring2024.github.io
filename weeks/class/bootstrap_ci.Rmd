@@ -13,6 +13,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Bootstrap CI for median
 
+Suppose we want a 95% confidence interval for the median eruption time of Old Faithful. Define $\delta = m - M$ where $m$ is the sample median and $M$ is the true median. Then we want quantiles $a, b$ of $\delta$ such that $0.95 = P(a \leq \delta \leq b)$. Why? Re-arranging, we have $0.95 = P(m -a \geq M \geq m - b)$! Unfortunately, we don't know the distribution of $\delta$, so we approximate it via bootstrapping. We will assume $\hat{F} = \hat{F}_{n}$.
+
 ```{r}
 data("faithful")
 x <- faithful$eruptions * 60
@@ -29,7 +31,9 @@ for(i in 1:B){
 hist(delta_star)
 
 # (approximate) bootstrap CI
-ci <- samp_med - quantile(delta_star, c(0.975, 0.025))
+a_star <- quantile(delta_star, 0.025)
+b_star <- quantile(delta_star, 0.975)
+ci <- samp_med - c(b_star, a_star)
 names(ci) <- c("2.5", "97.5")
 ci
 ```
@@ -39,6 +43,16 @@ ci
 The approximate 95% bootstrap CI for the median eruption time of Old Faithul is [`r ci[1]`, `r ci[2]`].
 
 ### Bootstrap CI for proportion
+
+Recall from Homework 3: in a sample from the Chinese population of Hong Kong in 1937, blood types occurred wit the following frequencies:
+
+-   AA: 342
+
+-   Aa: 500
+
+-   aa: 187
+
+Assuming Hardy-Weinberg, the MLE estimate of the true frequency $\theta$ of A is $\hat{\theta} = \frac{2n_{AA} + n_{Aa}}{n} \approx 0.575$ . Can we get a 90% confidence interval for $\theta$?
 
 ```{r}
 x <- c(rep("AA", 342), rep("Aa", 500), rep("aa", 187))
@@ -52,7 +66,13 @@ for(i in 1:B){
   delta_star[i] <- (2*sum(x_star == "AA" ) + sum(x_star == "Aa"))/(2*n) - theta_hat
 }
 
-theta_hat - quantile(delta_star, c(0.975, 0.025))
+
+# (approximate) bootstrap CI
+a_star <- quantile(delta_star, 0.025)
+b_star <- quantile(delta_star, 0.975)
+ci <- theta_hat - c(b_star, a_star)
+names(ci) <- c("0.05", 0.95)
+ci
 ```
 
 ## Parametric
@@ -74,8 +94,9 @@ for(i in 1:B){
 hist(delta_star)
 
 # (approximate) bootstrap CI
-ci <- samp_med - quantile(delta_star, c(0.975, 0.025))
+a_star <- quantile(delta_star, 0.025)
+b_star <- quantile(delta_star, 0.975)
+ci <- samp_med - c(b_star, a_star)
 names(ci) <- c("2.5", "97.5")
 ci
 ```
-

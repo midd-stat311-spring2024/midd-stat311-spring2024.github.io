@@ -130,7 +130,7 @@
     "href": "index.html#major-announcements",
     "title": "Statistical Inference",
     "section": "Major Announcements",
-    "text": "Major Announcements\n\nMidterm 1 (non-R) revisions (due physically in class Tuesday, 04/09):\n\nFor partial credit back, you are welcome to revise any and all parts in which you received less than 50%. My expectation is that for every part you revise, you should completely re-write a new solution.\n\nThis may also require you to revise previous parts of problems in which you received more then 50% credit but not full 100%. If this is the case, please include this work in your revision as well.\n\nTempting as it may be, try not work with others/ask each other how you did certain parts.\n\nFinal project announced. Take a look at the description!\nNew office hours schedule as follows:\n\nMondays 2:00-4:00pm (starting on 04/15)\nTuesdays 10:45am-12:00pm (as usual)\nHowever, I’m travelling this coming Monday 4/08, so I will extend due date of Homework 6 to Wednesday 04/10 and have the following make-up office hours:\n\nFriday 04/05 from 10:45am-11:45am\nWednesday 04/10 from 3:30-4:30pm\n\n\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
+    "text": "Major Announcements\n\nMidterm 1 (non-R) revisions (due physically in class Tuesday, 04/09):\n\nFor partial credit back, you are welcome to revise any and all parts in which you received less than 50%. My expectation is that for every part you revise, you should completely re-write a new solution.\n\nThis may also require you to revise previous parts of problems in which you received more then 50% credit but not full 100%. If this is the case, please include this work in your revision as well.\n\nTempting as it may be, try not work with others/ask each other how you did certain parts.\n\nFinal project announced. Take a look at the description!\nNew office hours schedule as follows:\n\nMondays 2:00-4:00pm (starting on 04/15)\nTuesdays 10:45am-12:00pm (as usual)\nHowever, I’m travelling this coming Monday 4/08, so I will extend due date of Homework 6 to Wednesday 04/10 and have the following make-up office hours:\n\nWednesday 04/10 from 3:30-4:30pm\n\n\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
   },
   {
     "objectID": "index.html#course-details",
@@ -151,7 +151,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome!\nPrior and posterior distributions\n\n\n\nWeek 02\n\nConjugate priors\nBayes estimators\n\n\n\nWeek 03\n\nMaximum likelihood estimation\n\n\n\nWeek 04\n\nMethod of moments\nBias, variance, MSE\n\n\n\nWeek 05\n\nFisher information\nCramer-Rao Lower Bound\n\n\n\nSPRING BREAK\n\n\nWeek 06\n\n\\(\\chi^2\\) and \\(t\\) distributions\nJoint distribution of sample mean and variance\n\n\n\nWeek 07\n\nConfidence intervals\n\n\n\nWeek 08\n\nBootstrapping"
+    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome!\nPrior and posterior distributions\n\n\n\nWeek 02\n\nConjugate priors\nBayes estimators\n\n\n\nWeek 03\n\nMaximum likelihood estimation\n\n\n\nWeek 04\n\nMethod of moments\nBias, variance, MSE\n\n\n\nWeek 05\n\nFisher information\nCramer-Rao Lower Bound\n\n\n\nSPRING BREAK\n\n\nWeek 06\n\n\\(\\chi^2\\) and \\(t\\) distributions\nJoint distribution of sample mean and variance\n\n\n\nWeek 07\n\nConfidence intervals\n\n\n\nWeek 08\n\nBootstrapping\n\n\n\nWeek 09\n\nHypothesis testing\np-values"
   },
   {
     "objectID": "weeks/week-04.html",
@@ -298,7 +298,7 @@
     "href": "weeks/week-08.html",
     "title": "Week 08",
     "section": "",
-    "text": "Tuesday (04/09)\n\nNote: Homework 6 due tomorrow 4/10!\nTopics\n\nFinish up CIs\nEmpirical CDF\nThe bootstrap\n\nDaily assignment\n\nDaily assignment\n\n\n\nThursday (04/11)\n\nBring your laptops!\nTopics\n\nBootstrap distribution\nBootstrap confidence intervals\n\nDaily assignment\n\nNone!\n\n\n\nFriday (04/12)\n\nBring your laptops!\nTopics\n\nBootstrap confidence intervals (cont.)\n\nDaily assignment\n\nNone!"
+    "text": "Tuesday (04/09)\n\nNote: Homework 6 due tomorrow 4/10!\nTopics\n\nFinish up CIs\nEmpirical CDF\nThe bootstrap\n\nDaily assignment\n\nDaily assignment\n\nClass activity\n\nCode from bootstrap distribution demo\n\n\n\nThursday (04/11)\n\nBring your laptops!\nTopics\n\nBootstrap distribution\nBootstrap confidence intervals\n\nDaily assignment\n\nNone!\n\n\n\nFriday (04/12)\n\nBring your laptops!\nTopics\n\nBootstrap confidence intervals (cont.)\n\nDaily assignment\n\nNone!"
   },
   {
     "objectID": "project.html",
@@ -333,41 +333,55 @@
     "href": "weeks/week-09.html",
     "title": "Week 09",
     "section": "",
-    "text": "Tuesday (04/16)\n\nTopics\n\nIntroduction to Hypothesis tests\nSignificance level and power\nLRT\n\nDaily assignment\n\nTBD\n\n\n\nThursday (04/18)\n\nTopics\n\np-values\n\nDaily assignment\n\nTBD\n\n\n\nFriday (04/19)\n\nTopics\n\nNO CLASS: Spring symposium\n\nDaily assignment\n\nNone! But it’s a good idea to skim over readings and notes from this week."
+    "text": "Tuesday (04/16)\n\nTopics\n\nIntroduction to Hypothesis tests\nPower\nSignificance level\n\nDaily assignment\n\nTBD\n\n\n\nThursday (04/18)\n\nTopics\n\nSize of test\np-values\n\nDaily assignment\n\nTBD\n\n\n\nFriday (04/19)\n\nTopics\n\nNO CLASS: Spring symposium\n\nDaily assignment\n\nNone! But it’s a good idea to skim over readings and notes from this week."
   },
   {
     "objectID": "weeks/week-10.html",
     "href": "weeks/week-10.html",
     "title": "Week 10",
     "section": "",
-    "text": "Tuesday (04/23)\n\nTopics\n\nMore on hypothesis tests\nEquivalence of Confidence Sets and Hypothesis Tests\n\nDaily assignment\n\nTBD\n\n\n\nThursday (04/25)\n\nTopics\n\nNeyman-Pearson Lemma\n\nDaily assignment\n\nTBD\n\n\n\nFriday (04/26)\n\nTopics\n\n\\(t\\)-test\n\nDaily assignment\n\nNone!"
+    "text": "Tuesday (04/23)\n\nTopics\n\nP-value (cont.)\nEquivalence of Confidence Sets and Hypothesis Tests\n\nDaily assignment\n\nTBD\n\n\n\nThursday (04/25)\n\nTopics\n\nLikelihood ratio test\n\nDaily assignment\n\nTBD\n\n\n\nFriday (04/26)\n\nProject proposals due tomorrow at 12:00pm to Canvas!\nTopics\n\n\\(t\\)-test\n\nDaily assignment\n\nNone!"
   },
   {
     "objectID": "weeks/week-11.html",
     "href": "weeks/week-11.html",
     "title": "Week 11",
     "section": "",
-    "text": "Tuesday (04/30)\n\nTopics\n\nTwo-sample \\(t\\)-test\n\\(F\\) distribution\n\nDaily assignment\n\nTBD\n\n\n\nThursday (05/02)\n\nTopics\n\n\\(F\\)-test\n\nDaily assignment\n\nTBD\n\n\n\nFriday (05/03)\n\nMidterm 2 today!\nTopics\n\nTBD\n\nDaily assignment\n\nNone!"
+    "text": "Tuesday (04/30)\n\nTopics\n\nTwo-sample \\(t\\)-test\n\\(F\\)-distribution\n\nDaily assignment\n\nTBD\n\n\n\nThursday (05/02)\n\nTopics\n\n\\(F\\)-test\n\nDaily assignment\n\nTBD\n\n\n\nFriday (05/03)\n\nMidterm 2 today!\nTopics\n\nReview day\n\nDaily assignment\n\nNone!"
   },
   {
     "objectID": "weeks/week-12.html",
     "href": "weeks/week-12.html",
     "title": "Week 12",
     "section": "",
-    "text": "Tuesday (05/07)\n\nTopics\n\nMethod of lease squares\nSLR\n\nDaily assignment\n\nTBD\n\n\n\nThursday (05/09)\n\nTopics\n\nInference for SLR\n\nDaily assignment\n\nTBD\n\n\n\nFriday (05/11)\n\nTopics\n\nInference for SLR (cont.)\n\nDaily assignment\n\nNone!"
+    "text": "Tuesday (05/07)\n\nTopics\n\nMethod of least squares\nSLR\n\nDaily assignment\n\nTBD\n\n\n\nThursday (05/09)\n\nTopics\n\nInference for SLR\nCRFs\n\nDaily assignment\n\nTBD\n\n\n\nFriday (05/11)\n\nTopics\n\nInference for SLR (cont.)\n\nDaily assignment\n\nNone!"
   },
   {
     "objectID": "weeks/class/bootstrap_dist.html",
     "href": "weeks/class/bootstrap_dist.html",
-    "title": "Empirical Bootstrap",
+    "title": "Empirical Bootstrap Distribution",
     "section": "",
-    "text": "Consider the following sample of eruption times (in seconds) of the Old Faithful geyser:\n\n# obtain data\ndata(\"faithful\")\nx <- faithful$eruptions * 60\nhist(x)\n\n\n\n\nPerhaps we’d like to obtain a bootstrap distribution for the mean eruption time.\n\nn <- length(x)\nB <- 5000\ndelta_star <- rep(NA, B)\nfor(i in 1:B){\n  # if size isn't specified in sample(), defaults to length of x!\n  xstar <- sample(x, replace = T)\n  delta_star[i] <- mean(xstar) \n}\n\n# bootstrap distribution of means\nhist(delta_star)\n\n\n\n# bootstrap estimate of bias\nmean(delta_star) - mean(x)\n\n[1] -0.04032944"
+    "text": "Consider the following sample of eruption times (in seconds) of the Old Faithful geyser:\n\n# obtain data\ndata(\"faithful\")\nx <- faithful$eruptions * 60\nhist(x)\n\n\n\n\nThis data is certainly not Normal!\nPerhaps we’d like to obtain a bootstrap distribution for the median eruption time.\n\nn <- length(x)\nB <- 5000\ndelta_star <- rep(NA, B)\nfor(i in 1:B){\n  xstar <- sample(x, size = n, replace = T)\n  delta_star[i] <- median(xstar) \n}\n\n# bootstrap distribution of medians\nhist(delta_star)\n\n\n\n# bootstrap estimate of bias\nmean(delta_star) - median(x)\n\n[1] -0.90333"
   },
   {
     "objectID": "weeks/class/bootstrap_dist.html#example-2-bootstrapping-for-mse",
     "href": "weeks/class/bootstrap_dist.html#example-2-bootstrapping-for-mse",
-    "title": "Empirical Bootstrap",
+    "title": "Empirical Bootstrap Distribution",
     "section": "Example 2: bootstrapping for MSE",
-    "text": "Example 2: bootstrapping for MSE\nThe coefficient of variation of a distribution is the quantity \\(\\frac{\\sigma}{\\mu}\\), where \\(\\sigma\\) and \\(\\mu\\) are the standard deviation and mean of the distribution, respectively. Let us generate some Poisson data and obtain estimates of the mean squared error (MSE) of the estimator \\(\\frac{s}{\\bar{x}}\\) where \\(s\\) is the sample standard deviation and \\(\\bar{x}\\) is the sample mean.\n\n# generate some Poisson data\nlambda_true <- 1\nn <- 20\nx <- rpois(n, lambda_true)\n\nAn estimate for coefficient variation from the data is:\n\ncv_hat <- sd(x)/mean(x)\ncv_hat\n\n[1] 1.376494\n\n\n\nBootstrap estimate\n\nB <- 5000\ndelta_star <- rep(NA, B)\nfor(i in 1:B){\n  xstar <- sample(x, replace = T)\n  delta_star[i] <- sd(xstar)/mean(xstar)\n}\nhist(delta_star)\n\n\n\n# bootstrap estimate of MSE\nmean((delta_star - cv_hat)^2)\n\n[1] 0.1146386\n\n\n\n\n“Monte Carlo” estimate\nSince we know the true distribution, we don’t need to bootstrap to estimate the MSE of \\(\\frac{s}{\\bar{x}}\\) for \\(\\frac{\\sigma}{\\mu}\\). That is, rather than resampling from the original observation x, we can actually simulate new data sets from the Poisson distribution. Then we can compare the estimates to the true coefficient of variation, which for a \\(\\text{Poisson}(\\lambda)\\) distribution is \\(\\frac{\\sqrt{\\lambda}}{\\lambda}\\).\n\ndelta_hat <- rep(NA, B)\nfor(i in 1:B){\n  x_new <- rpois(n, lambda_true)\n  delta_hat[i] <- sd(x_new)/mean(x_new)\n}\nhist(delta_hat)\n\n\n\ncv_true <- sqrt(lambda_true)/lambda_true\nmean((delta_hat - cv_true)^2)\n\n[1] 0.03892559"
+    "text": "Example 2: bootstrapping for MSE\nThe coefficient of variation of a distribution is the quantity \\(\\frac{\\sigma}{\\mu}\\), where \\(\\sigma\\) and \\(\\mu\\) are the standard deviation and mean of the distribution, respectively. Let us generate some Poisson data and obtain estimates of the mean squared error (MSE) of the estimator \\(\\frac{s}{\\bar{x}}\\) where \\(s\\) is the sample standard deviation and \\(\\bar{x}\\) is the sample mean.\nNotice that in the following, I am setting a seed using the set.seed() function. The input doesn’t really matter. What this function does is ensure that the random generator in R generates the same sequence of random values. That way when we knit or run the same code that involves random sampling on different laptops, we will get the same result.\n\n# generate some Poisson data\nset.seed(309)\nlambda_true <- 1\nn <- 20\nx <- rpois(n, lambda_true)\n\nAn estimate for coefficient variation from the data is:\n\ncv_hat <- sd(x)/mean(x)\ncv_hat\n\n[1] 1.00006\n\n\n\nBootstrap estimate\n\nB <- 5000\ndelta_star <- rep(NA, B)\nfor(i in 1:B){\n  # if size isn't specified in sample(), defaults to length of x!\n  xstar <- sample(x, replace = T)\n  delta_star[i] <- sd(xstar)/mean(xstar)\n}\nhist(delta_star)\n\n\n\n# bootstrap estimate of MSE\nmean((delta_star - cv_hat)^2)\n\n[1] 0.03948413\n\n\n\n\n“Monte Carlo” estimate\nSince we know the true distribution, we don’t need to bootstrap to estimate the MSE of \\(\\frac{s}{\\bar{x}}\\) for \\(\\frac{\\sigma}{\\mu}\\). That is, rather than resampling from the original observation x, we can actually simulate new data sets from the Poisson distribution. Then we can compare the estimates to the true coefficient of variation, which for a \\(\\text{Poisson}(\\lambda)\\) distribution is \\(\\frac{\\sqrt{\\lambda}}{\\lambda}\\).\n\ndelta_hat <- rep(NA, B)\nfor(i in 1:B){\n  x_new <- rpois(n, lambda_true)\n  delta_hat[i] <- sd(x_new)/mean(x_new)\n}\nhist(delta_hat)\n\n\n\ncv_true <- sqrt(lambda_true)/lambda_true\nmean((delta_hat - cv_true)^2)\n\n[1] 0.04043435"
+  },
+  {
+    "objectID": "weeks/class/bootstrap_ci.html",
+    "href": "weeks/class/bootstrap_ci.html",
+    "title": "Bootstrap confidence intervals",
+    "section": "",
+    "text": "data(\"faithful\")\nx <- faithful$eruptions * 60\nn <- length(x)\nsamp_med <- median(x)\nB <- 5000\ndelta_star <- rep(NA, B)\nfor(i in 1:B){\n  xstar <- sample(x, size = n, replace = T)\n  delta_star[i] <- median(xstar) - samp_med\n}\n\n# bootstrap distribution of delta\nhist(delta_star)\n\n\n\n# (approximate) bootstrap CI\nci <- samp_med - quantile(delta_star, c(0.975, 0.025))\nnames(ci) <- c(\"2.5\", \"97.5\")\nci\n\n   2.5   97.5 \n233.49 250.02 \n\n\n233.49, 250.02\nThe approximate 95% bootstrap CI for the median eruption time of Old Faithul is [233.49, 250.02].\n\n\n\n\nx <- c(rep(\"AA\", 342), rep(\"Aa\", 500), rep(\"aa\", 187))\nn <- length(x)\nB <- 1000\ntheta_hat <- (2*sum(x == \"AA\" ) + sum(x == \"Aa\"))/(2*n)\n\ndelta_star <- rep(NA, B)\nfor(i in 1:B){\n  x_star <- sample(x, size = n, replace = T)\n  delta_star[i] <- (2*sum(x_star == \"AA\" ) + sum(x_star == \"Aa\"))/(2*n) - theta_hat\n}\n\ntheta_hat - quantile(delta_star, c(0.975, 0.025))\n\n    97.5%      2.5% \n0.5534500 0.5962099"
+  },
+  {
+    "objectID": "weeks/class/bootstrap_ci.html#parametric",
+    "href": "weeks/class/bootstrap_ci.html#parametric",
+    "title": "Bootstrap confidence intervals",
+    "section": "Parametric",
+    "text": "Parametric\nReturning to the Old Faithful example: suppose we assume that the eruption times are Normal (even though the data clearly show that they are not…). For a parametric bootstrap, we will take repeated samples from a Normal distribution with mean and variance estimated from the observed data, then proceed as we did in the nonparametric bootstrap:\n\nx <- faithful$eruptions * 60\nn <- length(x)\nsamp_mean <- mean(x)\nsamp_sd_mle <- sd(x)*sqrt((n-1)/n)\nsamp_med <- median(x)\nB <- 5000\ndelta_star <- rep(NA, B)\nfor(i in 1:B){\n  xstar <- rnorm(n, samp_mean, samp_sd_mle)\n  delta_star[i] <- median(xstar) - samp_med\n}\nhist(delta_star)\n\n\n\n# (approximate) bootstrap CI\nci <- samp_med - quantile(delta_star, c(0.975, 0.025))\nnames(ci) <- c(\"2.5\", \"97.5\")\nci\n\n     2.5     97.5 \n260.2404 280.8233"
   }
 ]

@@ -8,7 +8,7 @@ title: "Week 12"
 
 **Topics**
 
--   Method of lease squares
+-   Method of least squares
 -   SLR
 
 **Daily assignment**
@@ -24,6 +24,7 @@ title: "Week 12"
 **Topics**
 
 -   Inference for SLR
+-   CRFs
 
 **Daily assignment**
 

@@ -9,8 +9,8 @@ title: "Week 09"
 **Topics**
 
 -   Introduction to Hypothesis tests
--   Significance level and power
--   LRT
+-   Power
+-   Significance level
 
 **Daily assignment**
 
@@ -24,6 +24,7 @@ title: "Week 09"
 
 **Topics**
 
+-   Size of test
 -   p-values
 
 **Daily assignment**

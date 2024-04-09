@@ -9,7 +9,7 @@ title: "Week 11"
 **Topics**
 
 -   Two-sample $t$-test
--   $F$ distribution
+-   $F$-distribution
 
 **Daily assignment**
 
@@ -39,7 +39,7 @@ title: "Week 11"
 
 **Topics**
 
--   TBD
+-   Review day
 
 **Daily assignment**
 

@@ -20,6 +20,10 @@ Note: Homework 6 due tomorrow 4/10!
 
 -   [Daily assignment](daily/DA_16.pdf)
 
+**Class activity**
+
+-   Code from bootstrap distribution demo
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}

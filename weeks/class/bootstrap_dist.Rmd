@@ -1,8 +1,10 @@
 ---
-title: "Empirical Bootstrap"
+title: "Empirical Bootstrap Distribution"
 author: "Becky Tang"
 date: "2024-04-09"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -20,31 +22,35 @@ x <- faithful$eruptions * 60
 hist(x)
 ```
 
-Perhaps we'd like to obtain a bootstrap distribution for the mean eruption time.
+This data is certainly not Normal!
+
+Perhaps we'd like to obtain a bootstrap distribution for the median eruption time.
 
 ```{r}
 n <- length(x)
 B <- 5000
 delta_star <- rep(NA, B)
 for(i in 1:B){
-  # if size isn't specified in sample(), defaults to length of x!
-  xstar <- sample(x, replace = T)
-  delta_star[i] <- mean(xstar) 
+  xstar <- sample(x, size = n, replace = T)
+  delta_star[i] <- median(xstar) 
 }
 
-# bootstrap distribution of means
+# bootstrap distribution of medians
 hist(delta_star)
 
 # bootstrap estimate of bias
-mean(delta_star) - mean(x)
+mean(delta_star) - median(x)
 ```
 
 ## Example 2: bootstrapping for MSE
 
 The coefficient of variation of a distribution is the quantity $\frac{\sigma}{\mu}$, where $\sigma$ and $\mu$ are the standard deviation and mean of the distribution, respectively. Let us generate some Poisson data and obtain estimates of the mean squared error (MSE) of the estimator $\frac{s}{\bar{x}}$ where $s$ is the sample standard deviation and $\bar{x}$ is the sample mean.
 
+Notice that in the following, I am setting a seed using the `set.seed()` function. The input doesn't really matter. What this function does is ensure that the random generator in R generates the same sequence of random values. That way when we knit or run the same code that involves random sampling on different laptops, we will get the same result.
+
 ```{r}
 # generate some Poisson data
+set.seed(309)
 lambda_true <- 1
 n <- 20
 x <- rpois(n, lambda_true)
@@ -63,6 +69,7 @@ cv_hat
 B <- 5000
 delta_star <- rep(NA, B)
 for(i in 1:B){
+  # if size isn't specified in sample(), defaults to length of x!
   xstar <- sample(x, replace = T)
   delta_star[i] <- sd(xstar)/mean(xstar)
 }
@@ -74,7 +81,7 @@ mean((delta_star - cv_hat)^2)
 
 ### "Monte Carlo" estimate
 
-Since we know the true distribution, we don't need to bootstrap to estimate the MSE of $\frac{s}{\bar{x}}$ for $\frac{\sigma}{\mu}$. That is, rather than resampling from the original observation `x`, we can actually simulate new data sets from the Poisson distribution. Then we can compare the estimates to the true coefficient of variation, which for a $\text{Poisson}(\lambda)$ distribution is $\frac{\sqrt{\lambda}}{\lambda}$. 
+Since we know the true distribution, we don't need to bootstrap to estimate the MSE of $\frac{s}{\bar{x}}$ for $\frac{\sigma}{\mu}$. That is, rather than resampling from the original observation `x`, we can actually simulate new data sets from the Poisson distribution. Then we can compare the estimates to the true coefficient of variation, which for a $\text{Poisson}(\lambda)$ distribution is $\frac{\sqrt{\lambda}}{\lambda}$.
 
 ```{r}
 delta_hat <- rep(NA, B)
@@ -86,4 +93,27 @@ hist(delta_hat)
 
 cv_true <- sqrt(lambda_true)/lambda_true
 mean((delta_hat - cv_true)^2)
+```
+
+```{r echo = F, eval = F}
+boot_np_se_est <- function(y, B){
+  mu_hat <- mean(y)
+  theta_hat <- 1/mean(y)
+  tau_star <- matrix(NA, nrow = B, ncol = B)
+  delta_star <- rep(NA, B)
+  for(i in 1:B){
+    xstar <- sample(y, replace = T)
+    delta_star2 <- rep(NA, B)
+    for(k in 1:B){
+      xstar2 <- sample(xstar, replace = T)
+      delta_star2[k] <- 1/mean(xstar2)
+    }
+    se_hat <- sd(delta_star2)
+    delta_star[i] <- 1/mean(xstar)
+    tau_star[,i] <- (delta_star2 - delta_star[i])/se_hat
+  }
+  se_t <- sd(delta_star)
+  ci <- theta_hat - quantile(c(tau_star), c(0.975, 0.025))*se_t
+  return(ci)
+}
 ```

@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Becky Tang">
-<meta name="dcterms.date" content="2024-04-09">
+<meta name="dcterms.date" content="2024-04-08">
 
-<title>STAT 311: Statistical Inference - Empirical Bootstrap Distribution</title>
+<title>STAT 311: Statistical Inference - Bootstrap confidence intervals</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -125,7 +125,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   }
 }</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -182,7 +181,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Empirical Bootstrap Distribution</h1>
+      <h1 class="quarto-secondary-nav-title">Bootstrap confidence intervals</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -255,7 +254,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Empirical Bootstrap Distribution</h1>
+<h1 class="title d-none d-lg-block">Bootstrap confidence intervals</h1>
 </div>
 
 
@@ -272,7 +271,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 9, 2024</p>
+      <p class="date">April 8, 2024</p>
     </div>
   </div>
   
@@ -282,106 +281,91 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="example-1-bootstrapping-for-a-mean" class="level2">
-<h2 class="anchored" data-anchor-id="example-1-bootstrapping-for-a-mean">Example 1: bootstrapping for a mean</h2>
-<p>Consider the following sample of eruption times (in seconds) of the Old Faithful geyser:</p>
+<section id="non-parametric" class="level2">
+<h2 class="anchored" data-anchor-id="non-parametric">Non-parametric</h2>
+<section id="bootstrap-ci-for-median" class="level3">
+<h3 class="anchored" data-anchor-id="bootstrap-ci-for-median">Bootstrap CI for median</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># obtain data</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"faithful"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> faithful<span class="sc">$</span>eruptions <span class="sc">*</span> <span class="dv">60</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"faithful"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> faithful<span class="sc">$</span>eruptions <span class="sc">*</span> <span class="dv">60</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(x)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>samp_med <span class="ot">&lt;-</span> <span class="fu">median</span>(x)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="dv">5000</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>delta_star <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">NA</span>, B)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>B){</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  xstar <span class="ot">&lt;-</span> <span class="fu">sample</span>(x, <span class="at">size =</span> n, <span class="at">replace =</span> T)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  delta_star[i] <span class="ot">&lt;-</span> <span class="fu">median</span>(xstar) <span class="sc">-</span> samp_med</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># bootstrap distribution of delta</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(delta_star)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="bootstrap_dist_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="480"></p>
+<p><img src="bootstrap_ci_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
 </div>
-</div>
-<p>This data is certainly not Normal!</p>
-<p>Perhaps we’d like to obtain a bootstrap distribution for the median eruption time.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(x)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="dv">5000</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>delta_star <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">NA</span>, B)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>B){</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  xstar <span class="ot">&lt;-</span> <span class="fu">sample</span>(x, <span class="at">size =</span> n, <span class="at">replace =</span> T)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  delta_star[i] <span class="ot">&lt;-</span> <span class="fu">median</span>(xstar) </span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># bootstrap distribution of medians</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(delta_star)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<p><img src="bootstrap_dist_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="480"></p>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># bootstrap estimate of bias</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(delta_star) <span class="sc">-</span> <span class="fu">median</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># (approximate) bootstrap CI</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>ci <span class="ot">&lt;-</span> samp_med <span class="sc">-</span> <span class="fu">quantile</span>(delta_star, <span class="fu">c</span>(<span class="fl">0.975</span>, <span class="fl">0.025</span>))</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(ci) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"2.5"</span>, <span class="st">"97.5"</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>ci</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] -0.90333</code></pre>
+<pre><code>   2.5   97.5 
+233.49 250.02 </code></pre>
+</div>
+</div>
+<p>233.49, 250.02</p>
+<p>The approximate 95% bootstrap CI for the median eruption time of Old Faithul is [233.49, 250.02].</p>
+</section>
+<section id="bootstrap-ci-for-proportion" class="level3">
+<h3 class="anchored" data-anchor-id="bootstrap-ci-for-proportion">Bootstrap CI for proportion</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"AA"</span>, <span class="dv">342</span>), <span class="fu">rep</span>(<span class="st">"Aa"</span>, <span class="dv">500</span>), <span class="fu">rep</span>(<span class="st">"aa"</span>, <span class="dv">187</span>))</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(x)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>theta_hat <span class="ot">&lt;-</span> (<span class="dv">2</span><span class="sc">*</span><span class="fu">sum</span>(x <span class="sc">==</span> <span class="st">"AA"</span> ) <span class="sc">+</span> <span class="fu">sum</span>(x <span class="sc">==</span> <span class="st">"Aa"</span>))<span class="sc">/</span>(<span class="dv">2</span><span class="sc">*</span>n)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>delta_star <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">NA</span>, B)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>B){</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  x_star <span class="ot">&lt;-</span> <span class="fu">sample</span>(x, <span class="at">size =</span> n, <span class="at">replace =</span> T)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  delta_star[i] <span class="ot">&lt;-</span> (<span class="dv">2</span><span class="sc">*</span><span class="fu">sum</span>(x_star <span class="sc">==</span> <span class="st">"AA"</span> ) <span class="sc">+</span> <span class="fu">sum</span>(x_star <span class="sc">==</span> <span class="st">"Aa"</span>))<span class="sc">/</span>(<span class="dv">2</span><span class="sc">*</span>n) <span class="sc">-</span> theta_hat</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>theta_hat <span class="sc">-</span> <span class="fu">quantile</span>(delta_star, <span class="fu">c</span>(<span class="fl">0.975</span>, <span class="fl">0.025</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    97.5%      2.5% 
+0.5534500 0.5962099 </code></pre>
 </div>
 </div>
 </section>
-<section id="example-2-bootstrapping-for-mse" class="level2">
-<h2 class="anchored" data-anchor-id="example-2-bootstrapping-for-mse">Example 2: bootstrapping for MSE</h2>
-<p>The coefficient of variation of a distribution is the quantity <span class="math inline">\(\frac{\sigma}{\mu}\)</span>, where <span class="math inline">\(\sigma\)</span> and <span class="math inline">\(\mu\)</span> are the standard deviation and mean of the distribution, respectively. Let us generate some Poisson data and obtain estimates of the mean squared error (MSE) of the estimator <span class="math inline">\(\frac{s}{\bar{x}}\)</span> where <span class="math inline">\(s\)</span> is the sample standard deviation and <span class="math inline">\(\bar{x}\)</span> is the sample mean.</p>
-<p>Notice that in the following, I am setting a seed using the <code>set.seed()</code> function. The input doesn’t really matter. What this function does is ensure that the random generator in R generates the same sequence of random values. That way when we knit or run the same code that involves random sampling on different laptops, we will get the same result.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># generate some Poisson data</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">309</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>lambda_true <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">20</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rpois</span>(n, lambda_true)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>An estimate for coefficient variation from the data is:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>cv_hat <span class="ot">&lt;-</span> <span class="fu">sd</span>(x)<span class="sc">/</span><span class="fu">mean</span>(x)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>cv_hat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1.00006</code></pre>
-</div>
-</div>
-<section id="bootstrap-estimate" class="level3">
-<h3 class="anchored" data-anchor-id="bootstrap-estimate">Bootstrap estimate</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="dv">5000</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>delta_star <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">NA</span>, B)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>B){</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># if size isn't specified in sample(), defaults to length of x!</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  xstar <span class="ot">&lt;-</span> <span class="fu">sample</span>(x, <span class="at">replace =</span> T)</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  delta_star[i] <span class="ot">&lt;-</span> <span class="fu">sd</span>(xstar)<span class="sc">/</span><span class="fu">mean</span>(xstar)</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(delta_star)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<p><img src="bootstrap_dist_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="480"></p>
-</div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># bootstrap estimate of MSE</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>((delta_star <span class="sc">-</span> cv_hat)<span class="sc">^</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.03948413</code></pre>
-</div>
-</div>
 </section>
-<section id="monte-carlo-estimate" class="level3">
-<h3 class="anchored" data-anchor-id="monte-carlo-estimate">“Monte Carlo” estimate</h3>
-<p>Since we know the true distribution, we don’t need to bootstrap to estimate the MSE of <span class="math inline">\(\frac{s}{\bar{x}}\)</span> for <span class="math inline">\(\frac{\sigma}{\mu}\)</span>. That is, rather than resampling from the original observation <code>x</code>, we can actually simulate new data sets from the Poisson distribution. Then we can compare the estimates to the true coefficient of variation, which for a <span class="math inline">\(\text{Poisson}(\lambda)\)</span> distribution is <span class="math inline">\(\frac{\sqrt{\lambda}}{\lambda}\)</span>.</p>
+<section id="parametric" class="level2">
+<h2 class="anchored" data-anchor-id="parametric">Parametric</h2>
+<p>Returning to the Old Faithful example: suppose we assume that the eruption times are Normal (even though the data clearly show that they are not…). For a parametric bootstrap, we will take repeated samples from a Normal distribution with mean and variance estimated from the observed data, then proceed as we did in the nonparametric bootstrap:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>delta_hat <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">NA</span>, B)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>B){</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  x_new <span class="ot">&lt;-</span> <span class="fu">rpois</span>(n, lambda_true)</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  delta_hat[i] <span class="ot">&lt;-</span> <span class="fu">sd</span>(x_new)<span class="sc">/</span><span class="fu">mean</span>(x_new)</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(delta_hat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> faithful<span class="sc">$</span>eruptions <span class="sc">*</span> <span class="dv">60</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(x)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>samp_mean <span class="ot">&lt;-</span> <span class="fu">mean</span>(x)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>samp_sd_mle <span class="ot">&lt;-</span> <span class="fu">sd</span>(x)<span class="sc">*</span><span class="fu">sqrt</span>((n<span class="dv">-1</span>)<span class="sc">/</span>n)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>samp_med <span class="ot">&lt;-</span> <span class="fu">median</span>(x)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="dv">5000</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>delta_star <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">NA</span>, B)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>B){</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  xstar <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, samp_mean, samp_sd_mle)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  delta_star[i] <span class="ot">&lt;-</span> <span class="fu">median</span>(xstar) <span class="sc">-</span> samp_med</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(delta_star)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="bootstrap_dist_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="480"></p>
+<p><img src="bootstrap_ci_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>cv_true <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(lambda_true)<span class="sc">/</span>lambda_true</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>((delta_hat <span class="sc">-</span> cv_true)<span class="sc">^</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># (approximate) bootstrap CI</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>ci <span class="ot">&lt;-</span> samp_med <span class="sc">-</span> <span class="fu">quantile</span>(delta_star, <span class="fu">c</span>(<span class="fl">0.975</span>, <span class="fl">0.025</span>))</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(ci) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"2.5"</span>, <span class="st">"97.5"</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>ci</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.04043435</code></pre>
+<pre><code>     2.5     97.5 
+260.2404 280.8233 </code></pre>
 </div>
-</div>
-<div class="cell">
-
 </div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

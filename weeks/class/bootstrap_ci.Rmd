@@ -1,0 +1,81 @@
+---
+title: "Bootstrap confidence intervals"
+author: "Becky Tang"
+date: "2024-04-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Non-parametric
+
+### Bootstrap CI for median
+
+```{r}
+data("faithful")
+x <- faithful$eruptions * 60
+n <- length(x)
+samp_med <- median(x)
+B <- 5000
+delta_star <- rep(NA, B)
+for(i in 1:B){
+  xstar <- sample(x, size = n, replace = T)
+  delta_star[i] <- median(xstar) - samp_med
+}
+
+# bootstrap distribution of delta
+hist(delta_star)
+
+# (approximate) bootstrap CI
+ci <- samp_med - quantile(delta_star, c(0.975, 0.025))
+names(ci) <- c("2.5", "97.5")
+ci
+```
+
+`r ci`
+
+The approximate 95% bootstrap CI for the median eruption time of Old Faithul is [`r ci[1]`, `r ci[2]`].
+
+### Bootstrap CI for proportion
+
+```{r}
+x <- c(rep("AA", 342), rep("Aa", 500), rep("aa", 187))
+n <- length(x)
+B <- 1000
+theta_hat <- (2*sum(x == "AA" ) + sum(x == "Aa"))/(2*n)
+
+delta_star <- rep(NA, B)
+for(i in 1:B){
+  x_star <- sample(x, size = n, replace = T)
+  delta_star[i] <- (2*sum(x_star == "AA" ) + sum(x_star == "Aa"))/(2*n) - theta_hat
+}
+
+theta_hat - quantile(delta_star, c(0.975, 0.025))
+```
+
+## Parametric
+
+Returning to the Old Faithful example: suppose we assume that the eruption times are Normal (even though the data clearly show that they are not...). For a parametric bootstrap, we will take repeated samples from a Normal distribution with mean and variance estimated from the observed data, then proceed as we did in the nonparametric bootstrap:
+
+```{r}
+x <- faithful$eruptions * 60
+n <- length(x)
+samp_mean <- mean(x)
+samp_sd_mle <- sd(x)*sqrt((n-1)/n)
+samp_med <- median(x)
+B <- 5000
+delta_star <- rep(NA, B)
+for(i in 1:B){
+  xstar <- rnorm(n, samp_mean, samp_sd_mle)
+  delta_star[i] <- median(xstar) - samp_med
+}
+hist(delta_star)
+
+# (approximate) bootstrap CI
+ci <- samp_med - quantile(delta_star, c(0.975, 0.025))
+names(ci) <- c("2.5", "97.5")
+ci
+```
+

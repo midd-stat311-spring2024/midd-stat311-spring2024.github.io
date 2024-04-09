@@ -8,7 +8,7 @@ title: "Week 10"
 
 **Topics**
 
--   More on hypothesis tests
+-   P-value (cont.)
 -   Equivalence of Confidence Sets and Hypothesis Tests
 
 **Daily assignment**
@@ -23,7 +23,7 @@ title: "Week 10"
 
 **Topics**
 
--   Neyman-Pearson Lemma
+-   Likelihood ratio test
 
 **Daily assignment**
 
@@ -34,6 +34,8 @@ title: "Week 10"
 ::: {style="color: #6284a2"}
 ### Friday (04/26)
 :::
+
+Project proposals due tomorrow at 12:00pm to Canvas!
 
 **Topics**
 

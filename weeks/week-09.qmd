@@ -23,8 +23,7 @@ title: "Week 09"
 
 **Topics**
 
--   Significance level
--   Size of test
+-   Level and size of test
 -   p-values
 
 **Daily assignment**

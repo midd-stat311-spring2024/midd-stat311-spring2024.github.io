@@ -24,4 +24,4 @@ Note: problem sets will be updated with new questions following each class. Comp
     -   **Note**: associated `R` problems can be completed in the following `.Rmd` template: {{< downloadthis weeks/hw/templates/hw6_r.Rmd dname="hw6_r" label=".Rmd" icon="arrow-down-short" class=styled id=btn1 >}}
         -   A rendered version for easier reading can be viewed here: [HW 6: R (rendered)](weeks/hw/templates/hw6_r.Rmd)
 -   [Homework 7](weeks/hw/hw7.pdf) (due Tuesday, 4/16 at 11:59pm)
-    -   This homework will be be a bit shorter, but is `R` heavy
+    -   This homework will be a bit shorter, but is `R` heavy

@@ -1,7 +1,7 @@
 ---
 title: "Empirical Bootstrap Distribution"
 author: "Becky Tang"
-date: "2024-04-09"
+date: "2024-04-11"
 output:
   pdf_document: default
   html_document: default
@@ -38,7 +38,16 @@ for(i in 1:B){
 # bootstrap distribution of medians
 hist(delta_star)
 
-# bootstrap estimate of bias
+# observed sample median
+median(x)
+```
+
+Note that the bootstrap distribution of sample median is centered around the observed sample median.
+
+What can we do with this bootstrap distribution? We can approximate the bias of the sample median for the true median, because now we have a (boostrap) distribution for the sample median to obtain an estimate for the mean of the sample median:
+
+```{r}
+# bootstrap estimate of bias of sample median for true median
 mean(delta_star) - median(x)
 ```
 
@@ -56,13 +65,6 @@ n <- 20
 x <- rpois(n, lambda_true)
 ```
 
-An estimate for coefficient variation from the data is:
-
-```{r}
-cv_hat <- sd(x)/mean(x)
-cv_hat
-```
-
 ### Bootstrap estimate
 
 ```{r}
@@ -74,46 +76,23 @@ for(i in 1:B){
   delta_star[i] <- sd(xstar)/mean(xstar)
 }
 hist(delta_star)
+```
 
+We can once again obtain a bootstrap estimate of the bias of this estimate $\frac{\hat{\sigma}_{MLE}}{\hat{\mu}_{MLE}}$ for the true coefficient of variation.
+
+```{r}
+# observed estimate for coefficient of variation 
+cv_hat <- sd(x)/mean(x)
+cv_hat
+
+# approximate bias of estimate for true coefficient of variation
+mean(delta_star) - cv_hat
+```
+
+We can also approximate the mean squared error of this estimate for the true quantity:
+
+```{r}
 # bootstrap estimate of MSE
 mean((delta_star - cv_hat)^2)
 ```
 
-### "Monte Carlo" estimate
-
-Since we know the true distribution, we don't need to bootstrap to estimate the MSE of $\frac{s}{\bar{x}}$ for $\frac{\sigma}{\mu}$. That is, rather than resampling from the original observation `x`, we can actually simulate new data sets from the Poisson distribution. Then we can compare the estimates to the true coefficient of variation, which for a $\text{Poisson}(\lambda)$ distribution is $\frac{\sqrt{\lambda}}{\lambda}$.
-
-```{r}
-delta_hat <- rep(NA, B)
-for(i in 1:B){
-  x_new <- rpois(n, lambda_true)
-  delta_hat[i] <- sd(x_new)/mean(x_new)
-}
-hist(delta_hat)
-
-cv_true <- sqrt(lambda_true)/lambda_true
-mean((delta_hat - cv_true)^2)
-```
-
-```{r echo = F, eval = F}
-boot_np_se_est <- function(y, B){
-  mu_hat <- mean(y)
-  theta_hat <- 1/mean(y)
-  tau_star <- matrix(NA, nrow = B, ncol = B)
-  delta_star <- rep(NA, B)
-  for(i in 1:B){
-    xstar <- sample(y, replace = T)
-    delta_star2 <- rep(NA, B)
-    for(k in 1:B){
-      xstar2 <- sample(xstar, replace = T)
-      delta_star2[k] <- 1/mean(xstar2)
-    }
-    se_hat <- sd(delta_star2)
-    delta_star[i] <- 1/mean(xstar)
-    tau_star[,i] <- (delta_star2 - delta_star[i])/se_hat
-  }
-  se_t <- sd(delta_star)
-  ci <- theta_hat - quantile(c(tau_star), c(0.975, 0.025))*se_t
-  return(ci)
-}
-```

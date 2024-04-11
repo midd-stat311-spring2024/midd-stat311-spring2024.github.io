@@ -6,6 +6,8 @@ title: "Week 09"
 ### Tuesday (04/16)
 :::
 
+Class observed by department colleague!
+
 **Topics**
 
 -   Introduction to Hypothesis tests
@@ -28,7 +30,7 @@ title: "Week 09"
 
 **Daily assignment**
 
--   TBD
+-   [Daily assignment](daily/DA_18.pdf)
 
 ------------------------------------------------------------------------
 

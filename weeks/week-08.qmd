@@ -20,8 +20,6 @@ Note: Homework 6 due tomorrow 4/10!
 
 **Class activity**
 
--   Code from bootstrap distribution demo
-
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}
@@ -38,6 +36,10 @@ Bring your laptops!
 **Daily assignment**
 
 -   None!
+
+**Class activity**
+
+-   Code from [bootstrap distribution demo](class/bootstrap_dist.Rmd)
 
 ------------------------------------------------------------------------
 

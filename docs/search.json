@@ -340,7 +340,7 @@
     "href": "weeks/week-10.html",
     "title": "Week 10",
     "section": "",
-    "text": "Tuesday (04/23)\n\nTopics\n\nP-value (cont.)\nEquivalence of Confidence Sets and Hypothesis Tests\n\nDaily assignment\n\nTBD\n\n\n\nThursday (04/25)\n\nTopics\n\nLikelihood ratio test\n\nDaily assignment\n\nTBD\n\n\n\nFriday (04/26)\n\nProject proposals due tomorrow at 12:00pm to Canvas!\nTopics\n\n\\(t\\)-test\n\nDaily assignment\n\nNone!"
+    "text": "Tuesday (04/23)\n\nClass observed by department colleague!\nTopics\n\nP-value (cont.)\nEquivalence of Confidence Sets and Hypothesis Tests\n\nDaily assignment\n\nTBD\n\n\n\nThursday (04/25)\n\nTopics\n\nLikelihood ratio test\n\nDaily assignment\n\nTBD\n\n\n\nFriday (04/26)\n\nProject proposals due tomorrow at 12:00pm to Canvas!\nTopics\n\n\\(t\\)-test\n\nDaily assignment\n\nNone!"
   },
   {
     "objectID": "weeks/week-11.html",
@@ -404,5 +404,19 @@
     "title": "MATH 311: Homework 7 (R)",
     "section": "",
     "text": "Write a function in R which will take a vector \\(\\mathbf{x}\\) as input and outputs the value of the skewness \\(M_{3}(\\mathbf{x})\\) for this vector.\n\n\n\n\n\n\nA sample of size 20 was generated from a skewed distribution with unknown CDF \\(F\\). Generate 5000 bootstrap samples from x. Obtain approximations of the bias and standard deviation of the sample skewness estimator \\(M_{3}\\) using your bootstrapped statistics.\n\n\n\nSolution:"
+  },
+  {
+    "objectID": "weeks/class/power_fns.html",
+    "href": "weeks/class/power_fns.html",
+    "title": "Power functions",
+    "section": "",
+    "text": "Recall the following statistical model and hypotheses:\n\\[X_{1},\\ldots, X_{10} |\\theta \\sim \\text{Bern}(\\theta), \\qquad \\theta \\in [0,1]\\] \\[H_{0}: \\theta = \\frac{1}{2} \\qquad \\text{vs.} \\qquad H_{1}: \\theta \\neq \\frac{1}{2}\\] We have the following testing procedure \\(\\delta_{1}\\): \\(r(\\mathbf{X}) = |\\sum_{i=1}^{10} X_{i} - 5|, \\text{ with rejection region } R = \\{r(\\mathbf{X}) = 5 \\}\\)\nSo the power function is \\(\\pi(\\theta | \\delta_{1}) = P( \\sum_{i=1}^{10} X_{i} \\in \\{0, 10\\}|\\theta)\\).\n\npower_fn <- function(theta, n, r_vals){\n  # theta is possible vector of theta_vals\n  # n = number of trials\n  # r_vals = values in rejection region\n  n_theta <- length(theta)\n  ret <- rep(NA, n_theta)\n  for(i in 1:n_theta){\n    ret[i] <- sum(dbinom(r_vals, n, theta[i]))\n  }\n  return(ret)\n}\n\nn <- 10\ntheta_vals <- seq(0, 1, 0.01)\ndelta1 <- power_fn(theta_vals, n, c(0, 10))\n\n\nlibrary(tidyverse)\ndata.frame(theta = theta_vals, power = delta1) %>%\n  ggplot(., aes(x = theta, y = power)) +\n  geom_line()+\n  theme(text = element_text(size = 14))\n\n\n\n\nWe can use the plot of this power function to talk about the probability of Type I and II error under \\(\\delta_{1}\\)."
+  },
+  {
+    "objectID": "weeks/class/power_fns.html#comparing-power",
+    "href": "weeks/class/power_fns.html#comparing-power",
+    "title": "Power functions",
+    "section": "Comparing power",
+    "text": "Comparing power\nConsider the second testing procedure \\(\\delta_{2}\\): \\(r(\\mathbf{X}) = |\\sum_{i=1}^{10} X_{i} - 5| \\text{ with rejection region } R = \\{r(\\mathbf{X}) \\geq 4 \\}\\).\nSo the power function is \\(\\pi(\\theta | \\delta_{1}) = P( \\sum_{i=1}^{10} X_{i} \\in \\{0, 1, 9, 10\\}|\\theta)\\).\n\ndelta2 <- power_fn(theta_vals, n, c(0, 1, 9, 10))\ndata.frame(theta = theta_vals, delta1, delta2) %>%\n  pivot_longer(cols = 2:3, names_to = \"procedure\", values_to = \"power\") %>%\n  ggplot(.,aes(x = theta, y = power, col = procedure)) +\n  geom_line() + \n  theme(text = element_text(size = 14))"
   }
 ]

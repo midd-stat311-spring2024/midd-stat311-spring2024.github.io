@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Becky Tang">
-<meta name="dcterms.date" content="2024-04-08">
+<meta name="dcterms.date" content="2024-04-12">
 
 <title>STAT 311: Statistical Inference - Bootstrap confidence intervals</title>
 <style>
@@ -272,7 +272,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 8, 2024</p>
+      <p class="date">April 12, 2024</p>
     </div>
   </div>
   
@@ -286,23 +286,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="non-parametric">Non-parametric</h2>
 <section id="bootstrap-ci-for-median" class="level3">
 <h3 class="anchored" data-anchor-id="bootstrap-ci-for-median">Bootstrap CI for median</h3>
-<p>Suppose we want a 95% confidence interval for the median eruption time of Old Faithful. Define <span class="math inline">\(\delta = m - M\)</span> where <span class="math inline">\(m\)</span> is the sample median and <span class="math inline">\(M\)</span> is the true median. Then we want quantiles <span class="math inline">\(a, b\)</span> of <span class="math inline">\(\delta\)</span> such that <span class="math inline">\(0.95 = P(a \leq \delta \leq b)\)</span>. Why? Re-arranging, we have <span class="math inline">\(0.95 = P(m -a \geq M \geq m - b)\)</span>! Unfortunately, we don’t know the distribution of <span class="math inline">\(\delta\)</span>, so we approximate it via bootstrapping. We will assume <span class="math inline">\(\hat{F} = \hat{F}_{n}\)</span>.</p>
+<p>Suppose we want a symmetric 95% confidence interval for the median eruption time of Old Faithful. Define <span class="math inline">\(\delta = m - M\)</span> where <span class="math inline">\(m\)</span> is the sample median and <span class="math inline">\(M\)</span> is the true median. Then we want quantiles <span class="math inline">\(a, b\)</span> of <span class="math inline">\(\delta\)</span> such that <span class="math inline">\(0.95 = P(a \leq \delta \leq b)\)</span>. Why? Re-arranging, we have <span class="math inline">\(0.95 = P(m -a \geq M \geq m - b)\)</span>! Unfortunately, we don’t know the distribution of <span class="math inline">\(\delta\)</span>, so we approximate it and its quantiles via bootstrapping. We will assume <span class="math inline">\(\hat{F} = \hat{F}_{n}\)</span>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"faithful"</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> faithful<span class="sc">$</span>eruptions <span class="sc">*</span> <span class="dv">60</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(x)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>samp_med <span class="ot">&lt;-</span> <span class="fu">median</span>(x)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="dv">5000</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>delta_star <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">NA</span>, B)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>B){</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  xstar <span class="ot">&lt;-</span> <span class="fu">sample</span>(x, <span class="at">size =</span> n, <span class="at">replace =</span> T)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  delta_star[i] <span class="ot">&lt;-</span> <span class="fu">median</span>(xstar) <span class="sc">-</span> samp_med</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># bootstrap distribution of delta</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(delta_star)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"faithful"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> faithful<span class="sc">$</span>eruptions <span class="sc">*</span> <span class="dv">60</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(x)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>samp_med <span class="ot">&lt;-</span> <span class="fu">median</span>(x)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="dv">5000</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>delta_star <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">NA</span>, B)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>B){</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># nonparametric</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  xstar <span class="ot">&lt;-</span> <span class="fu">sample</span>(x, <span class="at">size =</span> n, <span class="at">replace =</span> T)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  delta_star[i] <span class="ot">&lt;-</span> <span class="fu">median</span>(xstar) <span class="sc">-</span> samp_med</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># bootstrap distribution of delta</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(delta_star)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="bootstrap_ci_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+<p><img src="bootstrap_ci_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="480"></p>
 </div>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># (approximate) bootstrap CI</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>a_star <span class="ot">&lt;-</span> <span class="fu">quantile</span>(delta_star, <span class="fl">0.025</span>)</span>
@@ -311,12 +313,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(ci) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"2.5"</span>, <span class="st">"97.5"</span>)</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>ci</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>   2.5   97.5 
-233.52 250.02 </code></pre>
+<pre><code>    2.5    97.5 
+233.478 250.020 </code></pre>
 </div>
 </div>
-<p>233.52, 250.02</p>
-<p>The approximate 95% bootstrap CI for the median eruption time of Old Faithul is [233.52, 250.02].</p>
+<p>The approximate 95% bootstrap CI for the median eruption time of Old Faithul is [233.478, 250.02].</p>
 </section>
 <section id="bootstrap-ci-for-proportion" class="level3">
 <h3 class="anchored" data-anchor-id="bootstrap-ci-for-proportion">Bootstrap CI for proportion</h3>
@@ -348,7 +349,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>ci</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     0.05      0.95 
-0.5568270 0.5932945 </code></pre>
+0.5578231 0.5942663 </code></pre>
 </div>
 </div>
 </section>
@@ -359,18 +360,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> faithful<span class="sc">$</span>eruptions <span class="sc">*</span> <span class="dv">60</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(x)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>samp_mean <span class="ot">&lt;-</span> <span class="fu">mean</span>(x)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>samp_sd_mle <span class="ot">&lt;-</span> <span class="fu">sd</span>(x)<span class="sc">*</span><span class="fu">sqrt</span>((n<span class="dv">-1</span>)<span class="sc">/</span>n)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>xbar <span class="ot">&lt;-</span> <span class="fu">mean</span>(x)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>s <span class="ot">&lt;-</span> <span class="fu">sd</span>(x)</span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>samp_med <span class="ot">&lt;-</span> <span class="fu">median</span>(x)</span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="dv">5000</span></span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>delta_star <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">NA</span>, B)</span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>B){</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  xstar <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, samp_mean, samp_sd_mle)</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  delta_star[i] <span class="ot">&lt;-</span> <span class="fu">median</span>(xstar) <span class="sc">-</span> samp_med</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(delta_star)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># parametric distribution</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  xstar <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, xbar, s)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  delta_star[i] <span class="ot">&lt;-</span> <span class="fu">median</span>(xstar) <span class="sc">-</span> samp_med</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(delta_star)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="bootstrap_ci_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+<p><img src="bootstrap_ci_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="480"></p>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># (approximate) bootstrap CI</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>a_star <span class="ot">&lt;-</span> <span class="fu">quantile</span>(delta_star, <span class="fl">0.025</span>)</span>
@@ -380,7 +382,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>ci</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     2.5     97.5 
-260.4927 280.9131 </code></pre>
+260.8621 280.8380 </code></pre>
 </div>
 </div>
 

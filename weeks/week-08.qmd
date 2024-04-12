@@ -56,3 +56,7 @@ Bring your laptops!
 **Daily assignment**
 
 -   None!
+
+**Class activity**
+
+-   Code from [bootstrap CI demo](class/bootstrap_ci.Rmd)

@@ -17,6 +17,10 @@ Class observed by department colleague!
 
 -   [Daily assignment](daily/DA_17.pdf)
 
+**Class activity**
+
+-   Practice problems
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}
@@ -44,4 +48,4 @@ Class observed by department colleague!
 
 **Daily assignment**
 
--   None! But it's an EXCELLENT idea to skim over readings and notes from this week.
+-   None! But it's an EXCELLENT idea to skim over readings and notes from this week, and to think about your final project

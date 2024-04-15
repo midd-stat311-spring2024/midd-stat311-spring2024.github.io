@@ -10,8 +10,8 @@ Class observed by department colleague!
 
 **Topics**
 
--   P-value (cont.)
 -   Equivalence of Confidence Sets and Hypothesis Tests
+-   Likelihood ratio test
 
 **Daily assignment**
 
@@ -25,11 +25,12 @@ Class observed by department colleague!
 
 **Topics**
 
--   Likelihood ratio test
+-   LRT cont.
+-   LRT asymptotics
 
 **Daily assignment**
 
--   TBD
+-   None!
 
 ------------------------------------------------------------------------
 

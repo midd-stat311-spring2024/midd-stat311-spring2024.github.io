@@ -19,7 +19,7 @@ Class observed by department colleague!
 
 **Class activity**
 
--   Practice problems
+-   Hypothesis test power and error [practice problems](class/16_ht_1.pdf)
 
 ------------------------------------------------------------------------
 

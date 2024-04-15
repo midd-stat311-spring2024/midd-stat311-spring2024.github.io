@@ -27,3 +27,4 @@ Note: problem sets will be updated with new questions following each class. Comp
     -   This homework will be a bit shorter, but is `R` heavy
     -   **Note**: associated `R` problems can be completed in the following `.Rmd` template: {{< downloadthis weeks/hw/templates/hw7_r.Rmd dname="hw7_r" label=".Rmd" icon="arrow-down-short" class=styled id=btn1 >}}
         -   A rendered version for easier reading can be viewed here: [HW 7: R (rendered)](weeks/hw/templates/hw7_r.Rmd)
+        -   Clarification: for the parametric bootstrap, you may assume the distribution is Exponential but you don't know the rate!

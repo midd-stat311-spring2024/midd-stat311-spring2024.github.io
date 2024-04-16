@@ -19,6 +19,8 @@ Class observed by department colleague!
 
 **Class activity**
 
+-   [Power function example](class/power_fns.Rmd) from class
+
 -   Hypothesis test power and error [practice problems](class/16_ht_1.pdf)
 
 ------------------------------------------------------------------------

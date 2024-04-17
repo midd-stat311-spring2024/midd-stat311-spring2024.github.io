@@ -38,6 +38,12 @@ Class observed by department colleague!
 
 -   [Daily assignment](daily/DA_18.pdf)
 
+**Class activity**
+
+-   Hypothesis test power and error [practice problems](class/16_ht_1.pdf)
+
+-   Size, level, and p-value practice problems
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}

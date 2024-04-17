@@ -10,12 +10,12 @@ Class observed by department colleague!
 
 **Topics**
 
--   Equivalence of Confidence Sets and Hypothesis Tests
 -   Likelihood ratio test
+-   LRT asymptotics
 
 **Daily assignment**
 
--   TBD
+-   [Daily assignment](daily/DA_19.pdf)
 
 ------------------------------------------------------------------------
 
@@ -25,12 +25,12 @@ Class observed by department colleague!
 
 **Topics**
 
--   LRT cont.
--   LRT asymptotics
+-   Equivalence of Confidence Sets and Hypothesis Tests
 
 **Daily assignment**
 
--   None!
+-   Nothing official, but be prepared to answer the following:
+    -   Suppose $X_{1},\ldots, X_{n} \sim N(\mu, \sigma^2)$ where $\mu$ is unknown and $\sigma^2$ is known. Letting $\alpha_{0} \in (0,1)$, find the bounds of an equal-tailed $(1-\alpha_{0})$ coefficient confidence interval for $\mu$. *You should be able to look through your notes to answer this one!*
 
 ------------------------------------------------------------------------
 

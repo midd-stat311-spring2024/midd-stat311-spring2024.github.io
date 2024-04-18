@@ -32,7 +32,6 @@ Class observed by department colleague!
 **Topics**
 
 -   Level and size of test
--   p-values
 
 **Daily assignment**
 
@@ -41,8 +40,6 @@ Class observed by department colleague!
 **Class activity**
 
 -   Hypothesis test power and error [practice problems](class/16_ht_1.pdf)
-
--   $p$-value [practice problems](class/17_ht_2.pdf)
 
 ------------------------------------------------------------------------
 

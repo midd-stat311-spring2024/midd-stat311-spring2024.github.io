@@ -8,8 +8,7 @@ title: "Week 11"
 
 **Topics**
 
--   Two-sample $t$-test
--   $F$-distribution
+-   $t$-test
 
 **Daily assignment**
 
@@ -23,7 +22,7 @@ title: "Week 11"
 
 **Topics**
 
--   $F$-test
+-   Two-sample $t$-test
 
 **Daily assignment**
 

@@ -41,6 +41,8 @@ Class observed by department colleague!
 
 **Project proposals due tomorrow at 12:00pm to Canvas!**
 
+**Material through today is fair game for Midterm II! (**Though next week's material is a lot of practice applying hypothesis testing ideas to a specific set of data.)
+
 **Topics**
 
 -   Equivalence of Confidence Sets and Hypothesis Tests

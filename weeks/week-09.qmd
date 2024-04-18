@@ -42,7 +42,7 @@ Class observed by department colleague!
 
 -   Hypothesis test power and error [practice problems](class/16_ht_1.pdf)
 
--   Size, level, and p-value practice problems
+-   $p$-value [practice problems](class/17_ht_2.pdf)
 
 ------------------------------------------------------------------------
 

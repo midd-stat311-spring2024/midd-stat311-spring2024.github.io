@@ -9,9 +9,8 @@ Welcome to the website for Middlebury College's Spring 2024 STAT 311. On this we
 
 ## Major Announcements
 
--   Midterm 2: in-person, tentatively scheduled for Friday 05/03 at 2:30pm (could move to Thursday 05/02 evening)
-    -   Will include a untimed take-home component that involves R
-    -   More details to come...
+-   Midterm 2: in-person, scheduled for Friday 05/03 at 2:30pm
+    -   See [this page](exam.qmd#sec-midterm2) for more details!
 -   [Final project](project.qmd) announced. Take a look at the description!
 -   New office hours schedule as follows:
     -   Mondays 2:00-4:00pm

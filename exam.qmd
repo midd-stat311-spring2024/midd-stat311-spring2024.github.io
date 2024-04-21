@@ -50,15 +50,17 @@ The midterm is composed to an in-person component and a take-home component that
 
 -   A possibly study strategy that has worked for Prof. Tang in the past:
 
-    1.  Create a first-draft cheat sheet
+    1.  Review your notes
 
-    2.  Using your cheat sheet, re-try some of the previous homework or practice problems that you've seen before (especially the ones that caused you trouble)
+    2.  Create a first-draft cheat sheet
 
-    3.  Make a second-draft cheat sheet based on what you learned about your preparedness from Step 2
+    3.  Using your cheat sheet, re-try some of the previous homework or practice problems that you've seen before (especially the ones that caused you trouble)
 
-    4.  Using your second-draft cheat sheet, try some of the new review problems
+    4.  Make a second-draft cheat sheet based on what you learned about your preparedness from previous step
 
-    5.  Make your final cheat sheet based on what you learned about your preparedness from Step 4
+    5.  Using your second-draft cheat sheet, try some of the new review problems
+
+    6.  Make your final cheat sheet based on what you learned about your preparedness from previous step
 
 -   Exam problems will be comparable in difficulty to those assigned for homework. Some exam questions may be similar to problems you have seen before, while others will require you to synthesize your knowledge in new ways.
 

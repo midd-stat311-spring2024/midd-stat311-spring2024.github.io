@@ -151,7 +151,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome!\nPrior and posterior distributions\n\n\n\nWeek 02\n\nConjugate priors\nBayes estimators\n\n\n\nWeek 03\n\nMaximum likelihood estimation\n\n\n\nWeek 04\n\nMethod of moments\nBias, variance, MSE\n\n\n\nWeek 05\n\nFisher information\nCramer-Rao Lower Bound\n\n\n\nSPRING BREAK\n\n\nWeek 06\n\n\\(\\chi^2\\) and \\(t\\) distributions\nJoint distribution of sample mean and variance\n\n\n\nWeek 07\n\nConfidence intervals\n\n\n\nWeek 08\n\nBootstrapping\n\n\n\nWeek 09\n\nHypothesis testing\np-values\n\n\n\nWeek 10\n\nLikelihood ratio test\n\\(t\\)-test"
+    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome!\nPrior and posterior distributions\n\n\n\nWeek 02\n\nConjugate priors\nBayes estimators\n\n\n\nWeek 03\n\nMaximum likelihood estimation\n\n\n\nWeek 04\n\nMethod of moments\nBias, variance, MSE\n\n\n\nWeek 05\n\nFisher information\nCramer-Rao Lower Bound\n\n\n\nSPRING BREAK\n\n\nWeek 06\n\n\\(\\chi^2\\) and \\(t\\) distributions\nJoint distribution of sample mean and variance\n\n\n\nWeek 07\n\nConfidence intervals\n\n\n\nWeek 08\n\nBootstrapping\n\n\n\nWeek 09\n\nHypothesis testing\n\n\n\nWeek 10\n\np-values\nLikelihood ratio test\n\n\n\nWeek 11\n\n\\(t\\)-tests"
   },
   {
     "objectID": "weeks/week-04.html",
@@ -347,7 +347,7 @@
     "href": "weeks/week-11.html",
     "title": "Week 11",
     "section": "",
-    "text": "Tuesday (04/30)\n\nTopics\n\n\\(t\\)-test\n\nDaily assignment\n\nTBD\n\n\n\nThursday (05/02)\n\nTopics\n\nTwo-sample \\(t\\)-test\n\nDaily assignment\n\nTBD\n\n\n\nFriday (05/03)\n\nMidterm 2 today!\nTopics\n\nReview day\n\nDaily assignment\n\nNone!"
+    "text": "Tuesday (04/30)\n\nTopics\n\n\\(t\\)-test\n\nDaily assignment\n\nDaily assignment\n\n\n\nThursday (05/02)\n\nTopics\n\nTwo-sample \\(t\\)-test\n\nDaily assignment\n\nNone\n\n\n\nFriday (05/03)\n\nMidterm 2 today!\nTopics\n\nReview day\n\nDaily assignment\n\nNone!"
   },
   {
     "objectID": "weeks/week-12.html",

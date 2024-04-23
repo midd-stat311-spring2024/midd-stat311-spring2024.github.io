@@ -18,6 +18,8 @@ Class observed by department colleague!
 
 **Class activity**
 
+-   p-value [practice problems](class/17_power_pvals.pdf)
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}

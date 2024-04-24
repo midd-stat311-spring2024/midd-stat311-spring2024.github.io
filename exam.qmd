@@ -66,7 +66,9 @@ The midterm is composed to an in-person component and a take-home component that
 
 ### Review Problems {#sec-midterm1-review}
 
-For extra practice, additional review problems will be made available below around the middle of Week 10. These questions are not necessarily representative of the typical scope and difficulty of individual exam questions. This review is not comprehensive, nor does it necessarily represent the expected amount of time for it will take for you to complete the exam.
+For extra practice, additional review problems have been made available below. These questions are not necessarily representative of the typical scope and difficulty of individual exam questions. This review is not comprehensive, nor does it represent the expected amount of time for it will take for you to complete the exam.
+
+-   Midterm 2 [review problems](weeks/exam/midterm2_review.pdf)
 
 ------------------------------------------------------------------------
 

@@ -35,6 +35,11 @@ Class observed by department colleague!
 
 -   [Daily assignment](daily/DA_19.pdf)
 
+**Class activity**
+
+-   [Binomial LRT example](class/18_lrt.Rmd)
+-   Binomial LRT example [solutions](class/lrt.qmd)
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}

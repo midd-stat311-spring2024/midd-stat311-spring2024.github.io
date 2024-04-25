@@ -63,10 +63,10 @@ kable(tab, format="markdown", escape = F) %>%
 Now we can find the value $k$ such that $\text{Pr}(\Lambda(\mathbf{x}) \leq k | \theta = 0.6) \leq 0.08$! Fill out the remaining components:
 
 -   $\text{Pr}(\Lambda(\mathbf{x}) \leq `r round(Lambda_sort[1], 4)` | \theta = 0.6) = \text{Pr}(\sum X_i = \qquad \qquad | \theta = 0.6) =  \qquad$ 
--   $\text{Pr}(\Lambda(\mathbf{x}) \leq \qquad | \theta = 0.6) = \text{Pr}(\sum X_i = \qquad  \qquad | \theta = 0.6)  = \qquad$`
--   $\text{Pr}(\Lambda(\mathbf{x}) \leq \qquad | \theta = 0.6) = \text{Pr}(\sum X_i = \qquad  \qquad| \theta = 0.6)  = \qquad$ 
+-   $\text{Pr}(\Lambda(\mathbf{x}) \leq \qquad  \qquad | \theta = 0.6) = \text{Pr}(\sum X_i = \qquad  \qquad | \theta = 0.6)  =   \qquad \qquad$`
+-   $\text{Pr}(\Lambda(\mathbf{x}) \leq \qquad  \qquad | \theta = 0.6) = \text{Pr}(\sum X_i = \qquad  \qquad| \theta = 0.6)  =  \qquad \qquad$ 
 
-So rejecting $H_{0}$ when $\Lambda(\mathbf{x}) \leq k$ for any $k \in \qquad \qquad$  yields a level-0.08 test.
+So rejecting $H_{0}$ when $\Lambda(\mathbf{x}) \leq k$ for any $k \in \qquad  \qquad \qquad$  yields a level-0.08 test.
 
 In particular, the test that rejects $H_{0}$ when $k = `r round(Lambda_sort[2], 4)`$ has size:
 

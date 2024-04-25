@@ -38,7 +38,7 @@ Class observed by department colleague!
 **Class activity**
 
 -   [Binomial LRT example](class/18_lrt.Rmd)
--   Binomial LRT example [solutions](class/lrt.qmd)
+    -   Solutions posted after class
 
 ------------------------------------------------------------------------
 

@@ -30,3 +30,4 @@ Note: problem sets will be updated with new questions following each class. Comp
         -   Clarification: for the parametric bootstrap, you may assume the distribution is Exponential but you don't know the rate!
 -   [Homework 8](weeks/hw/hw8.pdf) (due Tuesday, 4/23 at 11:59pm)
 -   [Homework 9](weeks/hw/hw9.pdf) (due Tuesday, 4/30 at 11:59pm)
+    -   Note that I've added a proof to Friday's section which should be helpful for the last problem on this homework!

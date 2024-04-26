@@ -62,3 +62,7 @@ Class observed by department colleague!
 **Class activity**
 
 -   [Binomial LRT asymptotic example](class/lrt_asymptotics.Rmd)
+
+-   [Donuts and duality](class/duality.qmd)
+
+-   [Proof](files/duality_proof.pdf) of one of the duality theorems

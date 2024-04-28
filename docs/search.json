@@ -130,7 +130,7 @@
     "href": "index.html#major-announcements",
     "title": "Statistical Inference",
     "section": "Major Announcements",
-    "text": "Major Announcements\n\nMidterm 2: in-person, scheduled for Friday 05/03 at 2:30pm\n\nSee this page for more details!\nPractice problems have been made available as well!\n\nFinal project proposals due this Saturday!\nNew office hours schedule as follows:\n\nMondays 2:00-4:00pm\nTuesdays 10:45am-12:00pm\n\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
+    "text": "Major Announcements\n\nMidterm 2: in-person, scheduled for Friday 05/03 at 2:30pm in WNS 105\n\nSee this page for more details!\nPractice problems have been made available as well!\n\nDr. Anna Haensch (Tufts University) will give a talk on “Becoming a Data Scientist: An Impractical Guide”\n\nWhen: Thursday, May 2 at 2:30pm\nWhere: WNS 101\n\nMath and Stats Senior Seminar Presentations will take place on May 7 and 9\n\nCome see what seniors are doing in applied math and statistics!\nSchedule will be provided soon.\n\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
   },
   {
     "objectID": "index.html#course-details",
@@ -151,7 +151,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome!\nPrior and posterior distributions\n\n\n\nWeek 02\n\nConjugate priors\nBayes estimators\n\n\n\nWeek 03\n\nMaximum likelihood estimation\n\n\n\nWeek 04\n\nMethod of moments\nBias, variance, MSE\n\n\n\nWeek 05\n\nFisher information\nCramer-Rao Lower Bound\n\n\n\nSPRING BREAK\n\n\nWeek 06\n\n\\(\\chi^2\\) and \\(t\\) distributions\nJoint distribution of sample mean and variance\n\n\n\nWeek 07\n\nConfidence intervals\n\n\n\nWeek 08\n\nBootstrapping\n\n\n\nWeek 09\n\nHypothesis testing\n\n\n\nWeek 10\n\np-values\nLikelihood ratio test\n\n\n\nWeek 11\n\n\\(t\\)-tests"
+    "text": "A high-level overview of the semester’s topics are presented here. Please select a week for a specific day’s assignments and materials.\n\nWeek 01\n\nWelcome!\nPrior and posterior distributions\n\n\n\nWeek 02\n\nConjugate priors\nBayes estimators\n\n\n\nWeek 03\n\nMaximum likelihood estimation\n\n\n\nWeek 04\n\nMethod of moments\nBias, variance, MSE\n\n\n\nWeek 05\n\nFisher information\nCramer-Rao Lower Bound\n\n\n\nSPRING BREAK\n\n\nWeek 06\n\n\\(\\chi^2\\) and \\(t\\) distributions\nJoint distribution of sample mean and variance\n\n\n\nWeek 07\n\nConfidence intervals\n\n\n\nWeek 08\n\nBootstrapping\n\n\n\nWeek 09\n\nHypothesis testing\n\n\n\nWeek 10\n\np-values\nLikelihood ratio test\n\n\n\nWeek 11\n\n\\(t\\)-tests\n\n\n\nWeek 12\n\nSimple linear regression"
   },
   {
     "objectID": "weeks/week-04.html",

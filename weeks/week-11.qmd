@@ -14,6 +14,10 @@ title: "Week 11"
 
 -   [Daily assignment](daily/DA_20.pdf)
 
+**Class activity**
+
+-   $t$-test [practice problems](class/19_t_test.pdf)
+
 ------------------------------------------------------------------------
 
 ::: {style="color: #6284a2"}

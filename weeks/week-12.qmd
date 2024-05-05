@@ -9,7 +9,6 @@ title: "Week 12"
 **Topics**
 
 -   Method of least squares
--   SLR
 
 **Daily assignment**
 
@@ -23,7 +22,7 @@ title: "Week 12"
 
 **Topics**
 
--   Inference for SLR
+-   SLR
 -   CRFs
 
 **Daily assignment**

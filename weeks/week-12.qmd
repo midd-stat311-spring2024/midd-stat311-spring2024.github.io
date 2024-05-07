@@ -23,11 +23,10 @@ title: "Week 12"
 **Topics**
 
 -   SLR
--   CRFs
 
 **Daily assignment**
 
--   TBD
+-   [Daily assignment](daily/DA_21.pdf)
 
 ------------------------------------------------------------------------
 

@@ -130,7 +130,7 @@
     "href": "index.html#major-announcements",
     "title": "Statistical Inference",
     "section": "Major Announcements",
-    "text": "Major Announcements\n\nMidterm 2: take-home component due in class on May 7\nMath and Stats Senior Seminar Presentations will take place this week on May 7 and 9\n\nCome see what seniors are doing in applied math and statistics!\nSchedule here!\n\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
+    "text": "Major Announcements\n\nProject rough drafts due this Saturday! More information on project tab.\nMath and Stats Senior Seminar Presentations will take place this week on May 7 and 9\n\nCome see what seniors are doing in applied math and statistics!\nSchedule here!\n\n\n\nRequired textbook: Probability and Statistics, 4th edition by DeGroot and Schervish."
   },
   {
     "objectID": "index.html#course-details",
@@ -305,7 +305,7 @@
     "href": "project.html",
     "title": "Final project",
     "section": "",
-    "text": "Downloadable PDF with final project description here.\nKey dates:\n\nSaturday 04/27 at 12:00pm: project proposal due\nSaturday 05/11 at 12:00pm: rough draft due\nSaturday 05/18 at 9:00am: project presentations during exam period\nMonday 05/20 at 11:59pm: final draft and reflection due"
+    "text": "Downloadable PDF with final project description here.\nKey dates:"
   },
   {
     "objectID": "weeks/hw/templates/hw6_r.html",
@@ -354,7 +354,7 @@
     "href": "weeks/week-12.html",
     "title": "Week 12",
     "section": "",
-    "text": "Tuesday (05/07)\n\nTopics\n\nMethod of least squares\n\nDaily assignment\n\nTBD\n\n\n\nThursday (05/09)\n\nTopics\n\nSLR\nCRFs\n\nDaily assignment\n\nTBD\n\n\n\nFriday (05/11)\n\nTopics\n\nInference for SLR (cont.)\n\nDaily assignment\n\nNone!"
+    "text": "Tuesday (05/07)\n\nTopics\n\nMethod of least squares\n\nDaily assignment\n\nNone!\n\n\n\nThursday (05/09)\n\nTopics\n\nSLR\nCRFs\n\nDaily assignment\n\nTBD\n\n\n\nFriday (05/11)\n\nTopics\n\nInference for SLR (cont.)\n\nDaily assignment\n\nNone!"
   },
   {
     "objectID": "weeks/class/bootstrap_dist.html",
@@ -495,5 +495,12 @@
     "title": "Equivalence of CI and HT",
     "section": "",
     "text": "Recall our donuts! I read online somewhere that a Boston creme donut weights 100 g. Let’s see how Middlebury Bagel’s donuts compare. Let \\(X_1,\\ldots, X_n \\sim N(\\mu ,\\sigma^2)\\) represent the weight in grams of each donut. I have no idea what \\(\\mu\\) nor \\(\\sigma^2\\) are!\nI have the following hypotheses: \\[H_{0}: \\mu = 100 \\qquad \\text{ vs. } \\qquad H_{1}: \\mu \\neq 100\\]\nSuppose I want a level 0.05 test of these hypotheses. There are infinitely many tests out there that could test these hypotheses, so how do I pick one? One way is to use the duality of CI and HT!\nFor this data, we know that a 95% CI for \\(\\mu\\) is of the form \\[[A(\\mathbf{X}),B(\\mathbf{X})]= \\left[\\bar{X} - T_{n-1}^{-1}\\left(\\frac{1+\\gamma}{2}\\right)\\frac{s}{\\sqrt{n}}, \\bar{X} + T_{n-1}^{-1}\\left(\\frac{1+\\gamma}{2}\\right)\\frac{s}{\\sqrt{n}}\\right]\\]\nBy Duality Theorem 2, a test \\(\\delta\\) that defines an acceptance region of \\(R^c : \\{r(\\mathbf{x}): \\mu_{0} \\in [A(\\mathbf{X}),B(\\mathbf{X})]\\}\\) for the null \\(H_{0}: \\mu = \\mu_{0}\\) yields a level \\(1-\\gamma\\) test.\nWe (only) observed \\(n=4\\) data points: \\(\\mathbf{X} = (113, 110, 112, 106)\\). A 95% CI for \\(\\mu\\) is thus:\n\nx <- c(113, 110, 112, 106)\nn <- length(x)\n\nxbar <- mean(x)\ns <- sd(x)\nc <- qt((1 + 0.95)/2, n-1)\n\nc(xbar - c * s/sqrt(n), xbar + c * s/sqrt(n))\n\n[1] 105.3241 115.1759\n\n\nSuppose we use the testing procedure defined above. Then since \\(\\mu_{0} = 100\\) does not fall into this interval, this level \\(0.05 = 1 - 0.95\\) test rejects \\(H_{0}\\). So we conclude that the average weight of Middlebury Bagel’s boston creme donuts are not 100g."
+  },
+  {
+    "objectID": "project.html#rough-draft",
+    "href": "project.html#rough-draft",
+    "title": "Final project",
+    "section": "Rough draft",
+    "text": "Rough draft"
   }
 ]

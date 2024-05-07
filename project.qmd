@@ -13,3 +13,39 @@ Downloadable PDF with final project description [here](weeks/project/project_des
 -   Saturday 05/18 at 9:00am: project presentations during exam period
 
 -   Monday 05/20 at 11:59pm: final draft and reflection due
+
+------------------------------------------------------------------------
+
+::: {#sec-draft}
+## Rough draft 
+:::
+
+### Draft expectations
+
+The purpose of the rough draft is to receive constructive feedback from your peers. Remember, the final paper should be understandable by someone who has taken the course. So what better way to test that than by having a peer actually read your paper?
+
+It is not my expectation that you/your group has written all that you'd like to put into the final paper. However, you can only receive quality and useful feedback if you share a draft that has enough content to work with! Therefore, **I expect that your rough draft has addressed at least Objectives 1-5 on the final project description.** If you have made further progress, that's great! These components do not have to be fully polished, but there has to be a narrative arc that flows through your paper such that the reader is not confused or discombobulated as they jump from paragraph to paragraph. Once again, the more work you put it at an early stage will mean less work later!
+
+A potential sectioning that could be useful (though is by no means required) is below. This might help you frame your narrative arc.
+
+-   Introduction
+
+-   Description of specific topic
+
+-   Methods and theory
+
+-   Application
+
+-   Conclusion
+
+Recall that this draft is due to Canvas at noon on Saturday, 05/11.
+
+### Peer review process
+
+After the rough drafts are submitted, you will be assigned a few rough drafts to read and provide feedback on. **You should read these drafts before class on Monday, 05/13** **and be prepared to share feedback on that day of class.** I am aware that there is only a little over one day to read through these drafts, but hopefully that shouldn't take more than an hour.
+
+I cannot emphasize enough how important peer review is! As someone giving comments, it is a great opportunity to learn how to give constructive, actionable feedback. As someone receiving comments, you receive the benefit of learning if your paper makes sense to someone who isn't familiar with the topic and receive helpful suggestions on how to improve the draft. Because this process is so important, it is my expectation that you really do work to generate helpful feedback.
+
+::: {style="color: purple"}
+I will soon share some guiding questions to help you synthesize your comments for the drafts and facilitate discussion in class. **Your responses to these guiding questions will be collected in class on Monday, 05/13 and will count towards your final project grade.** They will be graded for evidence of depth, and not just completion.
+:::

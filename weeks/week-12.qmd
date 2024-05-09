@@ -41,3 +41,7 @@ title: "Week 12"
 **Daily assignment**
 
 -   None!
+
+**Class activity**
+
+-   [Simple linear regression code](class/slr.qmd)

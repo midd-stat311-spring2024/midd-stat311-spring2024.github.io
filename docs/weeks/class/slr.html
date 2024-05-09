@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Becky Tang">
-<meta name="dcterms.date" content="2024-04-25">
+<meta name="dcterms.date" content="2024-05-10">
 
-<title>STAT 311: Statistical Inference - Likelihood ratio test</title>
+<title>STAT 311: Statistical Inference - Simple linear regression</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -125,9 +125,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   }
 }</script>
 
-<script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
-
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
@@ -185,7 +182,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Likelihood ratio test</h1>
+      <h1 class="quarto-secondary-nav-title">Simple linear regression</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -273,7 +270,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Likelihood ratio test</h1>
+<h1 class="title d-none d-lg-block">Simple linear regression</h1>
 </div>
 
 
@@ -290,7 +287,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 25, 2024</p>
+      <p class="date">May 10, 2024</p>
     </div>
   </div>
   
@@ -300,83 +297,124 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="lrt-set-up" class="level2">
-<h2 class="anchored" data-anchor-id="lrt-set-up">LRT set-up</h2>
-<p>Recall the coin-flipping scenario again! We have <span class="math inline">\(X_{1},\ldots, X_{n}\)</span> are a random sample from a <span class="math inline">\(\text{Bern}(\theta)\)</span> distribution, where <span class="math inline">\(\theta\)</span> is the probability of Heads. We have the hypotheses</p>
-<p><span class="math display">\[H_{0}: \theta = \theta_{0} \qquad \text{vs.} \qquad H_{1}: \theta \neq \theta_{0}\]</span> We can conduct a LRT of these hypotheses. We found the likelihood ratio statistic to be:</p>
-<p><span class="math display">\[\Lambda(\mathbf{X}) = \left(\frac{n\theta_{0}}{\sum X_i}\right)^{\sum X_{i}} \left( \frac{n(1-\theta_{0})}{n - \sum X_i}\right)^{n - \sum X_i}\]</span> The LRT says reject when <span class="math inline">\(\Lambda(\mathbf{x}) \leq k\)</span> for some <span class="math inline">\(k \in [0,1]\)</span>. Notice that <span class="math inline">\(\Lambda(\mathbf{x})\)</span> depends on how many heads we see!</p>
-</section>
-<section id="specific-case" class="level2">
-<h2 class="anchored" data-anchor-id="specific-case">Specific case</h2>
-<p>Suppose we have <span class="math inline">\(n=6\)</span> coin flips and <span class="math inline">\(\theta_{0} = 0.6\)</span>. That is,</p>
-<p><span class="math display">\[H_{0}: \theta = 0.6 \qquad \text{vs.} \qquad H_{1}: \theta \neq 0.6\]</span></p>
-<p>Also suppose we want a level <span class="math inline">\(0.08\)</span> LRT of these hypotheses, which means we need to find the value of <span class="math inline">\(k\)</span> such that</p>
-<p><span class="math display">\[\text{Pr}(\Lambda(\mathbf{x}) \leq k | \theta =  0.6) \leq 0.08\]</span> We can evaluate the test statistic for these specific values of <span class="math inline">\(n, \theta_{0}\)</span>, and each possible value of <span class="math inline">\(\sum_{i=1}^{6} X_i = y \in \{0,1,\ldots, 6\}\)</span>:</p>
+<section id="data" class="level1">
+<h1>Data</h1>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">6</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>theta0 <span class="ot">&lt;-</span> <span class="fl">0.6</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">0</span><span class="sc">:</span>n</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Lambda <span class="ot">&lt;-</span> ((n<span class="sc">*</span>theta0<span class="sc">/</span>y)<span class="sc">^</span>y) <span class="sc">*</span> (n<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>theta0)<span class="sc">/</span>(n <span class="sc">-</span> y))<span class="sc">^</span>(n <span class="sc">-</span> y)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Lambda</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.00409600 0.09172943 0.41990400 0.88473600 0.94478400 0.46438023 0.04665600</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(openintro)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<p>Since <span class="math inline">\(\Lambda(\mathbf{x})\)</span> is a function of <span class="math inline">\(\sum X_i\)</span>, <span class="math inline">\(\text{Pr}(\Lambda(\mathbf{x}) = k | \theta = 0.6)\)</span> can be obtained from <span class="math inline">\(\text{Pr}(\sum X_i = y |\theta = 0.6)\)</span>. For example, <span class="math inline">\(\text{Pr}(\Lambda(\mathbf{x}) = 0.004096) = \text{Pr}(\sum X_i = 0 | \theta = 0.6)\)</span>.</p>
-<p>We display the possible values of <span class="math inline">\(\Lambda(\mathbf{x})\)</span> below, along with their associated probabilities (which are obtained from <span class="math inline">\(\text{Pr}(\sum X_i = y |\theta = 0.6)\)</span>):</p>
-<div class="cell">
-<div class="cell-output-display">
-
-<table class="table" style="margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;">  </th>
-   <th style="text-align:right;"> y = 0 </th>
-   <th style="text-align:right;"> y = 1 </th>
-   <th style="text-align:right;"> y = 2 </th>
-   <th style="text-align:right;"> y = 3 </th>
-   <th style="text-align:right;"> y = 4 </th>
-   <th style="text-align:right;"> y = 5 </th>
-   <th style="text-align:right;"> y = 6 </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;border-left:1px solid;border-right:1px solid;"> \(Pr(\sum X_i = y \mid \theta_0)\) </td>
-   <td style="text-align:right;border-left:1px solid;border-right:1px solid;"> 0.004096 </td>
-   <td style="text-align:right;border-left:1px solid;border-right:1px solid;"> 0.0368640 </td>
-   <td style="text-align:right;border-left:1px solid;border-right:1px solid;"> 0.138240 </td>
-   <td style="text-align:right;border-left:1px solid;border-right:1px solid;"> 0.276480 </td>
-   <td style="text-align:right;border-left:1px solid;border-right:1px solid;"> 0.311040 </td>
-   <td style="text-align:right;border-left:1px solid;border-right:1px solid;"> 0.1866240 </td>
-   <td style="text-align:right;border-left:1px solid;border-right:1px solid;"> 0.046656 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> \(\Lambda(\mathbf{x})\) </td>
-   <td style="text-align:right;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.004096 </td>
-   <td style="text-align:right;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0917294 </td>
-   <td style="text-align:right;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.419904 </td>
-   <td style="text-align:right;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.884736 </td>
-   <td style="text-align:right;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.944784 </td>
-   <td style="text-align:right;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.4643802 </td>
-   <td style="text-align:right;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.046656 </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<p>Now we can find the value <span class="math inline">\(k\)</span> such that <span class="math inline">\(\text{Pr}(\Lambda(\mathbf{x}) \leq k | \theta = 0.6) \leq 0.08\)</span>! Fill out the remaining components:</p>
+<p>Elections for the U.S. House of Representatives take place every two years. Half coincide with presidential elections, and the other half take place in the middle of a Presidential term. These are called the midterm elections. The data <code>midterms_house</code> from the <code>openintro</code> package contains data from the 29 midterm elections between 1899-2019.</p>
+<p>One political theory suggests that high unemployment rate corresponds to worse performance by the President’s party in midterm elections. Let’s examine that here! The two variables we will consider in the following data are:</p>
 <ul>
-<li><span class="math inline">\(\text{Pr}(\Lambda(\mathbf{x}) \leq 0.0041 | \theta = 0.6) = \text{Pr}(\sum X_i = \qquad \qquad | \theta = 0.6) = \qquad\)</span></li>
-<li><span class="math inline">\(\text{Pr}(\Lambda(\mathbf{x}) \leq \qquad \qquad | \theta = 0.6) = \text{Pr}(\sum X_i = \qquad \qquad | \theta = 0.6) = \qquad \qquad\)</span>`</li>
-<li><span class="math inline">\(\text{Pr}(\Lambda(\mathbf{x}) \leq \qquad \qquad | \theta = 0.6) = \text{Pr}(\sum X_i = \qquad \qquad| \theta = 0.6) = \qquad \qquad\)</span></li>
+<li><p><code>unemp</code>: the unemployment rate in the year of the midterm election</p></li>
+<li><p><code>house_change</code>: percent change in the House seats for the sitting president’s party</p></li>
 </ul>
-<p>So rejecting <span class="math inline">\(H_{0}\)</span> when <span class="math inline">\(\Lambda(\mathbf{x}) \leq k\)</span> for any <span class="math inline">\(k \in \qquad \qquad \qquad\)</span> yields a level-0.08 test.</p>
-<p>In particular, the test that rejects <span class="math inline">\(H_{0}\)</span> when <span class="math inline">\(k = 0.0467\)</span> has size:</p>
-<p>The test that rejects <span class="math inline">\(H_{0}\)</span> when <span class="math inline">\(k = 0.0041\)</span> has size:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> midterms_house <span class="sc">%&gt;%</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span>year <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1935</span>, <span class="dv">1939</span>)) <span class="co"># filter out Depression Era</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="simple-linear-regression" class="level1">
+<h1>Simple Linear Regression</h1>
+<p>If we’re interested in understanding how <code>house_change</code> is related to <code>unemp</code>, we might consider a simple linear regression model of the form:</p>
+<p><span class="math display">\[\text{housechange} = \beta_{0} + \beta_{1} \text{unemp} + \epsilon\]</span> One big assumption is that the response variable is Normal:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(dat<span class="sc">$</span>house_change, <span class="at">xlab =</span> <span class="st">"Percent change"</span>, <span class="at">main =</span> <span class="st">"Histogram of midterm election changeover"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="slr_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Do this look Normal? Not so sure… But we will proceed anyway!</p>
+<section id="point-estimates" class="level2">
+<h2 class="anchored" data-anchor-id="point-estimates">Point estimates</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">nrow</span>(dat)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> dat<span class="sc">$</span>house_change</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>ybar <span class="ot">&lt;-</span> <span class="fu">mean</span>(y)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> dat<span class="sc">$</span>unemp</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>xbar <span class="ot">&lt;-</span> <span class="fu">mean</span>(x)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>s_x2 <span class="ot">&lt;-</span> <span class="fu">sum</span>((x <span class="sc">-</span> xbar)<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>b1_hat <span class="ot">&lt;-</span> <span class="fu">sum</span>((y <span class="sc">-</span> ybar)<span class="sc">*</span>(x <span class="sc">-</span> xbar))<span class="sc">/</span>s_x2</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>b0_hat <span class="ot">&lt;-</span> ybar <span class="sc">-</span> b1_hat <span class="sc">*</span> xbar</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>s2_hat <span class="ot">&lt;-</span> (<span class="dv">1</span><span class="sc">/</span>n)<span class="sc">*</span><span class="fu">sum</span>((y <span class="sc">-</span> (b0_hat <span class="sc">+</span> b1_hat<span class="sc">*</span>x))<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>b0_hat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -7.364406</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>b1_hat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -0.8897261</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>s2_hat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 73.95685</code></pre>
+</div>
+</div>
+</section>
+<section id="inference" class="level2">
+<h2 class="anchored" data-anchor-id="inference">Inference</h2>
+<section id="hypothesis-test" class="level3">
+<h3 class="anchored" data-anchor-id="hypothesis-test">Hypothesis test</h3>
+<p>We might want to better understand if unemployment rate really is associated with changes in composition of the House seats. Consider the hypotheses</p>
+<p><span class="math display">\[H_{0}: \beta_{1} = 0 \qquad \text{vs.} \qquad H_{1}: \beta_{1} \neq 0\]</span> Let <span class="math inline">\(U = s_{x}\left(\frac{\hat{\beta}_{1} - 0}{\sigma'}\right)\)</span>. Recall our rejection rule for a level <span class="math inline">\(\alpha_{0}\)</span> test of these hypotheses is to reject <span class="math inline">\(H_{0}\)</span> if <span class="math inline">\(|U| \geq c = T^{-1}_{n-2}(1 - \frac{\alpha_{0}}{2})\)</span>. In particular, consider <span class="math inline">\(\alpha_{0} = 0.05\)</span>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>s_tilde <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(n<span class="sc">*</span>s2_hat<span class="sc">/</span>(n<span class="dv">-2</span>))</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>u <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(s_x2)<span class="sc">*</span>(b1_hat <span class="sc">-</span> <span class="dv">0</span>)<span class="sc">/</span>s_tilde</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>u</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -1.065546</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># level-05 test rejection rule</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>alpha0 <span class="ot">&lt;-</span> <span class="fl">0.05</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="fu">qt</span>(<span class="dv">1</span> <span class="sc">-</span> alpha0<span class="sc">/</span><span class="dv">2</span>, n<span class="dv">-2</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>c</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.051831</code></pre>
+</div>
+</div>
+<p>Since <span class="math inline">\(|U| = |u| = 1.066\)</span> is less than <span class="math inline">\(c = 2.052\)</span>, we fail to reject <span class="math inline">\(H_{0}\)</span>. So we cannot conclude that there is a linear association between unemployment rate and the percent change in house representatives from the president’s party during midterm elections.</p>
+</section>
+<section id="p-value" class="level3">
+<h3 class="anchored" data-anchor-id="p-value">p-value</h3>
+<p>We can also obtain the p-value and compare its value to <span class="math inline">\(0.05\)</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># p-value</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pt</span>(<span class="sc">-</span><span class="fu">abs</span>(u), n<span class="dv">-2</span>) <span class="sc">+</span> <span class="fu">pt</span>(<span class="fu">abs</span>(u), n<span class="dv">-2</span>, <span class="at">lower.tail =</span> F)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.2960654</code></pre>
+</div>
+</div>
+<p>Since the p-value is greater than <span class="math inline">\(0.05\)</span>, we fail to reject <span class="math inline">\(H_{0}\)</span> at the 0.05 level.</p>
+</section>
+<section id="lm-function" class="level3">
+<h3 class="anchored" data-anchor-id="lm-function"><code>lm()</code> function</h3>
+<p>We can easily obtain these results using the <code>lm()</code> function below. Notice how the outputs from this function compare to the values we obtained by hand!</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(house_change <span class="sc">~</span> unemp, <span class="at">data =</span> dat)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = house_change ~ unemp, data = dat)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-14.0124  -7.6989   0.0913   7.2974  16.1447 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)
+(Intercept)  -7.3644     5.1553  -1.429    0.165
+unemp        -0.8897     0.8350  -1.066    0.296
+
+Residual standard error: 8.913 on 27 degrees of freedom
+Multiple R-squared:  0.04035,   Adjusted R-squared:  0.004812 
+F-statistic: 1.135 on 1 and 27 DF,  p-value: 0.2961</code></pre>
+</div>
+</div>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

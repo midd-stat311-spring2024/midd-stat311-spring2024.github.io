@@ -49,3 +49,5 @@ I cannot emphasize enough how important peer review is! As someone giving commen
 ::: {style="color: purple"}
 I will soon share some guiding questions to help you synthesize your comments for the drafts and facilitate discussion in class. **Your responses to these guiding questions will be collected in class on Monday, 05/13 and will count towards your final project grade.** They will be graded for evidence of depth, and not just completion.
 :::
+
+-   Peer review [guiding questions](weeks/project/peer_review_guide.pdf)

@@ -2,7 +2,7 @@
 title: "Final project"
 ---
 
-Downloadable PDF with final project description [here](weeks/project/project_description.pdf).
+Downloadable PDF with final project description [here](weeks/project/project_description.pdf) (last updated 05/14) .
 
 **Key dates:**
 
@@ -12,7 +12,7 @@ Downloadable PDF with final project description [here](weeks/project/project_des
 
 -   Saturday 05/18 at 9:00am: [project presentations](#sec-presentation) during exam period
 
--   Monday 05/20 at 11:59pm: final draft and reflection due
+-   Monday 05/20 at 11:59pm: [final draft](#sec-final) and [reflection](#sec-reflection) due to Canvas
 
 ------------------------------------------------------------------------
 
@@ -173,4 +173,32 @@ Your grade for the presentation will be based on points earned in each category:
 
 ------------------------------------------------------------------------
 
+::: {#sec-final}
+## Final draft
+:::
+
+The majority of the details for the final draft can be found on Section 3.2 of the [project description PDF](weeks/project/project_description.pdf). A few extra details that have been added are:
+
+-   Please have margins between 0.75 inches and 1.25 inches
+
+-   The page lengths listed on the description are *minimum* page lengths. If your paper is going over, that's totally fine!
+
+-   Make sure that you define your statistical notation clearly and use it consistently throughout the paper.
+
+------------------------------------------------------------------------
+
 ## Reflection {#sec-reflection}
+
+In addition to your final draft, please submit a roughly one page reflection that addresses the following questions:
+
+-   What were some of the most interesting discoveries you made while working on this project? These could be discoveries related to the topic or yourself while working on the project.
+
+-   What aspect of your project are you most proud of?
+
+-   What aspects of your project do you wish you could have improved or done better on?
+
+-   What aspects of the peer review were most helpful to you? Additionally, provide a specific example of some feedback that you incorporated into your final paper.
+
+-   How do you think you grew/developed your statistical expertise through this project, or perhaps through this class as a whole?
+
+-   Optionally: what suggestions/feedback do you have for the final project when Becky teaches this class again? Is there anything else that you'd like to reflect on, whether it's about the project or the class as a whole?

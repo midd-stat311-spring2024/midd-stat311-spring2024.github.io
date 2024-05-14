@@ -305,7 +305,7 @@
     "href": "project.html",
     "title": "Final project",
     "section": "",
-    "text": "Downloadable PDF with final project description here.\nKey dates:\nEvery group is required to give a presentation during our course’s exam period on Saturday, May 18 from 9:00am-12:00pm."
+    "text": "Downloadable PDF with final project description here (last updated 05/14) .\nKey dates:\nEvery group is required to give a presentation during our course’s exam period on Saturday, May 18 from 9:00am-12:00pm.\nThe majority of the details for the final draft can be found on Section 3.2 of the project description PDF. A few extra details that have been added are:"
   },
   {
     "objectID": "weeks/hw/templates/hw6_r.html",
@@ -530,5 +530,19 @@
     "title": "Final project",
     "section": "Presentation",
     "text": "Presentation"
+  },
+  {
+    "objectID": "project.html#sec-reflection",
+    "href": "project.html#sec-reflection",
+    "title": "Final project",
+    "section": "Reflection",
+    "text": "Reflection\nIn addition to your final draft, please submit a roughly one page reflection that addresses the following questions:\n\nWhat were some of the most interesting discoveries you made while working on this project? These could be discoveries related to the topic or yourself while working on the project.\nWhat aspect of your project are you most proud of?\nWhat aspects of your project do you wish you could have improved or done better on?\nWhat aspects of the peer review were most helpful to you? Additionally, provide a specific example of some feedback that you incorporated into your final paper.\nHow do you think you grew/developed your statistical expertise through this project, or perhaps through this class as a whole?\nOptionally: what suggestions/feedback do you have for the final project when Becky teaches this class again? Is there anything else that you’d like to reflect on, whether it’s about the project or the class as a whole?"
+  },
+  {
+    "objectID": "project.html#final-draft",
+    "href": "project.html#final-draft",
+    "title": "Final project",
+    "section": "Final draft",
+    "text": "Final draft"
   }
 ]

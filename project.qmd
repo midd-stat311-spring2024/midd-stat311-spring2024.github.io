@@ -72,6 +72,18 @@ Every group is required to give a presentation during our course's exam period o
 
 -   The presentation order will be randomly assigned, to be shared here on Friday, May 17
 
+    1.  Alec
+    2.  Duncan
+    3.  Megan
+    4.  Henry
+    5.  Xiuyuan
+    6.  Abby and Claire
+    7.  Justin, Xander, and Jackson
+    8.  Zach and Jiaan
+    9.  Cody
+    10. Violet
+    11. Alex
+
 ### Requirements
 
 As a presenter:
@@ -154,21 +166,13 @@ Your presentation will be assessed based on the following categories: Content, U
 Your grade for the presentation will be based on points earned in each category:
 
 -   8 pts: 100%
-
 -   7 pts: 90%
-
 -   6 pts: 80%
-
 -   5 pts: 70%
-
 -   4 pts: 60%
-
 -   3 pts: 50%
-
 -   2 pts: 40%
-
 -   1 pts: 20%
-
 -   0 pts: 0%
 
 ------------------------------------------------------------------------
